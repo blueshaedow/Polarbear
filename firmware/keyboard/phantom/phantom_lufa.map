@@ -1,0 +1,2049 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              obj_phantom_lufa/protocol/lufa/lufa.o (__udivmodqi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              obj_phantom_lufa/matrix.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              obj_phantom_lufa/keymap.o (__do_clear_bss)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+                              obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o (__eerd_byte_m32u4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+                              obj_phantom_lufa/common/avr/eeconfig.o (__eerd_word_m32u4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+                              obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o (__eeupd_byte_m32u4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+                              obj_phantom_lufa/common/avr/eeconfig.o (__eewr_byte_m32u4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+                              obj_phantom_lufa/common/avr/eeconfig.o (__eewr_word_m32u4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o) (__eerd_blraw_m32u4)
+
+Allocating common symbols
+Common symbol       size              file
+
+USB_IsInitialized   0x1               obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+keymap_config       0x1               obj_phantom_lufa/keymap.o
+USB_DeviceState     0x1               obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_ConfigurationNumber
+                    0x1               obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+USB_Device_CurrentlySelfPowered
+                    0x1               obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+USB_ControlRequest  0x8               obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_RemoteWakeupEnabled
+                    0x1               obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ .text          0x00000000        0x0 obj_phantom_lufa/keymap.o
+ .data          0x00000000        0x0 obj_phantom_lufa/keymap.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/keymap.o
+ .text          0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .data          0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .text.matrix_rows
+                0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .text.matrix_cols
+                0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .text.matrix_is_modified
+                0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .text.matrix_is_on
+                0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .text.matrix_key_count
+                0x00000000        0x0 obj_phantom_lufa/matrix.o
+ .text          0x00000000        0x0 obj_phantom_lufa/led.o
+ .data          0x00000000        0x0 obj_phantom_lufa/led.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/led.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/lufa.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/lufa.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/lufa.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_GetHIDReportItemInfo
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_SetHIDReportItemInfo
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_GetHIDReportSize
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_ProcessHIDReport
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_Stream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_PStream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Null_Stream
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Discard_Stream
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_LE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Stream_BE
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text.Endpoint_ConfigureEndpointTable
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text.Endpoint_ClearEndpoints
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfType
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeBefore
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeAfter
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorComp
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .text.USB_Event_Stub
+                0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .text          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .data          0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .text.host_get_driver
+                0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .text.host_mouse_send
+                0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .text.host_last_sysytem_report
+                0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .text.host_last_consumer_report
+                0x00000000        0x0 obj_phantom_lufa/common/host.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/keyboard.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/keyboard.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/keyboard.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/action.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/action.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/action.o
+ .text.debug_action
+                0x00000000        0x0 obj_phantom_lufa/common/action.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/action_tapping.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/action_tapping.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/action_tapping.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/action_macro.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/action_macro.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/action_macro.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/action_layer.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/action_layer.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/action_layer.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .text.set_mods
+                0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .text.get_weak_mods
+                0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .text.set_weak_mods
+                0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .text.get_first_key
+                0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .text.has_anymod
+                0x00000000        0x0 obj_phantom_lufa/common/action_util.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/keymap.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/keymap.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/keymap.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/print.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/print.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/print.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/debug.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/debug.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/debug.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text.bitpop   0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text.bitpop16
+                0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text.bitpop32
+                0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text.biton    0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text.biton16  0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text.biton32  0x00000000        0x0 obj_phantom_lufa/common/util.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/avr/suspend.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/avr/suspend.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/avr/suspend.o
+ .text.suspend_idle
+                0x00000000        0x0 obj_phantom_lufa/common/avr/suspend.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/avr/xprintf.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .text.timer_clear
+                0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .text.timer_read32
+                0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .text.timer_elapsed
+                0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .text.timer_elapsed32
+                0x00000000        0x0 obj_phantom_lufa/common/avr/timer.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/avr/bootloader.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/avr/bootloader.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/avr/bootloader.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/bootmagic.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/bootmagic.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/bootmagic.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/avr/eeconfig.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/avr/eeconfig.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/avr/eeconfig.o
+ .text.eeconfig_disable
+                0x00000000        0x0 obj_phantom_lufa/common/avr/eeconfig.o
+ .text.eeconfig_enable
+                0x00000000        0x0 obj_phantom_lufa/common/avr/eeconfig.o
+ .text          0x00000000        0x0 obj_phantom_lufa/common/command.o
+ .data          0x00000000        0x0 obj_phantom_lufa/common/command.o
+ .bss           0x00000000        0x0 obj_phantom_lufa/common/command.o
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .text.avr-libc
+                0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+LOAD obj_phantom_lufa/keymap.o
+LOAD obj_phantom_lufa/matrix.o
+LOAD obj_phantom_lufa/led.o
+LOAD obj_phantom_lufa/protocol/lufa/lufa.o
+LOAD obj_phantom_lufa/protocol/lufa/descriptor.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+LOAD obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+LOAD obj_phantom_lufa/common/host.o
+LOAD obj_phantom_lufa/common/keyboard.o
+LOAD obj_phantom_lufa/common/action.o
+LOAD obj_phantom_lufa/common/action_tapping.o
+LOAD obj_phantom_lufa/common/action_macro.o
+LOAD obj_phantom_lufa/common/action_layer.o
+LOAD obj_phantom_lufa/common/action_util.o
+LOAD obj_phantom_lufa/common/keymap.o
+LOAD obj_phantom_lufa/common/print.o
+LOAD obj_phantom_lufa/common/debug.o
+LOAD obj_phantom_lufa/common/util.o
+LOAD obj_phantom_lufa/common/avr/suspend.o
+LOAD obj_phantom_lufa/common/avr/xprintf.o
+LOAD obj_phantom_lufa/common/avr/timer.o
+LOAD obj_phantom_lufa/common/avr/bootloader.o
+LOAD obj_phantom_lufa/common/bootmagic.o
+LOAD obj_phantom_lufa/common/avr/eeconfig.o
+LOAD obj_phantom_lufa/common/command.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x4438
+ *(.vectors)
+ .vectors       0x00000000       0xac c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x000000ac       0x22 obj_phantom_lufa/matrix.o
+ *(.progmem*)
+ .progmem.data  0x000000ce       0xce obj_phantom_lufa/keymap.o
+ .progmem.data  0x0000019c       0x37 obj_phantom_lufa/matrix.o
+ .progmem.data  0x000001d3       0x3a obj_phantom_lufa/protocol/lufa/lufa.o
+ .progmem.data  0x0000020d      0x128 obj_phantom_lufa/protocol/lufa/descriptor.o
+                0x0000020d                KeyboardReport
+                0x00000282                ConsoleReport
+                0x00000313                ManufacturerString
+                0x0000024c                ExtrakeyReport
+                0x0000030f                LanguageString
+                0x000002a2                DeviceDescriptor
+                0x00000323                ProductString
+                0x000002b4                ConfigurationDescriptor
+ .progmem.data  0x00000335       0x1a obj_phantom_lufa/common/host.o
+ .progmem.data  0x0000034f       0x1a obj_phantom_lufa/common/keyboard.o
+ .progmem.data  0x00000369       0x1c obj_phantom_lufa/common/bootmagic.o
+ .progmem.data  0x00000385      0x3f3 obj_phantom_lufa/common/command.o
+                0x00000778                . = ALIGN (0x2)
+                0x00000778                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000778        0x0 linker stubs
+ *(.trampolines*)
+                0x00000778                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000778                __ctors_start = .
+ *(.ctors)
+                0x00000778                __ctors_end = .
+                0x00000778                __dtors_start = .
+ *(.dtors)
+                0x00000778                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000778        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000778                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000778        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ *(.init2)
+ *(.init3)
+ .init3         0x00000784       0x4e obj_phantom_lufa/common/avr/bootloader.o
+                0x00000784                bootloader_jump_after_watchdog_reset
+ *(.init3)
+ *(.init4)
+ .init4         0x000007d2       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x000007d2                __do_copy_data
+ .init4         0x000007e8       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000007e8                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000007f8        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ *(.init9)
+ *(.text)
+ .text          0x00000800        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000800                __vector_38
+                0x00000800                __vector_22
+                0x00000800                __vector_28
+                0x00000800                __vector_1
+                0x00000800                __vector_32
+                0x00000800                __vector_34
+                0x00000800                __vector_24
+                0x00000800                __bad_interrupt
+                0x00000800                __vector_6
+                0x00000800                __vector_31
+                0x00000800                __vector_35
+                0x00000800                __vector_39
+                0x00000800                __vector_3
+                0x00000800                __vector_23
+                0x00000800                __vector_30
+                0x00000800                __vector_25
+                0x00000800                __vector_11
+                0x00000800                __vector_13
+                0x00000800                __vector_17
+                0x00000800                __vector_19
+                0x00000800                __vector_7
+                0x00000800                __vector_41
+                0x00000800                __vector_27
+                0x00000800                __vector_5
+                0x00000800                __vector_33
+                0x00000800                __vector_37
+                0x00000800                __vector_4
+                0x00000800                __vector_9
+                0x00000800                __vector_2
+                0x00000800                __vector_15
+                0x00000800                __vector_36
+                0x00000800                __vector_29
+                0x00000800                __vector_40
+                0x00000800                __vector_8
+                0x00000800                __vector_26
+                0x00000800                __vector_14
+                0x00000800                __vector_16
+                0x00000800                __vector_18
+                0x00000800                __vector_20
+                0x00000800                __vector_42
+ .text          0x00000804      0x15c obj_phantom_lufa/common/avr/xprintf.o
+                0x0000094e                __xprintf
+                0x0000082a                xitoa
+                0x0000081c                xputs
+                0x00000804                xputc
+                0x00000960                . = ALIGN (0x2)
+ *(.text.*)
+ .text.keymap_key_to_keycode
+                0x00000960       0x3e obj_phantom_lufa/keymap.o
+                0x00000960                keymap_key_to_keycode
+ .text.keymap_fn_to_action
+                0x0000099e       0x16 obj_phantom_lufa/keymap.o
+                0x0000099e                keymap_fn_to_action
+ .text.matrix_get_row
+                0x000009b4       0x1a obj_phantom_lufa/matrix.o
+                0x000009b4                matrix_get_row
+ .text.unselect_cols
+                0x000009ce       0x28 obj_phantom_lufa/matrix.o
+ .text.matrix_init
+                0x000009f6       0x7a obj_phantom_lufa/matrix.o
+                0x000009f6                matrix_init
+ .text.matrix_print
+                0x00000a70       0x88 obj_phantom_lufa/matrix.o
+                0x00000a70                matrix_print
+ .text.matrix_scan
+                0x00000af8      0x306 obj_phantom_lufa/matrix.o
+                0x00000af8                matrix_scan
+ .text.led_set  0x00000dfe       0x1e obj_phantom_lufa/led.o
+                0x00000dfe                led_set
+ .text.EVENT_USB_Device_StartOfFrame
+                0x00000e1c       0x80 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x00000e1c                EVENT_USB_Device_StartOfFrame
+ .text.keyboard_leds
+                0x00000e9c        0x6 obj_phantom_lufa/protocol/lufa/lufa.o
+ .text.send_mouse
+                0x00000ea2        0x2 obj_phantom_lufa/protocol/lufa/lufa.o
+ .text.sendchar
+                0x00000ea4       0xce obj_phantom_lufa/protocol/lufa/lufa.o
+                0x00000ea4                sendchar
+ .text.send_consumer
+                0x00000f72       0x6c obj_phantom_lufa/protocol/lufa/lufa.o
+ .text.send_system
+                0x00000fde       0x6c obj_phantom_lufa/protocol/lufa/lufa.o
+ .text.send_keyboard
+                0x0000104a       0x6e obj_phantom_lufa/protocol/lufa/lufa.o
+ .text.EVENT_USB_Device_Suspend
+                0x000010b8        0xa obj_phantom_lufa/protocol/lufa/lufa.o
+                0x000010b8                EVENT_USB_Device_Suspend
+ .text.EVENT_USB_Device_Reset
+                0x000010c2        0xa obj_phantom_lufa/protocol/lufa/lufa.o
+                0x000010c2                EVENT_USB_Device_Reset
+ .text.EVENT_USB_Device_Disconnect
+                0x000010cc        0xe obj_phantom_lufa/protocol/lufa/lufa.o
+                0x000010cc                EVENT_USB_Device_Disconnect
+ .text.EVENT_USB_Device_Connect
+                0x000010da       0x24 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x000010da                EVENT_USB_Device_Connect
+ .text.main     0x000010fe       0xa8 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x000010fe                main
+ .text.EVENT_USB_Device_ControlRequest
+                0x000011a6      0x178 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x000011a6                EVENT_USB_Device_ControlRequest
+ .text.EVENT_USB_Device_ConfigurationChanged
+                0x0000131e       0x20 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x0000131e                EVENT_USB_Device_ConfigurationChanged
+ .text.EVENT_USB_Device_WakeUp
+                0x0000133e        0xe obj_phantom_lufa/protocol/lufa/lufa.o
+                0x0000133e                EVENT_USB_Device_WakeUp
+ .text.CALLBACK_USB_GetDescriptor
+                0x0000134c       0xc2 obj_phantom_lufa/protocol/lufa/descriptor.o
+                0x0000134c                CALLBACK_USB_GetDescriptor
+ .text.USB_Device_SendRemoteWakeup
+                0x0000140e       0x2c obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                0x0000140e                USB_Device_SendRemoteWakeup
+ .text.Endpoint_Write_Control_Stream_LE
+                0x0000143a       0xd4 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x0000143a                Endpoint_Write_Control_Stream_LE
+ .text.Endpoint_Write_Control_PStream_LE
+                0x0000150e       0xd6 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x0000150e                Endpoint_Write_Control_PStream_LE
+ .text.Endpoint_Write_Stream_LE
+                0x000015e4       0xaa obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x000015e4                Endpoint_Write_Stream_LE
+ .text.Endpoint_ConfigureEndpoint_Prv
+                0x0000168e       0x70 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x0000168e                Endpoint_ConfigureEndpoint_Prv
+ .text.Endpoint_ClearStatusStage
+                0x000016fe       0x42 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x000016fe                Endpoint_ClearStatusStage
+ .text.Endpoint_WaitUntilReady
+                0x00001740       0x64 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00001740                Endpoint_WaitUntilReady
+ .text.USB_Disable
+                0x000017a4       0x34 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x000017a4                USB_Disable
+ .text.USB_ResetInterface
+                0x000017d8       0x8e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x000017d8                USB_ResetInterface
+ .text.USB_Init
+                0x00001866       0x24 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00001866                USB_Init
+ .text.USB_INT_DisableAllInterrupts
+                0x0000188a       0x10 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000188a                USB_INT_DisableAllInterrupts
+ .text.USB_INT_ClearAllInterrupts
+                0x0000189a        0xa obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000189a                USB_INT_ClearAllInterrupts
+ .text.__vector_10
+                0x000018a4      0x19a obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x000018a4                __vector_10
+ .text.USB_Device_ProcessControlRequest
+                0x00001a3e      0x2e0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00001a3e                USB_Device_ProcessControlRequest
+ .text.USB_USBTask
+                0x00001d1e       0x2c obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                0x00001d1e                USB_USBTask
+ .text.host_set_driver
+                0x00001d4a        0xa obj_phantom_lufa/common/host.o
+                0x00001d4a                host_set_driver
+ .text.host_keyboard_leds
+                0x00001d54       0x1a obj_phantom_lufa/common/host.o
+                0x00001d54                host_keyboard_leds
+ .text.host_system_send
+                0x00001d6e       0x30 obj_phantom_lufa/common/host.o
+                0x00001d6e                host_system_send
+ .text.host_consumer_send
+                0x00001d9e       0x30 obj_phantom_lufa/common/host.o
+                0x00001d9e                host_consumer_send
+ .text.host_keyboard_send
+                0x00001dce       0xa0 obj_phantom_lufa/common/host.o
+                0x00001dce                host_keyboard_send
+ .text.matrix_setup
+                0x00001e6e        0x2 obj_phantom_lufa/common/keyboard.o
+                0x00001e6e                matrix_setup
+ .text.keyboard_setup
+                0x00001e70        0x6 obj_phantom_lufa/common/keyboard.o
+                0x00001e70                keyboard_setup
+ .text.keyboard_set_leds
+                0x00001e76       0x64 obj_phantom_lufa/common/keyboard.o
+                0x00001e76                keyboard_set_leds
+ .text.keyboard_task
+                0x00001eda      0x19e obj_phantom_lufa/common/keyboard.o
+                0x00001eda                keyboard_task
+ .text.keyboard_init
+                0x00002078        0xe obj_phantom_lufa/common/keyboard.o
+                0x00002078                keyboard_init
+ .text.debug_event
+                0x00002086       0x1e obj_phantom_lufa/common/action.o
+                0x00002086                debug_event
+ .text.debug_record
+                0x000020a4       0x20 obj_phantom_lufa/common/action.o
+                0x000020a4                debug_record
+ .text.is_tap_key
+                0x000020c4       0x5a obj_phantom_lufa/common/action.o
+                0x000020c4                is_tap_key
+ .text.clear_keyboard_but_mods
+                0x0000211e       0x1e obj_phantom_lufa/common/action.o
+                0x0000211e                clear_keyboard_but_mods
+ .text.clear_keyboard
+                0x0000213c        0xa obj_phantom_lufa/common/action.o
+                0x0000213c                clear_keyboard
+ .text.unregister_mods
+                0x00002146        0xe obj_phantom_lufa/common/action.o
+                0x00002146                unregister_mods
+ .text.register_mods
+                0x00002154        0xe obj_phantom_lufa/common/action.o
+                0x00002154                register_mods
+ .text.unregister_code
+                0x00002162       0x56 obj_phantom_lufa/common/action.o
+                0x00002162                unregister_code
+ .text.register_code
+                0x000021b8      0x15c obj_phantom_lufa/common/action.o
+                0x000021b8                register_code
+ .text.process_action
+                0x00002314      0x454 obj_phantom_lufa/common/action.o
+                0x00002314                process_action
+ .text.action_exec
+                0x00002768       0x5c obj_phantom_lufa/common/action.o
+                0x00002768                action_exec
+ .text.debug_waiting_buffer
+                0x000027c4       0x42 obj_phantom_lufa/common/action_tapping.o
+ .text.debug_tapping_key
+                0x00002806       0x1e obj_phantom_lufa/common/action_tapping.o
+ .text.waiting_buffer_scan_tap
+                0x00002824       0xf8 obj_phantom_lufa/common/action_tapping.o
+ .text.process_tapping
+                0x0000291c      0x4c6 obj_phantom_lufa/common/action_tapping.o
+ .text.action_tapping_process
+                0x00002de2      0x17e obj_phantom_lufa/common/action_tapping.o
+                0x00002de2                action_tapping_process
+ .text.action_macro_play
+                0x00002f60       0xf2 obj_phantom_lufa/common/action_macro.o
+                0x00002f60                action_macro_play
+ .text.default_layer_debug
+                0x00003052        0x2 obj_phantom_lufa/common/action_layer.o
+                0x00003052                default_layer_debug
+ .text.layer_debug
+                0x00003054        0x2 obj_phantom_lufa/common/action_layer.o
+                0x00003054                layer_debug
+ .text.layer_switch_get_action
+                0x00003056       0x92 obj_phantom_lufa/common/action_layer.o
+                0x00003056                layer_switch_get_action
+ .text.layer_state_set
+                0x000030e8       0x16 obj_phantom_lufa/common/action_layer.o
+ .text.layer_xor
+                0x000030fe       0x22 obj_phantom_lufa/common/action_layer.o
+                0x000030fe                layer_xor
+ .text.layer_and
+                0x00003120       0x22 obj_phantom_lufa/common/action_layer.o
+                0x00003120                layer_and
+ .text.layer_or
+                0x00003142       0x22 obj_phantom_lufa/common/action_layer.o
+                0x00003142                layer_or
+ .text.layer_invert
+                0x00003164       0x38 obj_phantom_lufa/common/action_layer.o
+                0x00003164                layer_invert
+ .text.layer_off
+                0x0000319c       0x40 obj_phantom_lufa/common/action_layer.o
+                0x0000319c                layer_off
+ .text.layer_on
+                0x000031dc       0x38 obj_phantom_lufa/common/action_layer.o
+                0x000031dc                layer_on
+ .text.layer_move
+                0x00003214       0x20 obj_phantom_lufa/common/action_layer.o
+                0x00003214                layer_move
+ .text.layer_clear
+                0x00003234        0xe obj_phantom_lufa/common/action_layer.o
+                0x00003234                layer_clear
+ .text.default_layer_state_set
+                0x00003242       0x16 obj_phantom_lufa/common/action_layer.o
+ .text.default_layer_xor
+                0x00003258       0x22 obj_phantom_lufa/common/action_layer.o
+                0x00003258                default_layer_xor
+ .text.default_layer_and
+                0x0000327a       0x22 obj_phantom_lufa/common/action_layer.o
+                0x0000327a                default_layer_and
+ .text.default_layer_or
+                0x0000329c       0x22 obj_phantom_lufa/common/action_layer.o
+                0x0000329c                default_layer_or
+ .text.default_layer_set
+                0x000032be        0x6 obj_phantom_lufa/common/action_layer.o
+                0x000032be                default_layer_set
+ .text.add_key  0x000032c4       0x3c obj_phantom_lufa/common/action_util.o
+                0x000032c4                add_key
+ .text.del_key  0x00003300       0x26 obj_phantom_lufa/common/action_util.o
+                0x00003300                del_key
+ .text.clear_keys
+                0x00003326       0x1c obj_phantom_lufa/common/action_util.o
+                0x00003326                clear_keys
+ .text.get_mods
+                0x00003342        0x6 obj_phantom_lufa/common/action_util.o
+                0x00003342                get_mods
+ .text.add_mods
+                0x00003348        0xc obj_phantom_lufa/common/action_util.o
+                0x00003348                add_mods
+ .text.del_mods
+                0x00003354        0xe obj_phantom_lufa/common/action_util.o
+                0x00003354                del_mods
+ .text.clear_mods
+                0x00003362        0x6 obj_phantom_lufa/common/action_util.o
+                0x00003362                clear_mods
+ .text.add_weak_mods
+                0x00003368        0xc obj_phantom_lufa/common/action_util.o
+                0x00003368                add_weak_mods
+ .text.del_weak_mods
+                0x00003374        0xe obj_phantom_lufa/common/action_util.o
+                0x00003374                del_weak_mods
+ .text.clear_weak_mods
+                0x00003382        0x6 obj_phantom_lufa/common/action_util.o
+                0x00003382                clear_weak_mods
+ .text.set_oneshot_mods
+                0x00003388        0x6 obj_phantom_lufa/common/action_util.o
+                0x00003388                set_oneshot_mods
+ .text.clear_oneshot_mods
+                0x0000338e        0x6 obj_phantom_lufa/common/action_util.o
+                0x0000338e                clear_oneshot_mods
+ .text.has_anykey
+                0x00003394       0x1e obj_phantom_lufa/common/action_util.o
+                0x00003394                has_anykey
+ .text.send_keyboard_report
+                0x000033b2       0x50 obj_phantom_lufa/common/action_util.o
+                0x000033b2                send_keyboard_report
+ .text.action_get_macro
+                0x00003402        0x6 obj_phantom_lufa/common/keymap.o
+                0x00003402                action_get_macro
+ .text.action_function
+                0x00003408        0x2 obj_phantom_lufa/common/keymap.o
+                0x00003408                action_function
+ .text.keycode_to_action
+                0x0000340a      0x15c obj_phantom_lufa/common/keymap.o
+ .text.action_for_key
+                0x00003566       0xf6 obj_phantom_lufa/common/keymap.o
+                0x00003566                action_for_key
+ .text.print_set_sendchar
+                0x0000365c        0xa obj_phantom_lufa/common/print.o
+                0x0000365c                print_set_sendchar
+ .text.bitrev   0x00003666       0x44 obj_phantom_lufa/common/util.o
+                0x00003666                bitrev
+ .text.bitrev16
+                0x000036aa       0x26 obj_phantom_lufa/common/util.o
+                0x000036aa                bitrev16
+ .text.bitrev32
+                0x000036d0       0x54 obj_phantom_lufa/common/util.o
+                0x000036d0                bitrev32
+ .text.suspend_power_down
+                0x00003724       0x4c obj_phantom_lufa/common/avr/suspend.o
+                0x00003724                suspend_power_down
+ .text.matrix_power_up
+                0x00003770        0x2 obj_phantom_lufa/common/avr/suspend.o
+                0x00003770                matrix_power_up
+ .text.matrix_power_down
+                0x00003772        0x2 obj_phantom_lufa/common/avr/suspend.o
+                0x00003772                matrix_power_down
+ .text.__vector_12
+                0x00003774       0x52 obj_phantom_lufa/common/avr/suspend.o
+                0x00003774                __vector_12
+ .text.suspend_wakeup_init
+                0x000037c6        0x6 obj_phantom_lufa/common/avr/suspend.o
+                0x000037c6                suspend_wakeup_init
+ .text.suspend_wakeup_condition
+                0x000037cc       0x30 obj_phantom_lufa/common/avr/suspend.o
+                0x000037cc                suspend_wakeup_condition
+ .text.timer_init
+                0x000037fc       0x12 obj_phantom_lufa/common/avr/timer.o
+                0x000037fc                timer_init
+ .text.timer_read
+                0x0000380e       0x1a obj_phantom_lufa/common/avr/timer.o
+                0x0000380e                timer_read
+ .text.__vector_21
+                0x00003828       0x4a obj_phantom_lufa/common/avr/timer.o
+                0x00003828                __vector_21
+ .text.bootloader_jump
+                0x00003872       0x48 obj_phantom_lufa/common/avr/bootloader.o
+                0x00003872                bootloader_jump
+ .text.scan_keycode
+                0x000038ba       0x72 obj_phantom_lufa/common/bootmagic.o
+ .text.bootmagic_scan_keycode
+                0x0000392c       0x18 obj_phantom_lufa/common/bootmagic.o
+                0x0000392c                bootmagic_scan_keycode
+ .text.bootmagic
+                0x00003944      0x29c obj_phantom_lufa/common/bootmagic.o
+                0x00003944                bootmagic
+ .text.eeconfig_write_keymap
+                0x00003be0        0xc obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003be0                eeconfig_write_keymap
+ .text.eeconfig_write_default_layer
+                0x00003bec        0xc obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003bec                eeconfig_write_default_layer
+ .text.eeconfig_write_debug
+                0x00003bf8        0xc obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003bf8                eeconfig_write_debug
+ .text.eeconfig_read_keymap
+                0x00003c04        0xa obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003c04                eeconfig_read_keymap
+ .text.eeconfig_read_default_layer
+                0x00003c0e        0xa obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003c0e                eeconfig_read_default_layer
+ .text.eeconfig_read_debug
+                0x00003c18        0xa obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003c18                eeconfig_read_debug
+ .text.eeconfig_is_enabled
+                0x00003c22       0x16 obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003c22                eeconfig_is_enabled
+ .text.eeconfig_init
+                0x00003c38       0x36 obj_phantom_lufa/common/avr/eeconfig.o
+                0x00003c38                eeconfig_init
+ .text.command_extra
+                0x00003c6e        0x4 obj_phantom_lufa/common/command.o
+                0x00003c6e                command_extra
+ .text.command_console_extra
+                0x00003c72        0x4 obj_phantom_lufa/common/command.o
+                0x00003c72                command_console_extra
+ .text.command_console_help
+                0x00003c76        0xa obj_phantom_lufa/common/command.o
+ .text.switch_default_layer
+                0x00003c80       0x50 obj_phantom_lufa/common/command.o
+ .text.command_common
+                0x00003cd0      0x658 obj_phantom_lufa/common/command.o
+ .text.command_proc
+                0x00004328       0x92 obj_phantom_lufa/common/command.o
+                0x00004328                command_proc
+ .text.libgcc   0x000043ba       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x000043ba                __udivmodqi4
+ .text.avr-libc
+                0x000043d2       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+                0x000043d2                __eerd_byte_m32u4
+ .text.avr-libc
+                0x000043e2        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+                0x000043e2                __eerd_word_m32u4
+ .text.avr-libc
+                0x000043ee       0x1c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+                0x000043f0                __eewr_r18_m32u4
+                0x000043ee                __eewr_byte_m32u4
+ .text.avr-libc
+                0x0000440a        0xa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+                0x0000440a                __eewr_word_m32u4
+ .text.avr-libc
+                0x00004414       0x20 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+                0x00004418                __eerd_blraw_m32u4
+                0x00004414                __eerd_block_m32u4
+                0x00004434                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00004434        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00004434                exit
+                0x00004434                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00004434        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00004438                _etext = .
+
+.data           0x00800100        0xe load address 0x00004438
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.debouncing
+                0x00800100        0x1 obj_phantom_lufa/matrix.o
+ .data.keyboard_protocol
+                0x00800101        0x1 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x00800101                keyboard_protocol
+ .data.lufa_driver
+                0x00800102        0xa obj_phantom_lufa/protocol/lufa/lufa.o
+                0x00800102                lufa_driver
+ .data.keyboard_report
+                0x0080010c        0x2 obj_phantom_lufa/common/action_util.o
+                0x0080010c                keyboard_report
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080010e                . = ALIGN (0x2)
+                0x0080010e                _edata = .
+                0x0080010e                PROVIDE (__data_end, .)
+
+.bss            0x0080010e       0xbe
+                0x0080010e                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080010e        0x2 obj_phantom_lufa/common/avr/xprintf.o
+                0x0080010e                xfunc_out
+ *(.bss*)
+ .bss.matrix    0x00800110       0x18 obj_phantom_lufa/matrix.o
+ .bss.matrix_debouncing
+                0x00800128       0x18 obj_phantom_lufa/matrix.o
+ .bss.keyboard_idle
+                0x00800140        0x1 obj_phantom_lufa/protocol/lufa/lufa.o
+                0x00800140                keyboard_idle
+ .bss.keyboard_led_stats
+                0x00800141        0x1 obj_phantom_lufa/protocol/lufa/lufa.o
+ .bss.console_flush
+                0x00800142        0x1 obj_phantom_lufa/protocol/lufa/lufa.o
+ .bss.timeouted.4932
+                0x00800143        0x1 obj_phantom_lufa/protocol/lufa/lufa.o
+ .bss.count.4811
+                0x00800144        0x1 obj_phantom_lufa/protocol/lufa/lufa.o
+ .bss.keyboard_report_sent
+                0x00800145        0x8 obj_phantom_lufa/protocol/lufa/lufa.o
+ .bss.last_consumer_report
+                0x0080014d        0x2 obj_phantom_lufa/common/host.o
+ .bss.last_system_report
+                0x0080014f        0x2 obj_phantom_lufa/common/host.o
+ .bss.driver    0x00800151        0x2 obj_phantom_lufa/common/host.o
+ .bss.led_status.2013
+                0x00800153        0x1 obj_phantom_lufa/common/keyboard.o
+ .bss.matrix_prev.2012
+                0x00800154       0x18 obj_phantom_lufa/common/keyboard.o
+ .bss.tapping_key
+                0x0080016c        0x6 obj_phantom_lufa/common/action_tapping.o
+ .bss.waiting_buffer_head
+                0x00800172        0x1 obj_phantom_lufa/common/action_tapping.o
+ .bss.waiting_buffer_tail
+                0x00800173        0x1 obj_phantom_lufa/common/action_tapping.o
+ .bss.waiting_buffer
+                0x00800174       0x30 obj_phantom_lufa/common/action_tapping.o
+ .bss.default_layer_state
+                0x008001a4        0x4 obj_phantom_lufa/common/action_layer.o
+                0x008001a4                default_layer_state
+ .bss.layer_state
+                0x008001a8        0x4 obj_phantom_lufa/common/action_layer.o
+                0x008001a8                layer_state
+ .bss.__compound_literal.0
+                0x008001ac        0x8 obj_phantom_lufa/common/action_util.o
+ .bss.real_mods
+                0x008001b4        0x1 obj_phantom_lufa/common/action_util.o
+ .bss.oneshot_mods
+                0x008001b5        0x1 obj_phantom_lufa/common/action_util.o
+ .bss.weak_mods
+                0x008001b6        0x1 obj_phantom_lufa/common/action_util.o
+ .bss.debug_config
+                0x008001b7        0x1 obj_phantom_lufa/common/debug.o
+                0x008001b7                debug_config
+ .bss.wdt_timeout
+                0x008001b8        0x1 obj_phantom_lufa/common/avr/suspend.o
+ .bss.timer_count
+                0x008001b9        0x4 obj_phantom_lufa/common/avr/timer.o
+                0x008001b9                timer_count
+ .bss.command_state
+                0x008001bd        0x1 obj_phantom_lufa/common/command.o
+                0x008001bd                command_state
+ *(COMMON)
+ COMMON         0x008001be        0x1 obj_phantom_lufa/keymap.o
+                0x008001be                keymap_config
+ COMMON         0x008001bf        0x3 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x008001bf                USB_Device_ConfigurationNumber
+                0x008001c0                USB_Device_CurrentlySelfPowered
+                0x008001c1                USB_Device_RemoteWakeupEnabled
+ COMMON         0x008001c2        0xa obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                0x008001c2                USB_IsInitialized
+                0x008001c3                USB_DeviceState
+                0x008001c4                USB_ControlRequest
+                0x008001cc                PROVIDE (__bss_end, .)
+                0x00004438                __data_load_start = LOADADDR (.data)
+                0x00004446                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001cc        0x4
+                0x008001cc                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+ .noinit        0x008001cc        0x4 obj_phantom_lufa/common/avr/bootloader.o
+                0x008001cc                reset_key
+                0x008001d0                PROVIDE (__noinit_end, .)
+                0x008001d0                _end = .
+                0x008001d0                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x8b8
+ *(.stab)
+ .stab          0x00000000      0x8b8 obj_phantom_lufa/common/avr/xprintf.o
+
+.stabstr        0x00000000       0x8f
+ *(.stabstr)
+ .stabstr       0x00000000       0x8f obj_phantom_lufa/common/avr/xprintf.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x8e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 obj_phantom_lufa/keymap.o
+ .debug_aranges
+                0x00000028       0x68 obj_phantom_lufa/matrix.o
+ .debug_aranges
+                0x00000090       0x20 obj_phantom_lufa/led.o
+ .debug_aranges
+                0x000000b0       0x90 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_aranges
+                0x00000140       0x20 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_aranges
+                0x00000160       0x38 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_aranges
+                0x00000198       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_aranges
+                0x000001b8       0xc8 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_aranges
+                0x00000280       0x40 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_aranges
+                0x000002c0       0x30 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_aranges
+                0x000002f0       0x30 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_aranges
+                0x00000320       0x38 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_aranges
+                0x00000358       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_aranges
+                0x00000378       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_aranges
+                0x00000398       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_aranges
+                0x000003b8       0x60 obj_phantom_lufa/common/host.o
+ .debug_aranges
+                0x00000418       0x40 obj_phantom_lufa/common/keyboard.o
+ .debug_aranges
+                0x00000458       0x78 obj_phantom_lufa/common/action.o
+ .debug_aranges
+                0x000004d0       0x40 obj_phantom_lufa/common/action_tapping.o
+ .debug_aranges
+                0x00000510       0x20 obj_phantom_lufa/common/action_macro.o
+ .debug_aranges
+                0x00000530       0xa0 obj_phantom_lufa/common/action_layer.o
+ .debug_aranges
+                0x000005d0       0xb0 obj_phantom_lufa/common/action_util.o
+ .debug_aranges
+                0x00000680       0x38 obj_phantom_lufa/common/keymap.o
+ .debug_aranges
+                0x000006b8       0x20 obj_phantom_lufa/common/print.o
+ .debug_aranges
+                0x000006d8       0x60 obj_phantom_lufa/common/util.o
+ .debug_aranges
+                0x00000738       0x50 obj_phantom_lufa/common/avr/suspend.o
+ .debug_aranges
+                0x00000788       0x50 obj_phantom_lufa/common/avr/timer.o
+ .debug_aranges
+                0x000007d8       0x28 obj_phantom_lufa/common/avr/bootloader.o
+ .debug_aranges
+                0x00000800       0x30 obj_phantom_lufa/common/bootmagic.o
+ .debug_aranges
+                0x00000830       0x68 obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_aranges
+                0x00000898       0x48 obj_phantom_lufa/common/command.o
+
+.debug_pubnames
+                0x00000000     0x13ee
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x56 obj_phantom_lufa/keymap.o
+ .debug_pubnames
+                0x00000056       0xb3 obj_phantom_lufa/matrix.o
+ .debug_pubnames
+                0x00000109       0x1e obj_phantom_lufa/led.o
+ .debug_pubnames
+                0x00000127      0x161 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_pubnames
+                0x00000288       0xd6 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_pubnames
+                0x0000035e       0x7e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_pubnames
+                0x000003dc       0x32 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_pubnames
+                0x0000040e      0x2df obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_pubnames
+                0x000006ed       0xaf obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_pubnames
+                0x0000079c       0x46 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_pubnames
+                0x000007e2       0x62 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_pubnames
+                0x00000844       0x9b obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_pubnames
+                0x000008df       0xa1 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_pubnames
+                0x00000980       0x25 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_pubnames
+                0x000009a5       0x63 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_pubnames
+                0x00000a08       0xe3 obj_phantom_lufa/common/host.o
+ .debug_pubnames
+                0x00000aeb       0x82 obj_phantom_lufa/common/keyboard.o
+ .debug_pubnames
+                0x00000b6d       0xf1 obj_phantom_lufa/common/action.o
+ .debug_pubnames
+                0x00000c5e       0x2d obj_phantom_lufa/common/action_tapping.o
+ .debug_pubnames
+                0x00000c8b       0x28 obj_phantom_lufa/common/action_macro.o
+ .debug_pubnames
+                0x00000cb3      0x149 obj_phantom_lufa/common/action_layer.o
+ .debug_pubnames
+                0x00000dfc      0x161 obj_phantom_lufa/common/action_util.o
+ .debug_pubnames
+                0x00000f5d       0x60 obj_phantom_lufa/common/keymap.o
+ .debug_pubnames
+                0x00000fbd       0x29 obj_phantom_lufa/common/print.o
+ .debug_pubnames
+                0x00000fe6       0x23 obj_phantom_lufa/common/debug.o
+ .debug_pubnames
+                0x00001009       0x7e obj_phantom_lufa/common/util.o
+ .debug_pubnames
+                0x00001087       0xa9 obj_phantom_lufa/common/avr/suspend.o
+ .debug_pubnames
+                0x00001130       0x97 obj_phantom_lufa/common/avr/timer.o
+ .debug_pubnames
+                0x000011c7       0x5d obj_phantom_lufa/common/avr/bootloader.o
+ .debug_pubnames
+                0x00001224       0x4d obj_phantom_lufa/common/bootmagic.o
+ .debug_pubnames
+                0x00001271      0x10a obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_pubnames
+                0x0000137b       0x73 obj_phantom_lufa/common/command.o
+
+.debug_info     0x00000000     0xcbed
+ *(.debug_info)
+ .debug_info    0x00000000      0x75a obj_phantom_lufa/keymap.o
+ .debug_info    0x0000075a      0x5d5 obj_phantom_lufa/matrix.o
+ .debug_info    0x00000d2f       0x91 obj_phantom_lufa/led.o
+ .debug_info    0x00000dc0     0x103e obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_info    0x00001dfe      0x6f6 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_info    0x000024f4      0x6ee obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_info    0x00002be2       0xc4 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_info    0x00002ca6     0x15d4 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_info    0x0000427a      0x5f2 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_info    0x0000486c       0x61 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_info    0x000048cd       0x61 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_info    0x0000492e       0x61 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_info    0x0000498f      0x4aa obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_info    0x00004e39      0x571 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_info    0x000053aa      0x34e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_info    0x000056f8      0x9b1 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_info    0x000060a9       0x79 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_info    0x00006122       0x61 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_info    0x00006183      0x269 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_info    0x000063ec      0x486 obj_phantom_lufa/common/host.o
+ .debug_info    0x00006872      0x3d7 obj_phantom_lufa/common/keyboard.o
+ .debug_info    0x00006c49      0xecd obj_phantom_lufa/common/action.o
+ .debug_info    0x00007b16      0xc55 obj_phantom_lufa/common/action_tapping.o
+ .debug_info    0x0000876b      0x735 obj_phantom_lufa/common/action_macro.o
+ .debug_info    0x00008ea0      0x61f obj_phantom_lufa/common/action_layer.o
+ .debug_info    0x000094bf      0x463 obj_phantom_lufa/common/action_util.o
+ .debug_info    0x00009922      0xdbc obj_phantom_lufa/common/keymap.o
+ .debug_info    0x0000a6de       0xdb obj_phantom_lufa/common/print.o
+ .debug_info    0x0000a7b9      0x107 obj_phantom_lufa/common/debug.o
+ .debug_info    0x0000a8c0      0x253 obj_phantom_lufa/common/util.o
+ .debug_info    0x0000ab13      0x1e5 obj_phantom_lufa/common/avr/suspend.o
+ .debug_info    0x0000acf8      0x1ea obj_phantom_lufa/common/avr/timer.o
+ .debug_info    0x0000aee2      0x182 obj_phantom_lufa/common/avr/bootloader.o
+ .debug_info    0x0000b064      0x83e obj_phantom_lufa/common/bootmagic.o
+ .debug_info    0x0000b8a2      0x188 obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_info    0x0000ba2a     0x11c3 obj_phantom_lufa/common/command.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x2ff1
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x17d obj_phantom_lufa/keymap.o
+ .debug_abbrev  0x0000017d      0x258 obj_phantom_lufa/matrix.o
+ .debug_abbrev  0x000003d5       0x5d obj_phantom_lufa/led.o
+ .debug_abbrev  0x00000432      0x394 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_abbrev  0x000007c6      0x17d obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_abbrev  0x00000943      0x201 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_abbrev  0x00000b44       0x79 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_abbrev  0x00000bbd      0x1bb obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_abbrev  0x00000d78      0x1fb obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_abbrev  0x00000f73       0x33 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_abbrev  0x00000fa6       0x33 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_abbrev  0x00000fd9       0x33 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_abbrev  0x0000100c      0x134 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_abbrev  0x00001140      0x17f obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_abbrev  0x000012bf      0x15c obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_abbrev  0x0000141b      0x256 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_abbrev  0x00001671       0x4a obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_abbrev  0x000016bb       0x33 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_abbrev  0x000016ee      0x174 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_abbrev  0x00001862      0x173 obj_phantom_lufa/common/host.o
+ .debug_abbrev  0x000019d5      0x176 obj_phantom_lufa/common/keyboard.o
+ .debug_abbrev  0x00001b4b      0x241 obj_phantom_lufa/common/action.o
+ .debug_abbrev  0x00001d8c      0x27a obj_phantom_lufa/common/action_tapping.o
+ .debug_abbrev  0x00002006      0x12e obj_phantom_lufa/common/action_macro.o
+ .debug_abbrev  0x00002134      0x16c obj_phantom_lufa/common/action_layer.o
+ .debug_abbrev  0x000022a0      0x1cb obj_phantom_lufa/common/action_util.o
+ .debug_abbrev  0x0000246b      0x216 obj_phantom_lufa/common/keymap.o
+ .debug_abbrev  0x00002681       0x9d obj_phantom_lufa/common/print.o
+ .debug_abbrev  0x0000271e       0x94 obj_phantom_lufa/common/debug.o
+ .debug_abbrev  0x000027b2       0x96 obj_phantom_lufa/common/util.o
+ .debug_abbrev  0x00002848      0x121 obj_phantom_lufa/common/avr/suspend.o
+ .debug_abbrev  0x00002969       0xd2 obj_phantom_lufa/common/avr/timer.o
+ .debug_abbrev  0x00002a3b       0xff obj_phantom_lufa/common/avr/bootloader.o
+ .debug_abbrev  0x00002b3a      0x1dc obj_phantom_lufa/common/bootmagic.o
+ .debug_abbrev  0x00002d16       0x8b obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_abbrev  0x00002da1      0x250 obj_phantom_lufa/common/command.o
+
+.debug_line     0x00000000     0x809a
+ *(.debug_line)
+ .debug_line    0x00000000      0x146 obj_phantom_lufa/keymap.o
+ .debug_line    0x00000146      0x4d1 obj_phantom_lufa/matrix.o
+ .debug_line    0x00000617       0xe2 obj_phantom_lufa/led.o
+ .debug_line    0x000006f9      0xb94 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_line    0x0000128d      0x29d obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_line    0x0000152a      0x5ba obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_line    0x00001ae4      0x167 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_line    0x00001c4b     0x18dd obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_line    0x00003528      0x5d9 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_line    0x00003b01       0x3e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_line    0x00003b3f       0x3e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_line    0x00003b7d       0x3e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_line    0x00003bbb      0x46a obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_line    0x00004025      0x5b2 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_line    0x000045d7      0x280 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_line    0x00004857      0x5ec obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_line    0x00004e43       0xa0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_line    0x00004ee3       0x3e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_line    0x00004f21      0x207 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_line    0x00005128      0x231 obj_phantom_lufa/common/host.o
+ .debug_line    0x00005359      0x200 obj_phantom_lufa/common/keyboard.o
+ .debug_line    0x00005559      0x5eb obj_phantom_lufa/common/action.o
+ .debug_line    0x00005b44      0x550 obj_phantom_lufa/common/action_tapping.o
+ .debug_line    0x00006094      0x1ea obj_phantom_lufa/common/action_macro.o
+ .debug_line    0x0000627e      0x330 obj_phantom_lufa/common/action_layer.o
+ .debug_line    0x000065ae      0x36b obj_phantom_lufa/common/action_util.o
+ .debug_line    0x00006919      0x2ef obj_phantom_lufa/common/keymap.o
+ .debug_line    0x00006c08       0xe5 obj_phantom_lufa/common/print.o
+ .debug_line    0x00006ced       0xa3 obj_phantom_lufa/common/debug.o
+ .debug_line    0x00006d90      0x251 obj_phantom_lufa/common/util.o
+ .debug_line    0x00006fe1      0x2cc obj_phantom_lufa/common/avr/suspend.o
+ .debug_line    0x000072ad      0x22a obj_phantom_lufa/common/avr/timer.o
+ .debug_line    0x000074d7      0x1de obj_phantom_lufa/common/avr/bootloader.o
+ .debug_line    0x000076b5      0x37e obj_phantom_lufa/common/bootmagic.o
+ .debug_line    0x00007a33      0x1e3 obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_line    0x00007c16      0x484 obj_phantom_lufa/common/command.o
+
+.debug_frame    0x00000000      0xde0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 obj_phantom_lufa/keymap.o
+ .debug_frame   0x00000030       0xb0 obj_phantom_lufa/matrix.o
+ .debug_frame   0x000000e0       0x20 obj_phantom_lufa/led.o
+ .debug_frame   0x00000100      0x100 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_frame   0x00000200       0x20 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_frame   0x00000220       0x50 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_frame   0x00000270       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_frame   0x00000290      0x170 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_frame   0x00000400       0x60 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_frame   0x00000460       0x40 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_frame   0x000004a0       0x40 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_frame   0x000004e0       0x50 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_frame   0x00000530       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_frame   0x00000550       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_frame   0x00000570       0x20 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_frame   0x00000590       0xa0 obj_phantom_lufa/common/host.o
+ .debug_frame   0x00000630       0x60 obj_phantom_lufa/common/keyboard.o
+ .debug_frame   0x00000690       0xd0 obj_phantom_lufa/common/action.o
+ .debug_frame   0x00000760       0x60 obj_phantom_lufa/common/action_tapping.o
+ .debug_frame   0x000007c0       0x20 obj_phantom_lufa/common/action_macro.o
+ .debug_frame   0x000007e0      0x120 obj_phantom_lufa/common/action_layer.o
+ .debug_frame   0x00000900      0x140 obj_phantom_lufa/common/action_util.o
+ .debug_frame   0x00000a40       0x50 obj_phantom_lufa/common/keymap.o
+ .debug_frame   0x00000a90       0x20 obj_phantom_lufa/common/print.o
+ .debug_frame   0x00000ab0       0xa0 obj_phantom_lufa/common/util.o
+ .debug_frame   0x00000b50       0x80 obj_phantom_lufa/common/avr/suspend.o
+ .debug_frame   0x00000bd0       0x80 obj_phantom_lufa/common/avr/timer.o
+ .debug_frame   0x00000c50       0x30 obj_phantom_lufa/common/avr/bootloader.o
+ .debug_frame   0x00000c80       0x40 obj_phantom_lufa/common/bootmagic.o
+ .debug_frame   0x00000cc0       0xb0 obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_frame   0x00000d70       0x70 obj_phantom_lufa/common/command.o
+
+.debug_str      0x00000000     0x3d78
+ *(.debug_str)
+ .debug_str     0x00000000      0x563 obj_phantom_lufa/keymap.o
+                                0x5f7 (size before relaxing)
+ .debug_str     0x00000563      0x17b obj_phantom_lufa/matrix.o
+                                0x25e (size before relaxing)
+ .debug_str     0x000006de       0x16 obj_phantom_lufa/led.o
+                                 0xb9 (size before relaxing)
+ .debug_str     0x000006f4      0x677 obj_phantom_lufa/protocol/lufa/lufa.o
+                                0x800 (size before relaxing)
+ .debug_str     0x00000d6b      0x584 obj_phantom_lufa/protocol/lufa/descriptor.o
+                                0x6b2 (size before relaxing)
+ .debug_str     0x000012ef      0x49b obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+                                0x5dd (size before relaxing)
+ .debug_str     0x0000178a       0x97 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                0x138 (size before relaxing)
+ .debug_str     0x00001821      0x4fb obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                0x766 (size before relaxing)
+ .debug_str     0x00001d1c      0x27b obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                0x562 (size before relaxing)
+ .debug_str     0x00001f97       0x4d obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00001fe4       0x53 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+                                 0xee (size before relaxing)
+ .debug_str     0x00002037       0x4d obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00002084      0x1ba obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                0x44a (size before relaxing)
+ .debug_str     0x0000223e      0x109 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                0x3bc (size before relaxing)
+ .debug_str     0x00002347      0x23d obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+                                0x306 (size before relaxing)
+ .debug_str     0x00002584      0x409 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                0x836 (size before relaxing)
+ .debug_str     0x0000298d       0x54 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+                                 0xef (size before relaxing)
+ .debug_str     0x000029e1       0x4e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+                                 0xe9 (size before relaxing)
+ .debug_str     0x00002a2f       0x6e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                0x2a6 (size before relaxing)
+ .debug_str     0x00002a9d       0xdd obj_phantom_lufa/common/host.o
+                                0x282 (size before relaxing)
+ .debug_str     0x00002b7a       0xb8 obj_phantom_lufa/common/keyboard.o
+                                0x26f (size before relaxing)
+ .debug_str     0x00002c32      0x8ab obj_phantom_lufa/common/action.o
+                                0xde7 (size before relaxing)
+ .debug_str     0x000034dd      0x103 obj_phantom_lufa/common/action_tapping.o
+                                0x9b8 (size before relaxing)
+ .debug_str     0x000035e0       0x7f obj_phantom_lufa/common/action_macro.o
+                                0x73f (size before relaxing)
+ .debug_str     0x0000365f      0x102 obj_phantom_lufa/common/action_layer.o
+                                0x308 (size before relaxing)
+ .debug_str     0x00003761      0x13d obj_phantom_lufa/common/action_util.o
+                                0x23e (size before relaxing)
+ .debug_str     0x0000389e       0x51 obj_phantom_lufa/common/keymap.o
+                                0xd42 (size before relaxing)
+ .debug_str     0x000038ef       0x49 obj_phantom_lufa/common/print.o
+                                 0xf3 (size before relaxing)
+ .debug_str     0x00003938       0x1e obj_phantom_lufa/common/debug.o
+                                0x109 (size before relaxing)
+ .debug_str     0x00003956       0x65 obj_phantom_lufa/common/util.o
+                                0x11f (size before relaxing)
+ .debug_str     0x000039bb       0xbc obj_phantom_lufa/common/avr/suspend.o
+                                0x22f (size before relaxing)
+ .debug_str     0x00003a77       0x80 obj_phantom_lufa/common/avr/timer.o
+                                0x146 (size before relaxing)
+ .debug_str     0x00003af7       0x66 obj_phantom_lufa/common/avr/bootloader.o
+                                0x170 (size before relaxing)
+ .debug_str     0x00003b5d       0x43 obj_phantom_lufa/common/bootmagic.o
+                                0x815 (size before relaxing)
+ .debug_str     0x00003ba0       0xf5 obj_phantom_lufa/common/avr/eeconfig.o
+                                0x19e (size before relaxing)
+ .debug_str     0x00003c95       0xe3 obj_phantom_lufa/common/command.o
+                                0x8e9 (size before relaxing)
+
+.debug_loc      0x00000000     0x3ea7
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x9f obj_phantom_lufa/keymap.o
+ .debug_loc     0x0000009f       0xa7 obj_phantom_lufa/matrix.o
+ .debug_loc     0x00000146       0x13 obj_phantom_lufa/led.o
+ .debug_loc     0x00000159      0x1d4 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_loc     0x0000032d      0x200 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_loc     0x0000052d      0x584 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_loc     0x00000ab1     0x1886 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_loc     0x00002337      0x11c obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_loc     0x00002453      0x2c7 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_loc     0x0000271a      0x21e obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_loc     0x00002938      0x103 obj_phantom_lufa/common/host.o
+ .debug_loc     0x00002a3b      0x125 obj_phantom_lufa/common/keyboard.o
+ .debug_loc     0x00002b60      0x3d9 obj_phantom_lufa/common/action.o
+ .debug_loc     0x00002f39      0x1f5 obj_phantom_lufa/common/action_tapping.o
+ .debug_loc     0x0000312e      0x2f0 obj_phantom_lufa/common/action_macro.o
+ .debug_loc     0x0000341e      0x24c obj_phantom_lufa/common/action_layer.o
+ .debug_loc     0x0000366a       0xa1 obj_phantom_lufa/common/action_util.o
+ .debug_loc     0x0000370b      0x186 obj_phantom_lufa/common/keymap.o
+ .debug_loc     0x00003891      0x245 obj_phantom_lufa/common/util.o
+ .debug_loc     0x00003ad6       0x26 obj_phantom_lufa/common/avr/suspend.o
+ .debug_loc     0x00003afc      0x1af obj_phantom_lufa/common/avr/timer.o
+ .debug_loc     0x00003cab       0x18 obj_phantom_lufa/common/avr/bootloader.o
+ .debug_loc     0x00003cc3      0x128 obj_phantom_lufa/common/bootmagic.o
+ .debug_loc     0x00003deb       0x5a obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_loc     0x00003e45       0x62 obj_phantom_lufa/common/command.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(phantom_lufa.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0xb30
+ .debug_ranges  0x00000000       0x20 obj_phantom_lufa/keymap.o
+ .debug_ranges  0x00000020       0x90 obj_phantom_lufa/matrix.o
+ .debug_ranges  0x000000b0       0x18 obj_phantom_lufa/led.o
+ .debug_ranges  0x000000c8       0xd0 obj_phantom_lufa/protocol/lufa/lufa.o
+ .debug_ranges  0x00000198       0x18 obj_phantom_lufa/protocol/lufa/descriptor.o
+ .debug_ranges  0x000001b0       0xa0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_ranges  0x00000250       0x18 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_ranges  0x00000268       0xc0 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_ranges  0x00000328       0x50 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_ranges  0x00000378       0x28 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_ranges  0x000003a0       0x28 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_ranges  0x000003c8       0x30 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_ranges  0x000003f8       0x78 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_ranges  0x00000470       0x18 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_ranges  0x00000488       0x18 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_ranges  0x000004a0       0x58 obj_phantom_lufa/common/host.o
+ .debug_ranges  0x000004f8       0x38 obj_phantom_lufa/common/keyboard.o
+ .debug_ranges  0x00000530       0x70 obj_phantom_lufa/common/action.o
+ .debug_ranges  0x000005a0       0x68 obj_phantom_lufa/common/action_tapping.o
+ .debug_ranges  0x00000608       0x90 obj_phantom_lufa/common/action_macro.o
+ .debug_ranges  0x00000698       0x98 obj_phantom_lufa/common/action_layer.o
+ .debug_ranges  0x00000730       0xa8 obj_phantom_lufa/common/action_util.o
+ .debug_ranges  0x000007d8       0x30 obj_phantom_lufa/common/keymap.o
+ .debug_ranges  0x00000808       0x18 obj_phantom_lufa/common/print.o
+ .debug_ranges  0x00000820       0x58 obj_phantom_lufa/common/util.o
+ .debug_ranges  0x00000878       0x48 obj_phantom_lufa/common/avr/suspend.o
+ .debug_ranges  0x000008c0       0x48 obj_phantom_lufa/common/avr/timer.o
+ .debug_ranges  0x00000908       0x20 obj_phantom_lufa/common/avr/bootloader.o
+ .debug_ranges  0x00000928       0x70 obj_phantom_lufa/common/bootmagic.o
+ .debug_ranges  0x00000998       0x60 obj_phantom_lufa/common/avr/eeconfig.o
+ .debug_ranges  0x000009f8      0x138 obj_phantom_lufa/common/command.o
+
+Cross Reference Table
+
+Symbol                                            File
+CALLBACK_HIDParser_FilterHIDReportItem            obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+CALLBACK_USB_GetDescriptor                        obj_phantom_lufa/protocol/lufa/descriptor.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ConfigurationDescriptor                           obj_phantom_lufa/protocol/lufa/descriptor.o
+ConsoleReport                                     obj_phantom_lufa/protocol/lufa/descriptor.o
+DeviceDescriptor                                  obj_phantom_lufa/protocol/lufa/descriptor.o
+EVENT_USB_Device_ConfigurationChanged             obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+EVENT_USB_Device_Connect                          obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_ControlRequest                   obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+EVENT_USB_Device_Disconnect                       obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_Reset                            obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_StartOfFrame                     obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_Suspend                          obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_WakeUp                           obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+Endpoint_ClearEndpoints                           obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+Endpoint_ClearStatusStage                         obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+Endpoint_ConfigureEndpointTable                   obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+Endpoint_ConfigureEndpoint_Prv                    obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+Endpoint_Discard_Stream                           obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Null_Stream                              obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_BE                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_LE                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_BE                   obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_LE                   obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_EStream_BE                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_EStream_LE                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Stream_BE                           obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Stream_LE                           obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_WaitUntilReady                           obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_BE                 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_LE                 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_BE                 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_LE                 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+Endpoint_Write_Control_Stream_BE                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_Stream_LE                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+Endpoint_Write_EStream_BE                         obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_EStream_LE                         obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_PStream_BE                         obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_PStream_LE                         obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Stream_BE                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Stream_LE                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+ExtrakeyReport                                    obj_phantom_lufa/protocol/lufa/descriptor.o
+KeyboardReport                                    obj_phantom_lufa/protocol/lufa/descriptor.o
+LanguageString                                    obj_phantom_lufa/protocol/lufa/descriptor.o
+ManufacturerString                                obj_phantom_lufa/protocol/lufa/descriptor.o
+ProductString                                     obj_phantom_lufa/protocol/lufa/descriptor.o
+USB_ControlRequest                                obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_DeviceState                                   obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_Device_ConfigurationNumber                    obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_CurrentlySelfPowered                   obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_ProcessControlRequest                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_RemoteWakeupEnabled                    obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_Device_SendRemoteWakeup                       obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_Disable                                       obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_phantom_lufa/common/avr/bootloader.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_Event_Stub                                    obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+USB_GetHIDReportItemInfo                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_GetHIDReportSize                              obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_GetNextDescriptorComp                         obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfType                       obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeAfter                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeBefore                 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_INT_ClearAllInterrupts                        obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_INT_DisableAllInterrupts                      obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Init                                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_IsInitialized                                 obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+USB_ProcessHIDReport                              obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_ResetInterface                                obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_SetHIDReportItemInfo                          obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_USBTask                                       obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+__bad_interrupt                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__bss_end                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__data_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/avr/timer.o
+                                                  obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/common/debug.o
+                                                  obj_phantom_lufa/common/keymap.o
+                                                  obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+                                                  obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/matrix.o
+                                                  obj_phantom_lufa/keymap.o
+__do_copy_data                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                                                  obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/matrix.o
+__eerd_block_m32u4                                c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+__eerd_blraw_m32u4                                c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_block_atmega32u4.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+__eerd_byte_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+                                                  obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+__eerd_word_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_word_atmega32u4.o)
+                                                  obj_phantom_lufa/common/avr/eeconfig.o
+__eeupd_byte_m32u4                                c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+                                                  obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+__eeupd_r18_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+__eewr_byte_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+                                                  obj_phantom_lufa/common/avr/eeconfig.o
+__eewr_r18_m32u4                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_byte_atmega32u4.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+__eewr_word_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eewr_word_atmega32u4.o)
+                                                  obj_phantom_lufa/common/avr/eeconfig.o
+__heap_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__init                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__stack                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__udivmodqi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+__vector_1                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_10                                       obj_phantom_lufa/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_11                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_12                                       obj_phantom_lufa/common/avr/suspend.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_13                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_14                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_15                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_16                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_17                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_18                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_19                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_20                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_21                                       obj_phantom_lufa/common/avr/timer.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_22                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_23                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_24                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_25                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_26                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_27                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_28                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_29                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_3                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_30                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_31                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_32                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_33                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_34                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_35                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_36                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_37                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_38                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_39                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_4                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_40                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_41                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_42                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_5                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_6                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_7                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_8                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_9                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__xprintf                                         obj_phantom_lufa/common/avr/xprintf.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/matrix.o
+_exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+action_exec                                       obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/keyboard.o
+action_for_key                                    obj_phantom_lufa/common/keymap.o
+                                                  obj_phantom_lufa/common/action_layer.o
+action_function                                   obj_phantom_lufa/common/keymap.o
+                                                  obj_phantom_lufa/common/action.o
+action_get_macro                                  obj_phantom_lufa/common/keymap.o
+                                                  obj_phantom_lufa/common/action.o
+action_macro_play                                 obj_phantom_lufa/common/action_macro.o
+                                                  obj_phantom_lufa/common/action.o
+action_tapping_process                            obj_phantom_lufa/common/action_tapping.o
+                                                  obj_phantom_lufa/common/action.o
+add_key                                           obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+add_mods                                          obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+add_weak_mods                                     obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action_macro.o
+                                                  obj_phantom_lufa/common/action.o
+biton                                             obj_phantom_lufa/common/util.o
+biton16                                           obj_phantom_lufa/common/util.o
+biton32                                           obj_phantom_lufa/common/util.o
+bitpop                                            obj_phantom_lufa/common/util.o
+                                                  obj_phantom_lufa/common/action_util.o
+bitpop16                                          obj_phantom_lufa/common/util.o
+bitpop32                                          obj_phantom_lufa/common/util.o
+                                                  obj_phantom_lufa/matrix.o
+bitrev                                            obj_phantom_lufa/common/util.o
+bitrev16                                          obj_phantom_lufa/common/util.o
+bitrev32                                          obj_phantom_lufa/common/util.o
+                                                  obj_phantom_lufa/matrix.o
+bootloader_jump                                   obj_phantom_lufa/common/avr/bootloader.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/keymap.o
+bootloader_jump_after_watchdog_reset              obj_phantom_lufa/common/avr/bootloader.o
+bootmagic                                         obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/keyboard.o
+bootmagic_scan_keycode                            obj_phantom_lufa/common/bootmagic.o
+clear_keyboard                                    obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/common/keymap.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+clear_keyboard_but_mods                           obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_layer.o
+clear_keys                                        obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+clear_mods                                        obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+clear_oneshot_mods                                obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+clear_weak_mods                                   obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+command_console_extra                             obj_phantom_lufa/common/command.o
+command_extra                                     obj_phantom_lufa/common/command.o
+command_proc                                      obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/action.o
+command_state                                     obj_phantom_lufa/common/command.o
+debug_action                                      obj_phantom_lufa/common/action.o
+debug_config                                      obj_phantom_lufa/common/debug.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/matrix.o
+debug_event                                       obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+debug_record                                      obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+default_layer_and                                 obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+default_layer_debug                               obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+default_layer_or                                  obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+default_layer_set                                 obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+default_layer_state                               obj_phantom_lufa/common/action_layer.o
+default_layer_xor                                 obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+del_key                                           obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+del_mods                                          obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+del_weak_mods                                     obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action_macro.o
+                                                  obj_phantom_lufa/common/action.o
+eeconfig_disable                                  obj_phantom_lufa/common/avr/eeconfig.o
+eeconfig_enable                                   obj_phantom_lufa/common/avr/eeconfig.o
+eeconfig_init                                     obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_is_enabled                               obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_read_debug                               obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_read_default_layer                       obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_read_keymap                              obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_write_debug                              obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_write_default_layer                      obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+eeconfig_write_keymap                             obj_phantom_lufa/common/avr/eeconfig.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+get_first_key                                     obj_phantom_lufa/common/action_util.o
+get_mods                                          obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+get_weak_mods                                     obj_phantom_lufa/common/action_util.o
+has_anykey                                        obj_phantom_lufa/common/action_util.o
+has_anymod                                        obj_phantom_lufa/common/action_util.o
+host_consumer_send                                obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/common/action.o
+host_get_driver                                   obj_phantom_lufa/common/host.o
+host_keyboard_leds                                obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/keyboard.o
+host_keyboard_send                                obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/common/action_util.o
+host_last_consumer_report                         obj_phantom_lufa/common/host.o
+host_last_sysytem_report                          obj_phantom_lufa/common/host.o
+host_mouse_send                                   obj_phantom_lufa/common/host.o
+host_set_driver                                   obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+host_system_send                                  obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/common/action.o
+is_tap_key                                        obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+keyboard_idle                                     obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/common/command.o
+keyboard_init                                     obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+keyboard_protocol                                 obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/common/command.o
+keyboard_report                                   obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/command.o
+keyboard_set_leds                                 obj_phantom_lufa/common/keyboard.o
+keyboard_setup                                    obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+keyboard_task                                     obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+keymap_config                                     obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/keymap.o
+                                                  obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/keymap.o
+keymap_fn_to_action                               obj_phantom_lufa/keymap.o
+                                                  obj_phantom_lufa/common/keymap.o
+keymap_key_to_keycode                             obj_phantom_lufa/keymap.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/keymap.o
+layer_and                                         obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_clear                                       obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_debug                                       obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_invert                                      obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_move                                        obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_off                                         obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_on                                          obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_or                                          obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+layer_state                                       obj_phantom_lufa/common/action_layer.o
+layer_switch_get_action                           obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+                                                  obj_phantom_lufa/common/action.o
+layer_xor                                         obj_phantom_lufa/common/action_layer.o
+                                                  obj_phantom_lufa/common/action.o
+led_set                                           obj_phantom_lufa/led.o
+                                                  obj_phantom_lufa/common/keyboard.o
+lufa_driver                                       obj_phantom_lufa/protocol/lufa/lufa.o
+main                                              obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+matrix_cols                                       obj_phantom_lufa/matrix.o
+matrix_get_row                                    obj_phantom_lufa/matrix.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/common/keyboard.o
+matrix_init                                       obj_phantom_lufa/matrix.o
+                                                  obj_phantom_lufa/common/keyboard.o
+matrix_is_modified                                obj_phantom_lufa/matrix.o
+matrix_is_on                                      obj_phantom_lufa/matrix.o
+matrix_key_count                                  obj_phantom_lufa/matrix.o
+matrix_power_down                                 obj_phantom_lufa/common/avr/suspend.o
+matrix_power_up                                   obj_phantom_lufa/common/avr/suspend.o
+matrix_print                                      obj_phantom_lufa/matrix.o
+                                                  obj_phantom_lufa/common/keyboard.o
+matrix_rows                                       obj_phantom_lufa/matrix.o
+matrix_scan                                       obj_phantom_lufa/matrix.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/common/keyboard.o
+matrix_setup                                      obj_phantom_lufa/common/keyboard.o
+print_set_sendchar                                obj_phantom_lufa/common/print.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+process_action                                    obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_tapping.o
+register_code                                     obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_macro.o
+register_mods                                     obj_phantom_lufa/common/action.o
+reset_key                                         obj_phantom_lufa/common/avr/bootloader.o
+send_keyboard_report                              obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action_macro.o
+                                                  obj_phantom_lufa/common/action.o
+sendchar                                          obj_phantom_lufa/protocol/lufa/lufa.o
+set_mods                                          obj_phantom_lufa/common/action_util.o
+set_oneshot_mods                                  obj_phantom_lufa/common/action_util.o
+                                                  obj_phantom_lufa/common/action.o
+set_weak_mods                                     obj_phantom_lufa/common/action_util.o
+suspend_idle                                      obj_phantom_lufa/common/avr/suspend.o
+suspend_power_down                                obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+suspend_wakeup_condition                          obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+suspend_wakeup_init                               obj_phantom_lufa/common/avr/suspend.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+timer_clear                                       obj_phantom_lufa/common/avr/timer.o
+timer_count                                       obj_phantom_lufa/common/avr/timer.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/avr/suspend.o
+timer_elapsed                                     obj_phantom_lufa/common/avr/timer.o
+timer_elapsed32                                   obj_phantom_lufa/common/avr/timer.o
+timer_init                                        obj_phantom_lufa/common/avr/timer.o
+                                                  obj_phantom_lufa/common/keyboard.o
+timer_read                                        obj_phantom_lufa/common/avr/timer.o
+                                                  obj_phantom_lufa/common/keyboard.o
+timer_read32                                      obj_phantom_lufa/common/avr/timer.o
+unregister_code                                   obj_phantom_lufa/common/action.o
+                                                  obj_phantom_lufa/common/action_macro.o
+unregister_mods                                   obj_phantom_lufa/common/action.o
+xfunc_out                                         obj_phantom_lufa/common/avr/xprintf.o
+                                                  obj_phantom_lufa/common/print.o
+xitoa                                             obj_phantom_lufa/common/avr/xprintf.o
+xputc                                             obj_phantom_lufa/common/avr/xprintf.o
+xputs                                             obj_phantom_lufa/common/avr/xprintf.o
+                                                  obj_phantom_lufa/common/command.o
+                                                  obj_phantom_lufa/common/bootmagic.o
+                                                  obj_phantom_lufa/common/keyboard.o
+                                                  obj_phantom_lufa/common/host.o
+                                                  obj_phantom_lufa/protocol/lufa/lufa.o
+                                                  obj_phantom_lufa/matrix.o

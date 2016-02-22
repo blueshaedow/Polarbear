@@ -1,0 +1,36 @@
+   1               		.file	"print.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.print_set_sendchar,"ax",@progbits
+  17               	.global	print_set_sendchar
+  19               	print_set_sendchar:
+  20               	.LFB2:
+  21               	.LSM0:
+  22               	.LVL0:
+  23               	/* prologue: function */
+  24               	/* frame size = 0 */
+  25               	.LSM1:
+  26 0000 9093 0000 		sts (xfunc_out)+1,r25
+  27 0004 8093 0000 		sts xfunc_out,r24
+  28               	/* epilogue start */
+  29               	.LSM2:
+  30 0008 0895      		ret
+  31               	.LFE2:
+  57               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 print.c
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/ccmkuOfT.s:19     .text.print_set_sendchar:00000000 print_set_sendchar
+
+UNDEFINED SYMBOLS
+xfunc_out

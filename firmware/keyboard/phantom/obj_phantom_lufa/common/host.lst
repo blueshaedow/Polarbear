@@ -1,0 +1,328 @@
+   1               		.file	"host.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.host_set_driver,"ax",@progbits
+  17               	.global	host_set_driver
+  19               	host_set_driver:
+  20               	.LFB2:
+  21               	.LSM0:
+  22               	.LVL0:
+  23               	/* prologue: function */
+  24               	/* frame size = 0 */
+  25               	.LSM1:
+  26 0000 9093 0000 		sts (driver)+1,r25
+  27 0004 8093 0000 		sts driver,r24
+  28               	/* epilogue start */
+  29               	.LSM2:
+  30 0008 0895      		ret
+  31               	.LFE2:
+  33               		.section	.text.host_get_driver,"ax",@progbits
+  34               	.global	host_get_driver
+  36               	host_get_driver:
+  37               	.LFB3:
+  38               	.LSM3:
+  39               	/* prologue: function */
+  40               	/* frame size = 0 */
+  41               	.LSM4:
+  42 0000 8091 0000 		lds r24,driver
+  43 0004 9091 0000 		lds r25,driver+1
+  44               	/* epilogue start */
+  45 0008 0895      		ret
+  46               	.LFE3:
+  48               		.section	.text.host_keyboard_leds,"ax",@progbits
+  49               	.global	host_keyboard_leds
+  51               	host_keyboard_leds:
+  52               	.LFB4:
+  53               	.LSM5:
+  54               	/* prologue: function */
+  55               	/* frame size = 0 */
+  56               	.LSM6:
+  57 0000 E091 0000 		lds r30,driver
+  58 0004 F091 0000 		lds r31,(driver)+1
+  59 0008 3097      		sbiw r30,0
+  60 000a 01F4      		brne .L6
+  61 000c 80E0      		ldi r24,lo8(0)
+  62 000e 0895      		ret
+  63               	.L6:
+  64               	.LSM7:
+  65 0010 0190      		ld __tmp_reg__,Z+
+  66 0012 F081      		ld r31,Z
+  67 0014 E02D      		mov r30,__tmp_reg__
+  68 0016 0995      		icall
+  69               	.LSM8:
+  70 0018 0895      		ret
+  71               	.LFE4:
+  73               		.section	.text.host_mouse_send,"ax",@progbits
+  74               	.global	host_mouse_send
+  76               	host_mouse_send:
+  77               	.LFB6:
+  78               	.LSM9:
+  79               	.LVL1:
+  80               	/* prologue: function */
+  81               	/* frame size = 0 */
+  82               	.LSM10:
+  83 0000 E091 0000 		lds r30,driver
+  84 0004 F091 0000 		lds r31,(driver)+1
+  85 0008 3097      		sbiw r30,0
+  86 000a 01F0      		breq .L11
+  87               	.LSM11:
+  88 000c 0480      		ldd __tmp_reg__,Z+4
+  89 000e F581      		ldd r31,Z+5
+  90 0010 E02D      		mov r30,__tmp_reg__
+  91 0012 0995      		icall
+  92               	.LVL2:
+  93               	.L11:
+  94 0014 0895      		ret
+  95               	.LFE6:
+  97               		.section	.text.host_system_send,"ax",@progbits
+  98               	.global	host_system_send
+ 100               	host_system_send:
+ 101               	.LFB7:
+ 102               	.LSM12:
+ 103               	.LVL3:
+ 104               	/* prologue: function */
+ 105               	/* frame size = 0 */
+ 106 0000 9C01      		movw r18,r24
+ 107               	.LSM13:
+ 108 0002 8091 0000 		lds r24,last_system_report
+ 109 0006 9091 0000 		lds r25,(last_system_report)+1
+ 110               	.LVL4:
+ 111 000a 2817      		cp r18,r24
+ 112 000c 3907      		cpc r19,r25
+ 113 000e 01F0      		breq .L14
+ 114               	.LSM14:
+ 115 0010 3093 0000 		sts (last_system_report)+1,r19
+ 116 0014 2093 0000 		sts last_system_report,r18
+ 117               	.LSM15:
+ 118 0018 E091 0000 		lds r30,driver
+ 119 001c F091 0000 		lds r31,(driver)+1
+ 120 0020 3097      		sbiw r30,0
+ 121 0022 01F0      		breq .L14
+ 122               	.LSM16:
+ 123 0024 0680      		ldd __tmp_reg__,Z+6
+ 124 0026 F781      		ldd r31,Z+7
+ 125 0028 E02D      		mov r30,__tmp_reg__
+ 126 002a C901      		movw r24,r18
+ 127 002c 0995      		icall
+ 128               	.LVL5:
+ 129               	.L14:
+ 130 002e 0895      		ret
+ 131               	.LFE7:
+ 133               		.section	.text.host_consumer_send,"ax",@progbits
+ 134               	.global	host_consumer_send
+ 136               	host_consumer_send:
+ 137               	.LFB8:
+ 138               	.LSM17:
+ 139               	.LVL6:
+ 140               	/* prologue: function */
+ 141               	/* frame size = 0 */
+ 142 0000 9C01      		movw r18,r24
+ 143               	.LSM18:
+ 144 0002 8091 0000 		lds r24,last_consumer_report
+ 145 0006 9091 0000 		lds r25,(last_consumer_report)+1
+ 146               	.LVL7:
+ 147 000a 2817      		cp r18,r24
+ 148 000c 3907      		cpc r19,r25
+ 149 000e 01F0      		breq .L17
+ 150               	.LSM19:
+ 151 0010 3093 0000 		sts (last_consumer_report)+1,r19
+ 152 0014 2093 0000 		sts last_consumer_report,r18
+ 153               	.LSM20:
+ 154 0018 E091 0000 		lds r30,driver
+ 155 001c F091 0000 		lds r31,(driver)+1
+ 156 0020 3097      		sbiw r30,0
+ 157 0022 01F0      		breq .L17
+ 158               	.LSM21:
+ 159 0024 0084      		ldd __tmp_reg__,Z+8
+ 160 0026 F185      		ldd r31,Z+9
+ 161 0028 E02D      		mov r30,__tmp_reg__
+ 162 002a C901      		movw r24,r18
+ 163 002c 0995      		icall
+ 164               	.LVL8:
+ 165               	.L17:
+ 166 002e 0895      		ret
+ 167               	.LFE8:
+ 169               		.section	.text.host_last_sysytem_report,"ax",@progbits
+ 170               	.global	host_last_sysytem_report
+ 172               	host_last_sysytem_report:
+ 173               	.LFB9:
+ 174               	.LSM22:
+ 175               	/* prologue: function */
+ 176               	/* frame size = 0 */
+ 177               	.LSM23:
+ 178 0000 8091 0000 		lds r24,last_system_report
+ 179 0004 9091 0000 		lds r25,last_system_report+1
+ 180               	/* epilogue start */
+ 181 0008 0895      		ret
+ 182               	.LFE9:
+ 184               		.section	.text.host_last_consumer_report,"ax",@progbits
+ 185               	.global	host_last_consumer_report
+ 187               	host_last_consumer_report:
+ 188               	.LFB10:
+ 189               	.LSM24:
+ 190               	/* prologue: function */
+ 191               	/* frame size = 0 */
+ 192               	.LSM25:
+ 193 0000 8091 0000 		lds r24,last_consumer_report
+ 194 0004 9091 0000 		lds r25,last_consumer_report+1
+ 195               	/* epilogue start */
+ 196 0008 0895      		ret
+ 197               	.LFE10:
+ 199               		.section	.text.host_keyboard_send,"ax",@progbits
+ 200               	.global	host_keyboard_send
+ 202               	host_keyboard_send:
+ 203               	.LFB5:
+ 204               	.LSM26:
+ 205               	.LVL9:
+ 206 0000 EF92      		push r14
+ 207 0002 FF92      		push r15
+ 208 0004 0F93      		push r16
+ 209 0006 1F93      		push r17
+ 210 0008 CF93      		push r28
+ 211 000a DF93      		push r29
+ 212               	/* prologue: function */
+ 213               	/* frame size = 0 */
+ 214 000c 182F      		mov r17,r24
+ 215 000e 092F      		mov r16,r25
+ 216               	.LVL10:
+ 217               	.LSM27:
+ 218 0010 E091 0000 		lds r30,driver
+ 219 0014 F091 0000 		lds r31,(driver)+1
+ 220 0018 3097      		sbiw r30,0
+ 221 001a 01F0      		breq .L27
+ 222               	.LVL11:
+ 223               	.LSM28:
+ 224 001c 0280      		ldd __tmp_reg__,Z+2
+ 225 001e F381      		ldd r31,Z+3
+ 226 0020 E02D      		mov r30,__tmp_reg__
+ 227 0022 0995      		icall
+ 228               	.LSM29:
+ 229 0024 8091 0000 		lds r24,debug_config
+ 230 0028 82FF      		sbrs r24,2
+ 231 002a 00C0      		rjmp .L27
+ 232               	.LSM30:
+ 233 002c 80FF      		sbrs r24,0
+ 234 002e 00C0      		rjmp .L24
+ 235 0030 80E0      		ldi r24,lo8(__c.1695)
+ 236 0032 90E0      		ldi r25,hi8(__c.1695)
+ 237 0034 0E94 0000 		call xputs
+ 238               	.L24:
+ 239 0038 812F      		mov r24,r17
+ 240 003a 902F      		mov r25,r16
+ 241 003c 9C01      		movw r18,r24
+ 242 003e E901      		movw r28,r18
+ 243 0040 10E0      		ldi r17,lo8(0)
+ 244               	.LVL12:
+ 245               	.LBB2:
+ 246               	.LSM31:
+ 247 0042 80E0      		ldi r24,lo8(__c.1698)
+ 248 0044 E82E      		mov r14,r24
+ 249 0046 80E0      		ldi r24,hi8(__c.1698)
+ 250 0048 F82E      		mov r15,r24
+ 251               	.L26:
+ 252 004a 8091 0000 		lds r24,debug_config
+ 253 004e 80FF      		sbrs r24,0
+ 254 0050 00C0      		rjmp .L25
+ 255 0052 00D0      		rcall .
+ 256 0054 00D0      		rcall .
+ 257 0056 EDB7      		in r30,__SP_L__
+ 258 0058 FEB7      		in r31,__SP_H__
+ 259 005a 3196      		adiw r30,1
+ 260 005c ADB7      		in r26,__SP_L__
+ 261 005e BEB7      		in r27,__SP_H__
+ 262 0060 1296      		adiw r26,1+1
+ 263 0062 FC92      		st X,r15
+ 264 0064 EE92      		st -X,r14
+ 265 0066 1197      		sbiw r26,1
+ 266 0068 8881      		ld r24,Y
+ 267 006a 8283      		std Z+2,r24
+ 268 006c 1382      		std Z+3,__zero_reg__
+ 269 006e 0E94 0000 		call __xprintf
+ 270 0072 0F90      		pop __tmp_reg__
+ 271 0074 0F90      		pop __tmp_reg__
+ 272 0076 0F90      		pop __tmp_reg__
+ 273 0078 0F90      		pop __tmp_reg__
+ 274               	.L25:
+ 275               	.LSM32:
+ 276 007a 1F5F      		subi r17,lo8(-(1))
+ 277 007c 2196      		adiw r28,1
+ 278 007e 1830      		cpi r17,lo8(8)
+ 279 0080 01F4      		brne .L26
+ 280               	.LBE2:
+ 281               	.LSM33:
+ 282 0082 8091 0000 		lds r24,debug_config
+ 283 0086 80FF      		sbrs r24,0
+ 284 0088 00C0      		rjmp .L27
+ 285 008a 80E0      		ldi r24,lo8(__c.1703)
+ 286 008c 90E0      		ldi r25,hi8(__c.1703)
+ 287 008e 0E94 0000 		call xputs
+ 288               	.LVL13:
+ 289               	.L27:
+ 290               	/* epilogue start */
+ 291               	.LSM34:
+ 292 0092 DF91      		pop r29
+ 293 0094 CF91      		pop r28
+ 294 0096 1F91      		pop r17
+ 295               	.LVL14:
+ 296 0098 0F91      		pop r16
+ 297               	.LVL15:
+ 298 009a FF90      		pop r15
+ 299 009c EF90      		pop r14
+ 300 009e 0895      		ret
+ 301               	.LFE5:
+ 303               		.section	.bss.last_consumer_report,"aw",@nobits
+ 306               	last_consumer_report:
+ 307 0000 0000      		.skip 2,0
+ 308               		.section	.bss.last_system_report,"aw",@nobits
+ 311               	last_system_report:
+ 312 0000 0000      		.skip 2,0
+ 313               		.section	.progmem.data,"a",@progbits
+ 316               	__c.1703:
+ 317 0000 0A00      		.string	"\n"
+ 320               	__c.1698:
+ 321 0002 2530 3258 		.string	"%02X "
+ 321      2000 
+ 324               	__c.1695:
+ 325 0008 6B65 7962 		.string	"keyboard_report: "
+ 325      6F61 7264 
+ 325      5F72 6570 
+ 325      6F72 743A 
+ 325      2000 
+ 326               		.section	.bss.driver,"aw",@nobits
+ 329               	driver:
+ 330 0000 0000      		.skip 2,0
+ 419               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 host.c
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:19     .text.host_set_driver:00000000 host_set_driver
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:329    .bss.driver:00000000 driver
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:36     .text.host_get_driver:00000000 host_get_driver
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:51     .text.host_keyboard_leds:00000000 host_keyboard_leds
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:76     .text.host_mouse_send:00000000 host_mouse_send
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:100    .text.host_system_send:00000000 host_system_send
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:311    .bss.last_system_report:00000000 last_system_report
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:136    .text.host_consumer_send:00000000 host_consumer_send
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:306    .bss.last_consumer_report:00000000 last_consumer_report
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:172    .text.host_last_sysytem_report:00000000 host_last_sysytem_report
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:187    .text.host_last_consumer_report:00000000 host_last_consumer_report
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:202    .text.host_keyboard_send:00000000 host_keyboard_send
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:324    .progmem.data:00000008 __c.1695
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:320    .progmem.data:00000002 __c.1698
+C:\Users\User\AppData\Local\Temp/ccCEnkjo.s:316    .progmem.data:00000000 __c.1703
+
+UNDEFINED SYMBOLS
+debug_config
+xputs
+__xprintf
+__do_clear_bss

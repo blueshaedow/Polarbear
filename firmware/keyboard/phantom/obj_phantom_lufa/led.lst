@@ -1,0 +1,58 @@
+   1               		.file	"led.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.led_set,"ax",@progbits
+  17               	.global	led_set
+  19               	led_set:
+  20               	.LFB2:
+  21               	.LSM0:
+  22               	.LVL0:
+  23               	/* prologue: function */
+  24               	/* frame size = 0 */
+  25               	.LSM1:
+  26 0000 81FF      		sbrs r24,1
+  27 0002 00C0      		rjmp .L2
+  28               	.LVL1:
+  29               	.LSM2:
+  30 0004 269A      		sbi 36-32,6
+  31               	.LSM3:
+  32 0006 2E9A      		sbi 37-32,6
+  33 0008 00C0      		rjmp .L3
+  34               	.L2:
+  35               	.LSM4:
+  36 000a 2698      		cbi 36-32,6
+  37               	.LSM5:
+  38 000c 2E98      		cbi 37-32,6
+  39               	.L3:
+  40               	.LSM6:
+  41 000e 82FF      		sbrs r24,2
+  42 0010 00C0      		rjmp .L4
+  43               	.LSM7:
+  44 0012 279A      		sbi 36-32,7
+  45               	.LSM8:
+  46 0014 2F9A      		sbi 37-32,7
+  47 0016 0895      		ret
+  48               	.L4:
+  49               	.LSM9:
+  50 0018 2798      		cbi 36-32,7
+  51               	.LSM10:
+  52 001a 2F98      		cbi 37-32,7
+  53 001c 0895      		ret
+  54               	.LFE2:
+  80               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 led.c
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/ccwruHmv.s:19     .text.led_set:00000000 led_set
+
+NO UNDEFINED SYMBOLS

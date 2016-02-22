@@ -1,0 +1,539 @@
+   1               		.file	"keymap.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.action_get_macro,"ax",@progbits
+  17               		.weak	action_get_macro
+  19               	action_get_macro:
+  20               	.LFB105:
+  21               	.LSM0:
+  22               	.LVL0:
+  23               	/* prologue: function */
+  24               	/* frame size = 0 */
+  25               	.LSM1:
+  26 0000 80E0      		ldi r24,lo8(0)
+  27 0002 90E0      		ldi r25,hi8(0)
+  28               	.LVL1:
+  29               	/* epilogue start */
+  30 0004 0895      		ret
+  31               	.LFE105:
+  33               		.section	.text.action_function,"ax",@progbits
+  34               		.weak	action_function
+  36               	action_function:
+  37               	.LFB106:
+  38               	.LSM2:
+  39               	.LVL2:
+  40               	/* prologue: function */
+  41               	/* frame size = 0 */
+  42               	/* epilogue start */
+  43               	.LSM3:
+  44 0000 0895      		ret
+  45               	.LFE106:
+  47               		.section	.text.keycode_to_action,"ax",@progbits
+  49               	keycode_to_action:
+  50               	.LFB107:
+  51               	.LSM4:
+  52               	.LVL3:
+  53               	/* prologue: function */
+  54               	/* frame size = 0 */
+  55 0000 282F      		mov r18,r24
+  56               	.LSM5:
+  57 0002 8D3B      		cpi r24,lo8(-67)
+  58 0004 00F4      		brsh .L13
+  59 0006 883A      		cpi r24,lo8(-88)
+  60 0008 00F4      		brsh .L10
+  61 000a 853A      		cpi r24,lo8(-91)
+  62 000c 00F4      		brsh .L9
+  63 000e 8430      		cpi r24,lo8(4)
+  64 0010 00F4      		brsh .L8
+  65 0012 8130      		cpi r24,lo8(1)
+  66 0014 01F0      		breq .+2
+  67 0016 00C0      		rjmp .L6
+  68 0018 00C0      		rjmp .L45
+  69               	.L13:
+  70 001a 883E      		cpi r24,lo8(-24)
+  71 001c 00F4      		brsh .L14
+  72 001e 803E      		cpi r24,lo8(-32)
+  73 0020 00F4      		brsh .L8
+  74 0022 8F3B      		cpi r24,lo8(-65)
+  75 0024 01F0      		breq .+2
+  76 0026 00C0      		rjmp .L6
+  77 0028 00C0      		rjmp .L46
+  78               	.L14:
+  79 002a 803F      		cpi r24,lo8(-16)
+  80 002c 00F4      		brsh .+2
+  81 002e 00C0      		rjmp .L6
+  82 0030 00C0      		rjmp .L47
+  83               	.L8:
+  84               	.LSM6:
+  85 0032 822F      		mov r24,r18
+  86               	.LVL4:
+  87 0034 90E0      		ldi r25,lo8(0)
+  88               	.LVL5:
+  89 0036 9C01      		movw r18,r24
+  90               	.LVL6:
+  91 0038 00C0      		rjmp .L15
+  92               	.LVL7:
+  93               	.L9:
+  94               	.LSM7:
+  95 003a 853A      		cpi r24,lo8(-91)
+  96 003c 01F4      		brne .L16
+  97 003e 21E8      		ldi r18,lo8(16513)
+  98 0040 30E4      		ldi r19,hi8(16513)
+  99 0042 00C0      		rjmp .L15
+ 100               	.LVL8:
+ 101               	.L16:
+ 102 0044 863A      		cpi r24,lo8(-90)
+ 103 0046 01F0      		breq .L18
+ 104 0048 23E8      		ldi r18,lo8(16515)
+ 105 004a 30E4      		ldi r19,hi8(16515)
+ 106 004c 00C0      		rjmp .L15
+ 107               	.LVL9:
+ 108               	.L18:
+ 109 004e 22E8      		ldi r18,lo8(16514)
+ 110 0050 30E4      		ldi r19,hi8(16514)
+ 111 0052 00C0      		rjmp .L15
+ 112               	.LVL10:
+ 113               	.L10:
+ 114               	.LSM8:
+ 115 0054 883A      		cpi r24,lo8(-88)
+ 116 0056 01F4      		brne .L19
+ 117 0058 22EE      		ldi r18,lo8(17634)
+ 118 005a 34E4      		ldi r19,hi8(17634)
+ 119 005c 00C0      		rjmp .L15
+ 120               	.LVL11:
+ 121               	.L19:
+ 122 005e 893A      		cpi r24,lo8(-87)
+ 123 0060 01F4      		brne .L21
+ 124 0062 29EE      		ldi r18,lo8(17641)
+ 125 0064 34E4      		ldi r19,hi8(17641)
+ 126 0066 00C0      		rjmp .L15
+ 127               	.LVL12:
+ 128               	.L21:
+ 129 0068 8A3A      		cpi r24,lo8(-86)
+ 130 006a 01F4      		brne .L22
+ 131 006c 2AEE      		ldi r18,lo8(17642)
+ 132 006e 34E4      		ldi r19,hi8(17642)
+ 133 0070 00C0      		rjmp .L15
+ 134               	.LVL13:
+ 135               	.L22:
+ 136 0072 8B3A      		cpi r24,lo8(-85)
+ 137 0074 01F4      		brne .L23
+ 138 0076 25EB      		ldi r18,lo8(17589)
+ 139 0078 34E4      		ldi r19,hi8(17589)
+ 140 007a 00C0      		rjmp .L15
+ 141               	.LVL14:
+ 142               	.L23:
+ 143 007c 8C3A      		cpi r24,lo8(-84)
+ 144 007e 01F4      		brne .L24
+ 145 0080 26EB      		ldi r18,lo8(17590)
+ 146 0082 34E4      		ldi r19,hi8(17590)
+ 147 0084 00C0      		rjmp .L15
+ 148               	.LVL15:
+ 149               	.L24:
+ 150 0086 8B3B      		cpi r24,lo8(-69)
+ 151 0088 01F4      		brne .L25
+ 152 008a 23EB      		ldi r18,lo8(17587)
+ 153 008c 34E4      		ldi r19,hi8(17587)
+ 154 008e 00C0      		rjmp .L15
+ 155               	.LVL16:
+ 156               	.L25:
+ 157 0090 8C3B      		cpi r24,lo8(-68)
+ 158 0092 01F4      		brne .L26
+ 159 0094 24EB      		ldi r18,lo8(17588)
+ 160 0096 34E4      		ldi r19,hi8(17588)
+ 161 0098 00C0      		rjmp .L15
+ 162               	.LVL17:
+ 163               	.L26:
+ 164 009a 8D3A      		cpi r24,lo8(-83)
+ 165 009c 01F4      		brne .L27
+ 166 009e 27EB      		ldi r18,lo8(17591)
+ 167 00a0 34E4      		ldi r19,hi8(17591)
+ 168 00a2 00C0      		rjmp .L15
+ 169               	.LVL18:
+ 170               	.L27:
+ 171 00a4 803B      		cpi r24,lo8(-80)
+ 172 00a6 01F4      		brne .L28
+ 173 00a8 2CEC      		ldi r18,lo8(17612)
+ 174 00aa 34E4      		ldi r19,hi8(17612)
+ 175 00ac 00C0      		rjmp .L15
+ 176               	.LVL19:
+ 177               	.L28:
+ 178 00ae 8E3A      		cpi r24,lo8(-82)
+ 179 00b0 01F4      		brne .L29
+ 180 00b2 2DEC      		ldi r18,lo8(17613)
+ 181 00b4 34E4      		ldi r19,hi8(17613)
+ 182 00b6 00C0      		rjmp .L15
+ 183               	.LVL20:
+ 184               	.L29:
+ 185 00b8 8F3A      		cpi r24,lo8(-81)
+ 186 00ba 01F4      		brne .L30
+ 187 00bc 23E8      		ldi r18,lo8(17795)
+ 188 00be 35E4      		ldi r19,hi8(17795)
+ 189 00c0 00C0      		rjmp .L15
+ 190               	.LVL21:
+ 191               	.L30:
+ 192 00c2 813B      		cpi r24,lo8(-79)
+ 193 00c4 01F4      		brne .L31
+ 194 00c6 2AE8      		ldi r18,lo8(17802)
+ 195 00c8 35E4      		ldi r19,hi8(17802)
+ 196 00ca 00C0      		rjmp .L15
+ 197               	.LVL22:
+ 198               	.L31:
+ 199 00cc 823B      		cpi r24,lo8(-78)
+ 200 00ce 01F4      		brne .L32
+ 201 00d0 22E9      		ldi r18,lo8(17810)
+ 202 00d2 35E4      		ldi r19,hi8(17810)
+ 203 00d4 00C0      		rjmp .L15
+ 204               	.LVL23:
+ 205               	.L32:
+ 206 00d6 833B      		cpi r24,lo8(-77)
+ 207 00d8 01F4      		brne .L33
+ 208 00da 24E9      		ldi r18,lo8(17812)
+ 209 00dc 35E4      		ldi r19,hi8(17812)
+ 210 00de 00C0      		rjmp .L15
+ 211               	.LVL24:
+ 212               	.L33:
+ 213 00e0 843B      		cpi r24,lo8(-76)
+ 214 00e2 01F4      		brne .L34
+ 215 00e4 21E2      		ldi r18,lo8(17953)
+ 216 00e6 36E4      		ldi r19,hi8(17953)
+ 217 00e8 00C0      		rjmp .L15
+ 218               	.LVL25:
+ 219               	.L34:
+ 220 00ea 853B      		cpi r24,lo8(-75)
+ 221 00ec 01F4      		brne .L35
+ 222 00ee 23E2      		ldi r18,lo8(17955)
+ 223 00f0 36E4      		ldi r19,hi8(17955)
+ 224 00f2 00C0      		rjmp .L15
+ 225               	.LVL26:
+ 226               	.L35:
+ 227 00f4 863B      		cpi r24,lo8(-74)
+ 228 00f6 01F4      		brne .L36
+ 229 00f8 24E2      		ldi r18,lo8(17956)
+ 230 00fa 36E4      		ldi r19,hi8(17956)
+ 231 00fc 00C0      		rjmp .L15
+ 232               	.LVL27:
+ 233               	.L36:
+ 234 00fe 873B      		cpi r24,lo8(-73)
+ 235 0100 01F4      		brne .L37
+ 236 0102 25E2      		ldi r18,lo8(17957)
+ 237 0104 36E4      		ldi r19,hi8(17957)
+ 238 0106 00C0      		rjmp .L15
+ 239               	.LVL28:
+ 240               	.L37:
+ 241 0108 883B      		cpi r24,lo8(-72)
+ 242 010a 01F4      		brne .L38
+ 243 010c 26E2      		ldi r18,lo8(17958)
+ 244 010e 36E4      		ldi r19,hi8(17958)
+ 245 0110 00C0      		rjmp .L15
+ 246               	.LVL29:
+ 247               	.L38:
+ 248 0112 893B      		cpi r24,lo8(-71)
+ 249 0114 01F4      		brne .L39
+ 250 0116 27E2      		ldi r18,lo8(17959)
+ 251 0118 36E4      		ldi r19,hi8(17959)
+ 252 011a 00C0      		rjmp .L15
+ 253               	.LVL30:
+ 254               	.L39:
+ 255 011c 8A3B      		cpi r24,lo8(-70)
+ 256 011e 01F0      		breq .L40
+ 257 0120 20E0      		ldi r18,lo8(17408)
+ 258 0122 34E4      		ldi r19,hi8(17408)
+ 259 0124 00C0      		rjmp .L15
+ 260               	.LVL31:
+ 261               	.L40:
+ 262 0126 2AE2      		ldi r18,lo8(17962)
+ 263 0128 36E4      		ldi r19,hi8(17962)
+ 264 012a 00C0      		rjmp .L15
+ 265               	.LVL32:
+ 266               	.L47:
+ 267               	.LSM9:
+ 268 012c 30E0      		ldi r19,lo8(0)
+ 269               	.LVL33:
+ 270 012e 3065      		ori r19,hi8(20480)
+ 271               	.LVL34:
+ 272 0130 00C0      		rjmp .L15
+ 273               	.LVL35:
+ 274               	.L45:
+ 275               	.LSM10:
+ 276 0132 21E0      		ldi r18,lo8(1)
+ 277 0134 30E0      		ldi r19,hi8(1)
+ 278               	.LVL36:
+ 279 0136 00C0      		rjmp .L15
+ 280               	.LVL37:
+ 281               	.L46:
+ 282               	.LSM11:
+ 283 0138 0E94 0000 		call clear_keyboard
+ 284               	.LVL38:
+ 285 013c 84EF      		ldi r24,lo8(500)
+ 286 013e 91E0      		ldi r25,hi8(500)
+ 287               	.LVL39:
+ 288               	.LBB12:
+ 289               	.LBB13:
+ 290               	.LBB14:
+ 291               	.LBB15:
+ 292               	.LSM12:
+ 293 0140 20E9      		ldi r18,lo8(400)
+ 294 0142 31E0      		ldi r19,hi8(400)
+ 295               	.L41:
+ 296 0144 F901      		movw r30,r18
+ 297               	.LVL40:
+ 298               	/* #APP */
+ 299               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 300 0146 3197      		1: sbiw r30,1
+ 301 0148 01F4      		brne 1b
+ 302               	 ;  0 "" 2
+ 303               	/* #NOAPP */
+ 304               	.LBE15:
+ 305               	.LBE14:
+ 306               	.LSM13:
+ 307 014a 0197      		sbiw r24,1
+ 308               	.LSM14:
+ 309 014c 01F4      		brne .L41
+ 310               	.LBE13:
+ 311               	.LBE12:
+ 312               	.LSM15:
+ 313 014e 0E94 0000 		call bootloader_jump
+ 314               	.LVL41:
+ 315 0152 00C0      		rjmp .L15
+ 316               	.LVL42:
+ 317               	.L6:
+ 318               	.LSM16:
+ 319 0154 20E0      		ldi r18,lo8(0)
+ 320 0156 30E0      		ldi r19,hi8(0)
+ 321               	.LVL43:
+ 322               	.L15:
+ 323               	.LSM17:
+ 324 0158 C901      		movw r24,r18
+ 325               	.LVL44:
+ 326               	/* epilogue start */
+ 327 015a 0895      		ret
+ 328               	.LFE107:
+ 330               		.section	.text.action_for_key,"ax",@progbits
+ 331               	.global	action_for_key
+ 333               	action_for_key:
+ 334               	.LFB104:
+ 335               	.LSM18:
+ 336               	.LVL45:
+ 337               	/* prologue: function */
+ 338               	/* frame size = 0 */
+ 339               	.LSM19:
+ 340 0000 0E94 0000 		call keymap_key_to_keycode
+ 341               	.LVL46:
+ 342               	.LSM20:
+ 343 0004 803E      		cpi r24,lo8(-32)
+ 344               	.LVL47:
+ 345 0006 00F4      		brsh .L61
+ 346 0008 803C      		cpi r24,lo8(-64)
+ 347 000a 00F4      		brsh .L55
+ 348 000c 8133      		cpi r24,lo8(49)
+ 349 000e 01F4      		brne .+2
+ 350 0010 00C0      		rjmp .L52
+ 351 0012 8233      		cpi r24,lo8(50)
+ 352 0014 00F4      		brsh .L62
+ 353 0016 8932      		cpi r24,lo8(41)
+ 354 0018 01F4      		brne .+2
+ 355 001a 00C0      		rjmp .L50
+ 356 001c 8A32      		cpi r24,lo8(42)
+ 357 001e 01F0      		breq .+2
+ 358 0020 00C0      		rjmp .L49
+ 359 0022 00C0      		rjmp .L90
+ 360               	.L62:
+ 361 0024 8933      		cpi r24,lo8(57)
+ 362 0026 01F0      		breq .L54
+ 363 0028 8238      		cpi r24,lo8(-126)
+ 364 002a 01F0      		breq .L54
+ 365 002c 8533      		cpi r24,lo8(53)
+ 366 002e 01F0      		breq .+2
+ 367 0030 00C0      		rjmp .L49
+ 368 0032 00C0      		rjmp .L91
+ 369               	.L61:
+ 370 0034 833E      		cpi r24,lo8(-29)
+ 371 0036 01F0      		breq .L58
+ 372 0038 843E      		cpi r24,lo8(-28)
+ 373 003a 00F4      		brsh .L63
+ 374 003c 803E      		cpi r24,lo8(-32)
+ 375 003e 01F0      		breq .L56
+ 376 0040 823E      		cpi r24,lo8(-30)
+ 377 0042 01F0      		breq .+2
+ 378 0044 00C0      		rjmp .L49
+ 379 0046 00C0      		rjmp .L92
+ 380               	.L63:
+ 381 0048 863E      		cpi r24,lo8(-26)
+ 382 004a 01F0      		breq .L59
+ 383 004c 873E      		cpi r24,lo8(-25)
+ 384 004e 01F0      		breq .+2
+ 385 0050 00C0      		rjmp .L49
+ 386 0052 00C0      		rjmp .L93
+ 387               	.L55:
+ 388               	.LSM21:
+ 389 0054 0E94 0000 		call keymap_fn_to_action
+ 390               	.LVL48:
+ 391 0058 0895      		ret
+ 392               	.LVL49:
+ 393               	.L54:
+ 394               	.LSM22:
+ 395 005a 9091 0000 		lds r25,keymap_config
+ 396 005e 90FD      		sbrc r25,0
+ 397 0060 00C0      		rjmp .L67
+ 398 0062 91FD      		sbrc r25,1
+ 399 0064 00C0      		rjmp .L67
+ 400 0066 00C0      		rjmp .L81
+ 401               	.L56:
+ 402               	.LSM23:
+ 403 0068 8091 0000 		lds r24,keymap_config
+ 404               	.LVL50:
+ 405 006c 80FF      		sbrs r24,0
+ 406 006e 00C0      		rjmp .L67
+ 407               	.LSM24:
+ 408 0070 89E3      		ldi r24,lo8(57)
+ 409 0072 00C0      		rjmp .L81
+ 410               	.LVL51:
+ 411               	.L67:
+ 412               	.LSM25:
+ 413 0074 80EE      		ldi r24,lo8(-32)
+ 414               	.LVL52:
+ 415 0076 00C0      		rjmp .L81
+ 416               	.LVL53:
+ 417               	.L92:
+ 418               	.LSM26:
+ 419 0078 8091 0000 		lds r24,keymap_config
+ 420               	.LVL54:
+ 421 007c 82FD      		sbrc r24,2
+ 422 007e 00C0      		rjmp .L70
+ 423 0080 00C0      		rjmp .L85
+ 424               	.LVL55:
+ 425               	.L58:
+ 426               	.LSM27:
+ 427 0082 8091 0000 		lds r24,keymap_config
+ 428               	.LVL56:
+ 429 0086 82FF      		sbrs r24,2
+ 430 0088 00C0      		rjmp .L70
+ 431               	.L85:
+ 432               	.LSM28:
+ 433 008a 82EE      		ldi r24,lo8(-30)
+ 434 008c 00C0      		rjmp .L81
+ 435               	.L70:
+ 436               	.LSM29:
+ 437 008e 84FD      		sbrc r24,4
+ 438 0090 00C0      		rjmp .L86
+ 439               	.L71:
+ 440               	.LSM30:
+ 441 0092 83EE      		ldi r24,lo8(-29)
+ 442 0094 00C0      		rjmp .L81
+ 443               	.LVL57:
+ 444               	.L59:
+ 445               	.LSM31:
+ 446 0096 8091 0000 		lds r24,keymap_config
+ 447               	.LVL58:
+ 448 009a 83FD      		sbrc r24,3
+ 449 009c 00C0      		rjmp .L74
+ 450 009e 00C0      		rjmp .L87
+ 451               	.LVL59:
+ 452               	.L93:
+ 453               	.LSM32:
+ 454 00a0 8091 0000 		lds r24,keymap_config
+ 455               	.LVL60:
+ 456 00a4 83FF      		sbrs r24,3
+ 457 00a6 00C0      		rjmp .L74
+ 458               	.L87:
+ 459               	.LSM33:
+ 460 00a8 86EE      		ldi r24,lo8(-26)
+ 461 00aa 00C0      		rjmp .L81
+ 462               	.L74:
+ 463               	.LSM34:
+ 464 00ac 84FF      		sbrs r24,4
+ 465 00ae 00C0      		rjmp .L75
+ 466               	.L86:
+ 467               	.LSM35:
+ 468 00b0 80E0      		ldi r24,lo8(0)
+ 469 00b2 00C0      		rjmp .L81
+ 470               	.L75:
+ 471               	.LSM36:
+ 472 00b4 87EE      		ldi r24,lo8(-25)
+ 473 00b6 00C0      		rjmp .L81
+ 474               	.LVL61:
+ 475               	.L91:
+ 476               	.LSM37:
+ 477 00b8 8091 0000 		lds r24,keymap_config
+ 478               	.LVL62:
+ 479 00bc 85FF      		sbrs r24,5
+ 480 00be 00C0      		rjmp .L84
+ 481 00c0 00C0      		rjmp .L77
+ 482               	.LVL63:
+ 483               	.L50:
+ 484               	.LSM38:
+ 485 00c2 8091 0000 		lds r24,keymap_config
+ 486               	.LVL64:
+ 487 00c6 85FF      		sbrs r24,5
+ 488 00c8 00C0      		rjmp .L77
+ 489               	.L84:
+ 490               	.LSM39:
+ 491 00ca 85E3      		ldi r24,lo8(53)
+ 492 00cc 00C0      		rjmp .L81
+ 493               	.L77:
+ 494               	.LSM40:
+ 495 00ce 89E2      		ldi r24,lo8(41)
+ 496 00d0 00C0      		rjmp .L81
+ 497               	.LVL65:
+ 498               	.L52:
+ 499               	.LSM41:
+ 500 00d2 8091 0000 		lds r24,keymap_config
+ 501               	.LVL66:
+ 502 00d6 86FF      		sbrs r24,6
+ 503 00d8 00C0      		rjmp .L82
+ 504 00da 00C0      		rjmp .L79
+ 505               	.LVL67:
+ 506               	.L90:
+ 507               	.LSM42:
+ 508 00dc 8091 0000 		lds r24,keymap_config
+ 509               	.LVL68:
+ 510 00e0 86FF      		sbrs r24,6
+ 511 00e2 00C0      		rjmp .L79
+ 512               	.L82:
+ 513               	.LSM43:
+ 514 00e4 81E3      		ldi r24,lo8(49)
+ 515 00e6 00C0      		rjmp .L81
+ 516               	.L79:
+ 517               	.LSM44:
+ 518 00e8 8AE2      		ldi r24,lo8(42)
+ 519               	.LVL69:
+ 520               	.L81:
+ 521 00ea 0E94 0000 		call keycode_to_action
+ 522               	.LVL70:
+ 523 00ee 0895      		ret
+ 524               	.LVL71:
+ 525               	.L49:
+ 526               	.LSM45:
+ 527 00f0 0E94 0000 		call keycode_to_action
+ 528               	.LVL72:
+ 529               	.LSM46:
+ 530 00f4 0895      		ret
+ 531               	.LFE104:
+ 533               		.comm keymap_config,1,1
+ 582               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 keymap.c
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:19     .text.action_get_macro:00000000 action_get_macro
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:36     .text.action_function:00000000 action_function
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:49     .text.keycode_to_action:00000000 keycode_to_action
+C:\Users\User\AppData\Local\Temp/ccM8xGTT.s:333    .text.action_for_key:00000000 action_for_key
+                            *COM*:00000001 keymap_config
+
+UNDEFINED SYMBOLS
+clear_keyboard
+bootloader_jump
+keymap_key_to_keycode
+keymap_fn_to_action
+__do_clear_bss

@@ -1,0 +1,209 @@
+   1               		.file	"keymap_polarbear_tester.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	keymaps
+  17               		.section	.progmem.data,"a",@progbits
+  20               	keymaps:
+  21 0000 29        		.byte	41
+  22 0001 1E        		.byte	30
+  23 0002 1F        		.byte	31
+  24 0003 20        		.byte	32
+  25 0004 21        		.byte	33
+  26 0005 22        		.byte	34
+  27 0006 4C        		.byte	76
+  28 0007 2B        		.byte	43
+  29 0008 14        		.byte	20
+  30 0009 1A        		.byte	26
+  31 000a 08        		.byte	8
+  32 000b 15        		.byte	21
+  33 000c 17        		.byte	23
+  34 000d 31        		.byte	49
+  35 000e C1        		.byte	-63
+  36 000f 04        		.byte	4
+  37 0010 16        		.byte	22
+  38 0011 07        		.byte	7
+  39 0012 09        		.byte	9
+  40 0013 0A        		.byte	10
+  41 0014 34        		.byte	52
+  42 0015 E1        		.byte	-31
+  43 0016 1D        		.byte	29
+  44 0017 1B        		.byte	27
+  45 0018 06        		.byte	6
+  46 0019 19        		.byte	25
+  47 001a 05        		.byte	5
+  48 001b C2        		.byte	-62
+  49 001c E3        		.byte	-29
+  50 001d E2        		.byte	-30
+  51 001e 13        		.byte	19
+  52 001f 00        		.byte	0
+  53 0020 2A        		.byte	42
+  54 0021 C0        		.byte	-64
+  55 0022 28        		.byte	40
+  56 0023 E0        		.byte	-32
+  57 0024 00        		.byte	0
+  58 0025 00        		.byte	0
+  59 0026 00        		.byte	0
+  60 0027 00        		.byte	0
+  61 0028 00        		.byte	0
+  62 0029 00        		.byte	0
+  63 002a 01        		.byte	1
+  64 002b 27        		.byte	39
+  65 002c 26        		.byte	38
+  66 002d 25        		.byte	37
+  67 002e 24        		.byte	36
+  68 002f 23        		.byte	35
+  69 0030 01        		.byte	1
+  70 0031 01        		.byte	1
+  71 0032 13        		.byte	19
+  72 0033 12        		.byte	18
+  73 0034 0C        		.byte	12
+  74 0035 18        		.byte	24
+  75 0036 1C        		.byte	28
+  76 0037 01        		.byte	1
+  77 0038 01        		.byte	1
+  78 0039 33        		.byte	51
+  79 003a 0F        		.byte	15
+  80 003b 0E        		.byte	14
+  81 003c 0D        		.byte	13
+  82 003d 0B        		.byte	11
+  83 003e 01        		.byte	1
+  84 003f 01        		.byte	1
+  85 0040 38        		.byte	56
+  86 0041 37        		.byte	55
+  87 0042 36        		.byte	54
+  88 0043 10        		.byte	16
+  89 0044 11        		.byte	17
+  90 0045 01        		.byte	1
+  91 0046 01        		.byte	1
+  92 0047 01        		.byte	1
+  93 0048 01        		.byte	1
+  94 0049 00        		.byte	0
+  95 004a 01        		.byte	1
+  96 004b 01        		.byte	1
+  97 004c 01        		.byte	1
+  98 004d 01        		.byte	1
+  99 004e 00        		.byte	0
+ 100 004f 00        		.byte	0
+ 101 0050 00        		.byte	0
+ 102 0051 00        		.byte	0
+ 103 0052 00        		.byte	0
+ 104 0053 00        		.byte	0
+ 105 0054 BF        		.byte	-65
+ 106 0055 00        		.byte	0
+ 107 0056 00        		.byte	0
+ 108 0057 00        		.byte	0
+ 109 0058 00        		.byte	0
+ 110 0059 00        		.byte	0
+ 111 005a 00        		.byte	0
+ 112 005b 00        		.byte	0
+ 113 005c 00        		.byte	0
+ 114 005d 00        		.byte	0
+ 115 005e 4E        		.byte	78
+ 116 005f 4B        		.byte	75
+ 117 0060 00        		.byte	0
+ 118 0061 00        		.byte	0
+ 119 0062 C1        		.byte	-63
+ 120 0063 00        		.byte	0
+ 121 0064 4F        		.byte	79
+ 122 0065 52        		.byte	82
+ 123 0066 51        		.byte	81
+ 124 0067 50        		.byte	80
+ 125 0068 00        		.byte	0
+ 126 0069 00        		.byte	0
+ 127 006a 00        		.byte	0
+ 128 006b 00        		.byte	0
+ 129 006c 4D        		.byte	77
+ 130 006d 4A        		.byte	74
+ 131 006e 00        		.byte	0
+ 132 006f 00        		.byte	0
+ 133 0070 00        		.byte	0
+ 134 0071 00        		.byte	0
+ 135 0072 00        		.byte	0
+ 136 0073 00        		.byte	0
+ 137 0074 00        		.byte	0
+ 138 0075 00        		.byte	0
+ 139 0076 00        		.byte	0
+ 140 0077 00        		.byte	0
+ 141 0078 00        		.byte	0
+ 142 0079 00        		.byte	0
+ 143 007a 00        		.byte	0
+ 144 007b 00        		.byte	0
+ 145 007c 00        		.byte	0
+ 146 007d 00        		.byte	0
+ 147 007e 35        		.byte	53
+ 148 007f C3        		.byte	-61
+ 149 0080 C4        		.byte	-60
+ 150 0081 C5        		.byte	-59
+ 151 0082 C6        		.byte	-58
+ 152 0083 C7        		.byte	-57
+ 153 0084 00        		.byte	0
+ 154 0085 00        		.byte	0
+ 155 0086 C8        		.byte	-56
+ 156 0087 C9        		.byte	-55
+ 157 0088 CA        		.byte	-54
+ 158 0089 CB        		.byte	-53
+ 159 008a CC        		.byte	-52
+ 160 008b CD        		.byte	-51
+ 161 008c 00        		.byte	0
+ 162 008d 2D        		.byte	45
+ 163 008e 2E        		.byte	46
+ 164 008f 2F        		.byte	47
+ 165 0090 30        		.byte	48
+ 166 0091 00        		.byte	0
+ 167 0092 00        		.byte	0
+ 168 0093 00        		.byte	0
+ 169 0094 00        		.byte	0
+ 170 0095 00        		.byte	0
+ 171 0096 00        		.byte	0
+ 172 0097 00        		.byte	0
+ 173 0098 00        		.byte	0
+ 174 0099 C2        		.byte	-62
+ 175 009a 00        		.byte	0
+ 176 009b 00        		.byte	0
+ 177 009c 00        		.byte	0
+ 178 009d 00        		.byte	0
+ 179 009e 00        		.byte	0
+ 180 009f 00        		.byte	0
+ 181 00a0 00        		.byte	0
+ 182 00a1 00        		.byte	0
+ 183 00a2 00        		.byte	0
+ 184 00a3 00        		.byte	0
+ 185 00a4 00        		.byte	0
+ 186 00a5 00        		.byte	0
+ 187 00a6 00        		.byte	0
+ 188 00a7 00        		.byte	0
+ 189               	.global	fn_actions
+ 192               	fn_actions:
+ 193 00a8 2CA1      		.word	-24276
+ 194 00aa 048A      		.word	-30204
+ 195 00ac 088A      		.word	-30200
+ 196 00ae 1E02      		.word	542
+ 197 00b0 1F02      		.word	543
+ 198 00b2 2002      		.word	544
+ 199 00b4 2102      		.word	545
+ 200 00b6 2202      		.word	546
+ 201 00b8 2702      		.word	551
+ 202 00ba 2602      		.word	550
+ 203 00bc 2502      		.word	549
+ 204 00be 2402      		.word	548
+ 205 00c0 2302      		.word	547
+ 206 00c2 3402      		.word	564
+ 207               		.text
+ 208               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 keymap_polarbear_tester.c
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:20     .progmem.data:00000000 keymaps
+C:\Users\User\AppData\Local\Temp/ccAwkJxL.s:192    .progmem.data:000000a8 fn_actions
+
+NO UNDEFINED SYMBOLS

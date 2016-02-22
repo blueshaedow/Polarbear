@@ -1,0 +1,419 @@
+   1               		.file	"keyboard.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.matrix_setup,"ax",@progbits
+  17               		.weak	matrix_setup
+  19               	matrix_setup:
+  20               	.LFB5:
+  21               	.LSM0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	/* epilogue start */
+  25               	.LSM1:
+  26 0000 0895      		ret
+  27               	.LFE5:
+  29               		.section	.text.keyboard_setup,"ax",@progbits
+  30               	.global	keyboard_setup
+  32               	keyboard_setup:
+  33               	.LFB6:
+  34               	.LSM2:
+  35               	/* prologue: function */
+  36               	/* frame size = 0 */
+  37               	.LSM3:
+  38 0000 0E94 0000 		call matrix_setup
+  39               	/* epilogue start */
+  40               	.LSM4:
+  41 0004 0895      		ret
+  42               	.LFE6:
+  44               		.section	.text.keyboard_set_leds,"ax",@progbits
+  45               	.global	keyboard_set_leds
+  47               	keyboard_set_leds:
+  48               	.LFB9:
+  49               	.LSM5:
+  50               	.LVL0:
+  51 0000 1F93      		push r17
+  52               	/* prologue: function */
+  53               	/* frame size = 0 */
+  54 0002 182F      		mov r17,r24
+  55               	.LSM6:
+  56 0004 8091 0000 		lds r24,debug_config
+  57               	.LVL1:
+  58 0008 82FF      		sbrs r24,2
+  59 000a 00C0      		rjmp .L6
+  60 000c 80FF      		sbrs r24,0
+  61 000e 00C0      		rjmp .L7
+  62 0010 80E0      		ldi r24,lo8(__c.2054)
+  63 0012 90E0      		ldi r25,hi8(__c.2054)
+  64 0014 0E94 0000 		call xputs
+  65               	.L7:
+  66 0018 8091 0000 		lds r24,debug_config
+  67 001c 80FF      		sbrs r24,0
+  68 001e 00C0      		rjmp .L8
+  69 0020 00D0      		rcall .
+  70 0022 00D0      		rcall .
+  71 0024 EDB7      		in r30,__SP_L__
+  72 0026 FEB7      		in r31,__SP_H__
+  73 0028 3196      		adiw r30,1
+  74 002a 80E0      		ldi r24,lo8(__c.2056)
+  75 002c 90E0      		ldi r25,hi8(__c.2056)
+  76 002e ADB7      		in r26,__SP_L__
+  77 0030 BEB7      		in r27,__SP_H__
+  78 0032 1296      		adiw r26,1+1
+  79 0034 9C93      		st X,r25
+  80 0036 8E93      		st -X,r24
+  81 0038 1197      		sbiw r26,1
+  82 003a 1283      		std Z+2,r17
+  83 003c 1382      		std Z+3,__zero_reg__
+  84 003e 0E94 0000 		call __xprintf
+  85 0042 0F90      		pop __tmp_reg__
+  86 0044 0F90      		pop __tmp_reg__
+  87 0046 0F90      		pop __tmp_reg__
+  88 0048 0F90      		pop __tmp_reg__
+  89               	.L8:
+  90 004a 8091 0000 		lds r24,debug_config
+  91 004e 80FF      		sbrs r24,0
+  92 0050 00C0      		rjmp .L6
+  93 0052 80E0      		ldi r24,lo8(__c.2058)
+  94 0054 90E0      		ldi r25,hi8(__c.2058)
+  95 0056 0E94 0000 		call xputs
+  96               	.L6:
+  97               	.LSM7:
+  98 005a 812F      		mov r24,r17
+  99 005c 0E94 0000 		call led_set
+ 100               	/* epilogue start */
+ 101               	.LSM8:
+ 102 0060 1F91      		pop r17
+ 103               	.LVL2:
+ 104 0062 0895      		ret
+ 105               	.LFE9:
+ 107               		.section	.text.keyboard_task,"ax",@progbits
+ 108               	.global	keyboard_task
+ 110               	keyboard_task:
+ 111               	.LFB8:
+ 112               	.LSM9:
+ 113 0000 2F92      		push r2
+ 114 0002 3F92      		push r3
+ 115 0004 4F92      		push r4
+ 116 0006 5F92      		push r5
+ 117 0008 6F92      		push r6
+ 118 000a 7F92      		push r7
+ 119 000c 8F92      		push r8
+ 120 000e 9F92      		push r9
+ 121 0010 AF92      		push r10
+ 122 0012 BF92      		push r11
+ 123 0014 CF92      		push r12
+ 124 0016 DF92      		push r13
+ 125 0018 EF92      		push r14
+ 126 001a FF92      		push r15
+ 127 001c 0F93      		push r16
+ 128 001e 1F93      		push r17
+ 129 0020 DF93      		push r29
+ 130 0022 CF93      		push r28
+ 131 0024 CDB7      		in r28,__SP_L__
+ 132 0026 DEB7      		in r29,__SP_H__
+ 133 0028 2A97      		sbiw r28,10
+ 134 002a 0FB6      		in __tmp_reg__,__SREG__
+ 135 002c F894      		cli
+ 136 002e DEBF      		out __SP_H__,r29
+ 137 0030 0FBE      		out __SREG__,__tmp_reg__
+ 138 0032 CDBF      		out __SP_L__,r28
+ 139               	/* prologue: function */
+ 140               	/* frame size = 10 */
+ 141               	.LSM10:
+ 142 0034 0E94 0000 		call matrix_scan
+ 143 0038 90E0      		ldi r25,lo8(matrix_prev.2012)
+ 144 003a 492E      		mov r4,r25
+ 145 003c 90E0      		ldi r25,hi8(matrix_prev.2012)
+ 146 003e 592E      		mov r5,r25
+ 147 0040 6624      		clr r6
+ 148 0042 7724      		clr r7
+ 149               	.LVL3:
+ 150               	.L16:
+ 151 0044 262C      		mov r2,r6
+ 152               	.LBB2:
+ 153               	.LSM11:
+ 154 0046 862D      		mov r24,r6
+ 155 0048 0E94 0000 		call matrix_get_row
+ 156               	.LVL4:
+ 157 004c 5B01      		movw r10,r22
+ 158 004e 6C01      		movw r12,r24
+ 159               	.LSM12:
+ 160 0050 F201      		movw r30,r4
+ 161 0052 E080      		ld r14,Z
+ 162 0054 F180      		ldd r15,Z+1
+ 163 0056 0281      		ldd r16,Z+2
+ 164 0058 1381      		ldd r17,Z+3
+ 165 005a E626      		eor r14,r22
+ 166 005c F726      		eor r15,r23
+ 167 005e 0827      		eor r16,r24
+ 168 0060 1927      		eor r17,r25
+ 169               	.LSM13:
+ 170 0062 E114      		cp r14,__zero_reg__
+ 171 0064 F104      		cpc r15,__zero_reg__
+ 172 0066 0105      		cpc r16,__zero_reg__
+ 173 0068 1105      		cpc r17,__zero_reg__
+ 174 006a 01F4      		brne .+2
+ 175 006c 00C0      		rjmp .L11
+ 176               	.LVL5:
+ 177               	.LSM14:
+ 178 006e 8091 0000 		lds r24,debug_config
+ 179 0072 81FF      		sbrs r24,1
+ 180 0074 00C0      		rjmp .L12
+ 181 0076 0E94 0000 		call matrix_print
+ 182               	.LVL6:
+ 183               	.L12:
+ 184 007a 8824      		clr r8
+ 185 007c 9924      		clr r9
+ 186               	.L15:
+ 187               	.LBB3:
+ 188               	.LSM15:
+ 189 007e D801      		movw r26,r16
+ 190 0080 C701      		movw r24,r14
+ 191 0082 082C      		mov r0,r8
+ 192 0084 00C0      		rjmp 2f
+ 193 0086 B695      	1:	lsr r27
+ 194 0088 A795      		ror r26
+ 195 008a 9795      		ror r25
+ 196 008c 8795      		ror r24
+ 197 008e 0A94      	2:	dec r0
+ 198 0090 02F4      		brpl 1b
+ 199               	.LVL7:
+ 200 0092 8170      		andi r24,lo8(1)
+ 201 0094 9070      		andi r25,hi8(1)
+ 202 0096 892B      		or r24,r25
+ 203 0098 01F0      		breq .L13
+ 204               	.LSM16:
+ 205 009a 0E94 0000 		call timer_read
+ 206 009e 8982      		std Y+1,r8
+ 207               	.LVL8:
+ 208 00a0 2A82      		std Y+2,r2
+ 209 00a2 082C      		mov r0,r8
+ 210 00a4 00C0      		rjmp 2f
+ 211 00a6 D694      	1:	lsr r13
+ 212 00a8 C794      		ror r12
+ 213 00aa B794      		ror r11
+ 214 00ac A794      		ror r10
+ 215 00ae 0A94      	2:	dec r0
+ 216 00b0 02F4      		brpl 1b
+ 217               	.LVL9:
+ 218 00b2 B501      		movw r22,r10
+ 219               	.LVL10:
+ 220 00b4 6170      		andi r22,lo8(1)
+ 221 00b6 7070      		andi r23,hi8(1)
+ 222 00b8 6B83      		std Y+3,r22
+ 223 00ba 8160      		ori r24,lo8(1)
+ 224 00bc 9D83      		std Y+5,r25
+ 225 00be 8C83      		std Y+4,r24
+ 226               	.LSM17:
+ 227 00c0 482D      		mov r20,r8
+ 228               	.LVL11:
+ 229 00c2 522D      		mov r21,r2
+ 230 00c4 782F      		mov r23,r24
+ 231 00c6 8D81      		ldd r24,Y+5
+ 232 00c8 0E94 0000 		call action_exec
+ 233               	.LSM18:
+ 234 00cc F301      		movw r30,r6
+ 235 00ce EE0F      		lsl r30
+ 236 00d0 FF1F      		rol r31
+ 237 00d2 EE0F      		lsl r30
+ 238 00d4 FF1F      		rol r31
+ 239 00d6 E050      		subi r30,lo8(-(matrix_prev.2012))
+ 240 00d8 F040      		sbci r31,hi8(-(matrix_prev.2012))
+ 241 00da 81E0      		ldi r24,lo8(1)
+ 242 00dc 90E0      		ldi r25,hi8(1)
+ 243 00de A0E0      		ldi r26,hlo8(1)
+ 244 00e0 B0E0      		ldi r27,hhi8(1)
+ 245 00e2 082C      		mov r0,r8
+ 246 00e4 00C0      		rjmp 2f
+ 247 00e6 880F      	1:	lsl r24
+ 248 00e8 991F      		rol r25
+ 249 00ea AA1F      		rol r26
+ 250 00ec BB1F      		rol r27
+ 251 00ee 0A94      	2:	dec r0
+ 252 00f0 02F4      		brpl 1b
+ 253               	.LVL12:
+ 254 00f2 2081      		ld r18,Z
+ 255 00f4 3181      		ldd r19,Z+1
+ 256 00f6 4281      		ldd r20,Z+2
+ 257 00f8 5381      		ldd r21,Z+3
+ 258 00fa 8227      		eor r24,r18
+ 259 00fc 9327      		eor r25,r19
+ 260 00fe A427      		eor r26,r20
+ 261 0100 B527      		eor r27,r21
+ 262 0102 8083      		st Z,r24
+ 263 0104 9183      		std Z+1,r25
+ 264 0106 A283      		std Z+2,r26
+ 265 0108 B383      		std Z+3,r27
+ 266 010a 00C0      		rjmp .L14
+ 267               	.LVL13:
+ 268               	.L13:
+ 269               	.LSM19:
+ 270 010c 0894      		sec
+ 271 010e 811C      		adc r8,__zero_reg__
+ 272 0110 911C      		adc r9,__zero_reg__
+ 273               	.LVL14:
+ 274               	.LSM20:
+ 275 0112 F1E1      		ldi r31,lo8(17)
+ 276 0114 8F16      		cp r8,r31
+ 277 0116 9104      		cpc r9,__zero_reg__
+ 278 0118 01F0      		breq .+2
+ 279 011a 00C0      		rjmp .L15
+ 280               	.LVL15:
+ 281               	.L11:
+ 282 011c 0894      		sec
+ 283 011e 611C      		adc r6,__zero_reg__
+ 284 0120 711C      		adc r7,__zero_reg__
+ 285 0122 84E0      		ldi r24,lo8(4)
+ 286 0124 90E0      		ldi r25,hi8(4)
+ 287 0126 480E      		add r4,r24
+ 288 0128 591E      		adc r5,r25
+ 289               	.LBE3:
+ 290               	.LSM21:
+ 291 012a 96E0      		ldi r25,lo8(6)
+ 292 012c 6916      		cp r6,r25
+ 293 012e 7104      		cpc r7,__zero_reg__
+ 294 0130 01F0      		breq .+2
+ 295 0132 00C0      		rjmp .L16
+ 296               	.LBE2:
+ 297               	.LSM22:
+ 298 0134 0E94 0000 		call timer_read
+ 299               	.LVL16:
+ 300 0138 2FEF      		ldi r18,lo8(-1)
+ 301 013a 2E83      		std Y+6,r18
+ 302 013c 2F83      		std Y+7,r18
+ 303 013e 1886      		std Y+8,__zero_reg__
+ 304 0140 8160      		ori r24,lo8(1)
+ 305 0142 782F      		mov r23,r24
+ 306 0144 9A87      		std Y+10,r25
+ 307 0146 8987      		std Y+9,r24
+ 308 0148 4FEF      		ldi r20,lo8(-1)
+ 309 014a 5FEF      		ldi r21,lo8(-1)
+ 310 014c 60E0      		ldi r22,lo8(0)
+ 311 014e 8A85      		ldd r24,Y+10
+ 312 0150 0E94 0000 		call action_exec
+ 313               	.LVL17:
+ 314               	.L14:
+ 315               	.LSM23:
+ 316 0154 1091 0000 		lds r17,led_status.2013
+ 317 0158 0E94 0000 		call host_keyboard_leds
+ 318 015c 1817      		cp r17,r24
+ 319 015e 01F0      		breq .L18
+ 320               	.LSM24:
+ 321 0160 0E94 0000 		call host_keyboard_leds
+ 322 0164 8093 0000 		sts led_status.2013,r24
+ 323               	.LSM25:
+ 324 0168 0E94 0000 		call keyboard_set_leds
+ 325               	.L18:
+ 326               	/* epilogue start */
+ 327               	.LSM26:
+ 328 016c 2A96      		adiw r28,10
+ 329 016e 0FB6      		in __tmp_reg__,__SREG__
+ 330 0170 F894      		cli
+ 331 0172 DEBF      		out __SP_H__,r29
+ 332 0174 0FBE      		out __SREG__,__tmp_reg__
+ 333 0176 CDBF      		out __SP_L__,r28
+ 334 0178 CF91      		pop r28
+ 335 017a DF91      		pop r29
+ 336 017c 1F91      		pop r17
+ 337 017e 0F91      		pop r16
+ 338 0180 FF90      		pop r15
+ 339 0182 EF90      		pop r14
+ 340               	.LVL18:
+ 341 0184 DF90      		pop r13
+ 342 0186 CF90      		pop r12
+ 343 0188 BF90      		pop r11
+ 344 018a AF90      		pop r10
+ 345               	.LVL19:
+ 346 018c 9F90      		pop r9
+ 347 018e 8F90      		pop r8
+ 348               	.LVL20:
+ 349 0190 7F90      		pop r7
+ 350 0192 6F90      		pop r6
+ 351 0194 5F90      		pop r5
+ 352 0196 4F90      		pop r4
+ 353 0198 3F90      		pop r3
+ 354 019a 2F90      		pop r2
+ 355               	.LVL21:
+ 356 019c 0895      		ret
+ 357               	.LFE8:
+ 359               		.section	.text.keyboard_init,"ax",@progbits
+ 360               	.global	keyboard_init
+ 362               	keyboard_init:
+ 363               	.LFB7:
+ 364               	.LSM27:
+ 365               	/* prologue: function */
+ 366               	/* frame size = 0 */
+ 367               	.LSM28:
+ 368 0000 0E94 0000 		call timer_init
+ 369               	.LSM29:
+ 370 0004 0E94 0000 		call matrix_init
+ 371               	.LSM30:
+ 372 0008 0E94 0000 		call bootmagic
+ 373               	/* epilogue start */
+ 374               	.LSM31:
+ 375 000c 0895      		ret
+ 376               	.LFE7:
+ 378               		.section	.progmem.data,"a",@progbits
+ 381               	__c.2058:
+ 382 0000 0A00      		.string	"\n"
+ 385               	__c.2056:
+ 386 0002 2530 3258 		.string	"%02X"
+ 386      00
+ 389               	__c.2054:
+ 390 0007 6B65 7962 		.string	"keyboard_set_led: "
+ 390      6F61 7264 
+ 390      5F73 6574 
+ 390      5F6C 6564 
+ 390      3A20 00
+ 391               		.section	.bss.led_status.2013,"aw",@nobits
+ 394               	led_status.2013:
+ 395 0000 00        		.skip 1,0
+ 396               		.section	.bss.matrix_prev.2012,"aw",@nobits
+ 399               	matrix_prev.2012:
+ 400 0000 0000 0000 		.skip 24,0
+ 400      0000 0000 
+ 400      0000 0000 
+ 400      0000 0000 
+ 400      0000 0000 
+ 401               		.comm keymap_config,1,1
+ 458               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 keyboard.c
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:19     .text.matrix_setup:00000000 matrix_setup
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:32     .text.keyboard_setup:00000000 keyboard_setup
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:47     .text.keyboard_set_leds:00000000 keyboard_set_leds
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:389    .progmem.data:00000007 __c.2054
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:385    .progmem.data:00000002 __c.2056
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:381    .progmem.data:00000000 __c.2058
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:110    .text.keyboard_task:00000000 keyboard_task
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:399    .bss.matrix_prev.2012:00000000 matrix_prev.2012
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:394    .bss.led_status.2013:00000000 led_status.2013
+C:\Users\User\AppData\Local\Temp/ccUvTiIK.s:362    .text.keyboard_init:00000000 keyboard_init
+                            *COM*:00000001 keymap_config
+
+UNDEFINED SYMBOLS
+debug_config
+xputs
+__xprintf
+led_set
+matrix_scan
+matrix_get_row
+matrix_print
+timer_read
+action_exec
+host_keyboard_leds
+timer_init
+matrix_init
+bootmagic
+__do_clear_bss

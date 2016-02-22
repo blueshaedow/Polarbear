@@ -1,0 +1,1812 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              obj_polarbear_tester/matrix.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              obj_polarbear_tester/matrix.o (__do_clear_bss)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+                              obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o (__eerd_byte_m32u4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+                              obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o (__eeupd_byte_m32u4)
+
+Allocating common symbols
+Common symbol       size              file
+
+USB_IsInitialized   0x1               obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+USB_DeviceState     0x1               obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_ConfigurationNumber
+                    0x1               obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+led                 0x3               obj_polarbear_tester/led.o
+USB_Device_CurrentlySelfPowered
+                    0x1               obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+USB_ControlRequest  0x8               obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+USB_Device_RemoteWakeupEnabled
+                    0x1               obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ .text          0x00000000        0x0 obj_polarbear_tester/keymap_polarbear_tester.o
+ .data          0x00000000        0x0 obj_polarbear_tester/keymap_polarbear_tester.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/keymap_polarbear_tester.o
+ .text          0x00000000        0x0 obj_polarbear_tester/keymap_common.o
+ .data          0x00000000        0x0 obj_polarbear_tester/keymap_common.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/keymap_common.o
+ .text          0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .data          0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .text.matrix_rows
+                0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .text.matrix_cols
+                0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .text.matrix_is_modified
+                0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .text.matrix_is_on
+                0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .text.matrix_key_count
+                0x00000000        0x0 obj_polarbear_tester/matrix.o
+ .text          0x00000000        0x0 obj_polarbear_tester/led.o
+ .data          0x00000000        0x0 obj_polarbear_tester/led.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/led.o
+ .text.led_init
+                0x00000000        0x0 obj_polarbear_tester/led.o
+ COMMON         0x00000000        0x0 obj_polarbear_tester/led.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/lufa.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/lufa.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/lufa.o
+ .text.sendchar
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/lufa.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_GetHIDReportItemInfo
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_SetHIDReportItemInfo
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_GetHIDReportSize
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text.USB_ProcessHIDReport
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_Stream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_Stream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_PStream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Control_EStream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Control_EStream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_EStream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_EStream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_PStream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Read_Stream_LE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Write_Stream_BE
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Null_Stream
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text.Endpoint_Discard_Stream
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text.Endpoint_ConfigureEndpointTable
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text.Endpoint_ClearEndpoints
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfType
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeBefore
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorOfTypeAfter
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text.USB_GetNextDescriptorComp
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .text          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .data          0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .text.USB_USBTask
+                0x00000000        0x0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .text.host_get_driver
+                0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .text.host_mouse_send
+                0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .text.host_last_sysytem_report
+                0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .text.host_last_consumer_report
+                0x00000000        0x0 obj_polarbear_tester/common/host.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/keyboard.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/keyboard.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/keyboard.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/action.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/action.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/action.o
+ .text.debug_action
+                0x00000000        0x0 obj_polarbear_tester/common/action.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/action_tapping.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/action_tapping.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/action_tapping.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/action_macro.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/action_macro.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/action_macro.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/action_layer.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/action_layer.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/action_layer.o
+ .text.default_layer_set
+                0x00000000        0x0 obj_polarbear_tester/common/action_layer.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .text.set_mods
+                0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .text.get_weak_mods
+                0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .text.set_weak_mods
+                0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .text.get_first_key
+                0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .text.has_anymod
+                0x00000000        0x0 obj_polarbear_tester/common/action_util.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/keymap.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/keymap.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/keymap.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/print.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/print.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/print.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/debug.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/debug.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/debug.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.bitpop   0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.bitpop16
+                0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.bitpop32
+                0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.biton    0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.biton16  0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.biton32  0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.bitrev   0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.bitrev16
+                0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text.bitrev32
+                0x00000000        0x0 obj_polarbear_tester/common/util.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/avr/suspend.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/avr/suspend.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/avr/suspend.o
+ .text.suspend_idle
+                0x00000000        0x0 obj_polarbear_tester/common/avr/suspend.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/avr/xprintf.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/avr/xprintf.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/avr/xprintf.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .text.timer_clear
+                0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .text.timer_read32
+                0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .text.timer_elapsed
+                0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .text.timer_elapsed32
+                0x00000000        0x0 obj_polarbear_tester/common/avr/timer.o
+ .text          0x00000000        0x0 obj_polarbear_tester/common/avr/bootloader.o
+ .data          0x00000000        0x0 obj_polarbear_tester/common/avr/bootloader.o
+ .bss           0x00000000        0x0 obj_polarbear_tester/common/avr/bootloader.o
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .text.avr-libc
+                0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+ .text          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .data          0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .bss           0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+ .text.avr-libc
+                0x00000000        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+LOAD obj_polarbear_tester/keymap_polarbear_tester.o
+LOAD obj_polarbear_tester/keymap_common.o
+LOAD obj_polarbear_tester/matrix.o
+LOAD obj_polarbear_tester/led.o
+LOAD obj_polarbear_tester/protocol/lufa/lufa.o
+LOAD obj_polarbear_tester/protocol/lufa/descriptor.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+LOAD obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+LOAD obj_polarbear_tester/common/host.o
+LOAD obj_polarbear_tester/common/keyboard.o
+LOAD obj_polarbear_tester/common/action.o
+LOAD obj_polarbear_tester/common/action_tapping.o
+LOAD obj_polarbear_tester/common/action_macro.o
+LOAD obj_polarbear_tester/common/action_layer.o
+LOAD obj_polarbear_tester/common/action_util.o
+LOAD obj_polarbear_tester/common/keymap.o
+LOAD obj_polarbear_tester/common/print.o
+LOAD obj_polarbear_tester/common/debug.o
+LOAD obj_polarbear_tester/common/util.o
+LOAD obj_polarbear_tester/common/avr/suspend.o
+LOAD obj_polarbear_tester/common/avr/xprintf.o
+LOAD obj_polarbear_tester/common/avr/timer.o
+LOAD obj_polarbear_tester/common/avr/bootloader.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libm.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2ac2
+ *(.vectors)
+ .vectors       0x00000000       0xac c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x000000ac       0xc4 obj_polarbear_tester/keymap_polarbear_tester.o
+                0x000000ac                keymaps
+                0x00000154                fn_actions
+ .progmem.data  0x00000170       0xa5 obj_polarbear_tester/protocol/lufa/descriptor.o
+                0x00000170                KeyboardReport
+                0x000001e7                ManufacturerString
+                0x000001e3                LanguageString
+                0x000001af                DeviceDescriptor
+                0x000001ff                ProductString
+                0x000001c1                ConfigurationDescriptor
+                0x00000216                . = ALIGN (0x2)
+ *fill*         0x00000215        0x1 00
+                0x00000216                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000216        0x0 linker stubs
+ *(.trampolines*)
+                0x00000216                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000216                __ctors_start = .
+ *(.ctors)
+                0x00000216                __ctors_end = .
+                0x00000216                __dtors_start = .
+ *(.dtors)
+                0x00000216                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000216        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+                0x00000216                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000216        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ *(.init2)
+ *(.init3)
+ .init3         0x00000222       0x4e obj_polarbear_tester/common/avr/bootloader.o
+                0x00000222                bootloader_jump_after_watchdog_reset
+ *(.init3)
+ *(.init4)
+ .init4         0x00000270       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000270                __do_copy_data
+ .init4         0x00000286       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000286                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000296        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+ *(.init9)
+ *(.text)
+ .text          0x0000029e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+                0x0000029e                __vector_38
+                0x0000029e                __vector_22
+                0x0000029e                __vector_28
+                0x0000029e                __vector_1
+                0x0000029e                __vector_32
+                0x0000029e                __vector_34
+                0x0000029e                __vector_24
+                0x0000029e                __bad_interrupt
+                0x0000029e                __vector_6
+                0x0000029e                __vector_31
+                0x0000029e                __vector_35
+                0x0000029e                __vector_39
+                0x0000029e                __vector_3
+                0x0000029e                __vector_23
+                0x0000029e                __vector_30
+                0x0000029e                __vector_25
+                0x0000029e                __vector_13
+                0x0000029e                __vector_17
+                0x0000029e                __vector_19
+                0x0000029e                __vector_7
+                0x0000029e                __vector_41
+                0x0000029e                __vector_27
+                0x0000029e                __vector_5
+                0x0000029e                __vector_33
+                0x0000029e                __vector_37
+                0x0000029e                __vector_4
+                0x0000029e                __vector_9
+                0x0000029e                __vector_2
+                0x0000029e                __vector_15
+                0x0000029e                __vector_36
+                0x0000029e                __vector_29
+                0x0000029e                __vector_40
+                0x0000029e                __vector_8
+                0x0000029e                __vector_26
+                0x0000029e                __vector_14
+                0x0000029e                __vector_16
+                0x0000029e                __vector_18
+                0x0000029e                __vector_20
+                0x0000029e                __vector_42
+                0x000002a2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.keymap_key_to_keycode
+                0x000002a2       0x22 obj_polarbear_tester/keymap_common.o
+                0x000002a2                keymap_key_to_keycode
+ .text.keymap_fn_to_action
+                0x000002c4       0x24 obj_polarbear_tester/keymap_common.o
+                0x000002c4                keymap_fn_to_action
+ .text.matrix_get_row
+                0x000002e8        0xc obj_polarbear_tester/matrix.o
+                0x000002e8                matrix_get_row
+ .text.matrix_print
+                0x000002f4        0x2 obj_polarbear_tester/matrix.o
+                0x000002f4                matrix_print
+ .text.unselect_rows
+                0x000002f6       0x12 obj_polarbear_tester/matrix.o
+ .text.matrix_init
+                0x00000308       0x32 obj_polarbear_tester/matrix.o
+                0x00000308                matrix_init
+ .text.matrix_scan
+                0x0000033a      0x128 obj_polarbear_tester/matrix.o
+                0x0000033a                matrix_scan
+ .text.led_set  0x00000462       0x2c obj_polarbear_tester/led.o
+                0x00000462                led_set
+ .text.led_toggle
+                0x0000048e        0xe obj_polarbear_tester/led.o
+                0x0000048e                led_toggle
+ .text.EVENT_USB_Device_Disconnect
+                0x0000049c        0x6 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x0000049c                EVENT_USB_Device_Disconnect
+ .text.EVENT_USB_Device_Reset
+                0x000004a2        0x2 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x000004a2                EVENT_USB_Device_Reset
+ .text.EVENT_USB_Device_Suspend
+                0x000004a4        0x2 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x000004a4                EVENT_USB_Device_Suspend
+ .text.keyboard_leds
+                0x000004a6        0x6 obj_polarbear_tester/protocol/lufa/lufa.o
+ .text.send_mouse
+                0x000004ac        0x2 obj_polarbear_tester/protocol/lufa/lufa.o
+ .text.send_consumer
+                0x000004ae       0x6c obj_polarbear_tester/protocol/lufa/lufa.o
+ .text.send_system
+                0x0000051a       0x6c obj_polarbear_tester/protocol/lufa/lufa.o
+ .text.send_keyboard
+                0x00000586       0x6e obj_polarbear_tester/protocol/lufa/lufa.o
+ .text.main     0x000005f4       0x7e obj_polarbear_tester/protocol/lufa/lufa.o
+                0x000005f4                main
+ .text.EVENT_USB_Device_Connect
+                0x00000672       0x1c obj_polarbear_tester/protocol/lufa/lufa.o
+                0x00000672                EVENT_USB_Device_Connect
+ .text.EVENT_USB_Device_ControlRequest
+                0x0000068e      0x178 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x0000068e                EVENT_USB_Device_ControlRequest
+ .text.EVENT_USB_Device_ConfigurationChanged
+                0x00000806        0xc obj_polarbear_tester/protocol/lufa/lufa.o
+                0x00000806                EVENT_USB_Device_ConfigurationChanged
+ .text.EVENT_USB_Device_WakeUp
+                0x00000812        0x6 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x00000812                EVENT_USB_Device_WakeUp
+ .text.CALLBACK_USB_GetDescriptor
+                0x00000818       0x88 obj_polarbear_tester/protocol/lufa/descriptor.o
+                0x00000818                CALLBACK_USB_GetDescriptor
+ .text.USB_Device_SendRemoteWakeup
+                0x000008a0       0x2c obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                0x000008a0                USB_Device_SendRemoteWakeup
+ .text.Endpoint_Write_Control_Stream_LE
+                0x000008cc       0xd4 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x000008cc                Endpoint_Write_Control_Stream_LE
+ .text.Endpoint_Write_Control_PStream_LE
+                0x000009a0       0xd6 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x000009a0                Endpoint_Write_Control_PStream_LE
+ .text.Endpoint_Write_Stream_LE
+                0x00000a76       0xa6 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00000a76                Endpoint_Write_Stream_LE
+ .text.Endpoint_ConfigureEndpoint_Prv
+                0x00000b1c       0x70 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000b1c                Endpoint_ConfigureEndpoint_Prv
+ .text.Endpoint_ClearStatusStage
+                0x00000b8c       0x42 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000b8c                Endpoint_ClearStatusStage
+ .text.Endpoint_WaitUntilReady
+                0x00000bce       0x64 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000bce                Endpoint_WaitUntilReady
+ .text.USB_Disable
+                0x00000c32       0x34 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00000c32                USB_Disable
+ .text.USB_ResetInterface
+                0x00000c66       0x8e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00000c66                USB_ResetInterface
+ .text.USB_Init
+                0x00000cf4       0x24 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00000cf4                USB_Init
+ .text.USB_INT_DisableAllInterrupts
+                0x00000d18       0x10 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000d18                USB_INT_DisableAllInterrupts
+ .text.USB_INT_ClearAllInterrupts
+                0x00000d28        0xa obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000d28                USB_INT_ClearAllInterrupts
+ .text.__vector_11
+                0x00000d32       0x78 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000d32                __vector_11
+ .text.__vector_10
+                0x00000daa      0x1a4 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000daa                __vector_10
+ .text.USB_Device_ProcessControlRequest
+                0x00000f4e      0x2e0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00000f4e                USB_Device_ProcessControlRequest
+ .text.USB_Event_Stub
+                0x0000122e        0x2 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+                0x0000122e                USB_Event_Stub
+                0x0000122e                EVENT_USB_Device_StartOfFrame
+ .text.host_set_driver
+                0x00001230        0xa obj_polarbear_tester/common/host.o
+                0x00001230                host_set_driver
+ .text.host_keyboard_leds
+                0x0000123a       0x1a obj_polarbear_tester/common/host.o
+                0x0000123a                host_keyboard_leds
+ .text.host_keyboard_send
+                0x00001254       0x16 obj_polarbear_tester/common/host.o
+                0x00001254                host_keyboard_send
+ .text.host_system_send
+                0x0000126a       0x30 obj_polarbear_tester/common/host.o
+                0x0000126a                host_system_send
+ .text.host_consumer_send
+                0x0000129a       0x30 obj_polarbear_tester/common/host.o
+                0x0000129a                host_consumer_send
+ .text.matrix_setup
+                0x000012ca        0x2 obj_polarbear_tester/common/keyboard.o
+                0x000012ca                matrix_setup
+ .text.keyboard_setup
+                0x000012cc        0x6 obj_polarbear_tester/common/keyboard.o
+                0x000012cc                keyboard_setup
+ .text.keyboard_set_leds
+                0x000012d2        0x6 obj_polarbear_tester/common/keyboard.o
+                0x000012d2                keyboard_set_leds
+ .text.keyboard_task
+                0x000012d8      0x128 obj_polarbear_tester/common/keyboard.o
+                0x000012d8                keyboard_task
+ .text.keyboard_init
+                0x00001400        0xa obj_polarbear_tester/common/keyboard.o
+                0x00001400                keyboard_init
+ .text.debug_event
+                0x0000140a       0x1e obj_polarbear_tester/common/action.o
+                0x0000140a                debug_event
+ .text.debug_record
+                0x00001428       0x20 obj_polarbear_tester/common/action.o
+                0x00001428                debug_record
+ .text.is_tap_key
+                0x00001448       0x5a obj_polarbear_tester/common/action.o
+                0x00001448                is_tap_key
+ .text.clear_keyboard_but_mods
+                0x000014a2        0xe obj_polarbear_tester/common/action.o
+                0x000014a2                clear_keyboard_but_mods
+ .text.clear_keyboard
+                0x000014b0        0xa obj_polarbear_tester/common/action.o
+                0x000014b0                clear_keyboard
+ .text.unregister_mods
+                0x000014ba        0xe obj_polarbear_tester/common/action.o
+                0x000014ba                unregister_mods
+ .text.register_mods
+                0x000014c8        0xe obj_polarbear_tester/common/action.o
+                0x000014c8                register_mods
+ .text.unregister_code
+                0x000014d6       0xa6 obj_polarbear_tester/common/action.o
+                0x000014d6                unregister_code
+ .text.register_code
+                0x0000157c      0x19e obj_polarbear_tester/common/action.o
+                0x0000157c                register_code
+ .text.process_action
+                0x0000171a      0x40a obj_polarbear_tester/common/action.o
+                0x0000171a                process_action
+ .text.action_exec
+                0x00001b24       0x5c obj_polarbear_tester/common/action.o
+                0x00001b24                action_exec
+ .text.debug_waiting_buffer
+                0x00001b80       0x42 obj_polarbear_tester/common/action_tapping.o
+ .text.debug_tapping_key
+                0x00001bc2       0x1e obj_polarbear_tester/common/action_tapping.o
+ .text.waiting_buffer_scan_tap
+                0x00001be0       0xf8 obj_polarbear_tester/common/action_tapping.o
+ .text.process_tapping
+                0x00001cd8      0x4c6 obj_polarbear_tester/common/action_tapping.o
+ .text.action_tapping_process
+                0x0000219e      0x17e obj_polarbear_tester/common/action_tapping.o
+                0x0000219e                action_tapping_process
+ .text.action_macro_play
+                0x0000231c       0xf2 obj_polarbear_tester/common/action_macro.o
+                0x0000231c                action_macro_play
+ .text.default_layer_debug
+                0x0000240e        0x2 obj_polarbear_tester/common/action_layer.o
+                0x0000240e                default_layer_debug
+ .text.layer_debug
+                0x00002410        0x2 obj_polarbear_tester/common/action_layer.o
+                0x00002410                layer_debug
+ .text.layer_switch_get_action
+                0x00002412       0x92 obj_polarbear_tester/common/action_layer.o
+                0x00002412                layer_switch_get_action
+ .text.layer_state_set
+                0x000024a4       0x16 obj_polarbear_tester/common/action_layer.o
+ .text.layer_xor
+                0x000024ba       0x22 obj_polarbear_tester/common/action_layer.o
+                0x000024ba                layer_xor
+ .text.layer_and
+                0x000024dc       0x22 obj_polarbear_tester/common/action_layer.o
+                0x000024dc                layer_and
+ .text.layer_or
+                0x000024fe       0x22 obj_polarbear_tester/common/action_layer.o
+                0x000024fe                layer_or
+ .text.layer_invert
+                0x00002520       0x38 obj_polarbear_tester/common/action_layer.o
+                0x00002520                layer_invert
+ .text.layer_off
+                0x00002558       0x40 obj_polarbear_tester/common/action_layer.o
+                0x00002558                layer_off
+ .text.layer_on
+                0x00002598       0x38 obj_polarbear_tester/common/action_layer.o
+                0x00002598                layer_on
+ .text.layer_move
+                0x000025d0       0x20 obj_polarbear_tester/common/action_layer.o
+                0x000025d0                layer_move
+ .text.layer_clear
+                0x000025f0        0xe obj_polarbear_tester/common/action_layer.o
+                0x000025f0                layer_clear
+ .text.default_layer_state_set
+                0x000025fe       0x16 obj_polarbear_tester/common/action_layer.o
+ .text.default_layer_xor
+                0x00002614       0x22 obj_polarbear_tester/common/action_layer.o
+                0x00002614                default_layer_xor
+ .text.default_layer_and
+                0x00002636       0x22 obj_polarbear_tester/common/action_layer.o
+                0x00002636                default_layer_and
+ .text.default_layer_or
+                0x00002658       0x22 obj_polarbear_tester/common/action_layer.o
+                0x00002658                default_layer_or
+ .text.add_key  0x0000267a       0x3c obj_polarbear_tester/common/action_util.o
+                0x0000267a                add_key
+ .text.del_key  0x000026b6       0x26 obj_polarbear_tester/common/action_util.o
+                0x000026b6                del_key
+ .text.clear_keys
+                0x000026dc       0x1c obj_polarbear_tester/common/action_util.o
+                0x000026dc                clear_keys
+ .text.get_mods
+                0x000026f8        0x6 obj_polarbear_tester/common/action_util.o
+                0x000026f8                get_mods
+ .text.add_mods
+                0x000026fe        0xc obj_polarbear_tester/common/action_util.o
+                0x000026fe                add_mods
+ .text.del_mods
+                0x0000270a        0xe obj_polarbear_tester/common/action_util.o
+                0x0000270a                del_mods
+ .text.clear_mods
+                0x00002718        0x6 obj_polarbear_tester/common/action_util.o
+                0x00002718                clear_mods
+ .text.add_weak_mods
+                0x0000271e        0xc obj_polarbear_tester/common/action_util.o
+                0x0000271e                add_weak_mods
+ .text.del_weak_mods
+                0x0000272a        0xe obj_polarbear_tester/common/action_util.o
+                0x0000272a                del_weak_mods
+ .text.clear_weak_mods
+                0x00002738        0x6 obj_polarbear_tester/common/action_util.o
+                0x00002738                clear_weak_mods
+ .text.set_oneshot_mods
+                0x0000273e        0x6 obj_polarbear_tester/common/action_util.o
+                0x0000273e                set_oneshot_mods
+ .text.clear_oneshot_mods
+                0x00002744        0x6 obj_polarbear_tester/common/action_util.o
+                0x00002744                clear_oneshot_mods
+ .text.has_anykey
+                0x0000274a       0x1e obj_polarbear_tester/common/action_util.o
+                0x0000274a                has_anykey
+ .text.send_keyboard_report
+                0x00002768       0x50 obj_polarbear_tester/common/action_util.o
+                0x00002768                send_keyboard_report
+ .text.action_get_macro
+                0x000027b8        0x6 obj_polarbear_tester/common/keymap.o
+                0x000027b8                action_get_macro
+ .text.action_function
+                0x000027be        0x2 obj_polarbear_tester/common/keymap.o
+                0x000027be                action_function
+ .text.action_for_key
+                0x000027c0      0x16e obj_polarbear_tester/common/keymap.o
+                0x000027c0                action_for_key
+ .text.suspend_power_down
+                0x0000292e       0x4c obj_polarbear_tester/common/avr/suspend.o
+                0x0000292e                suspend_power_down
+ .text.matrix_power_up
+                0x0000297a        0x2 obj_polarbear_tester/common/avr/suspend.o
+                0x0000297a                matrix_power_up
+ .text.matrix_power_down
+                0x0000297c        0x2 obj_polarbear_tester/common/avr/suspend.o
+                0x0000297c                matrix_power_down
+ .text.__vector_12
+                0x0000297e       0x52 obj_polarbear_tester/common/avr/suspend.o
+                0x0000297e                __vector_12
+ .text.suspend_wakeup_init
+                0x000029d0        0x6 obj_polarbear_tester/common/avr/suspend.o
+                0x000029d0                suspend_wakeup_init
+ .text.suspend_wakeup_condition
+                0x000029d6       0x2a obj_polarbear_tester/common/avr/suspend.o
+                0x000029d6                suspend_wakeup_condition
+ .text.timer_init
+                0x00002a00       0x12 obj_polarbear_tester/common/avr/timer.o
+                0x00002a00                timer_init
+ .text.timer_read
+                0x00002a12       0x1a obj_polarbear_tester/common/avr/timer.o
+                0x00002a12                timer_read
+ .text.__vector_21
+                0x00002a2c       0x4a obj_polarbear_tester/common/avr/timer.o
+                0x00002a2c                __vector_21
+ .text.bootloader_jump
+                0x00002a76       0x48 obj_polarbear_tester/common/avr/bootloader.o
+                0x00002a76                bootloader_jump
+                0x00002abe                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002abe        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002abe                exit
+                0x00002abe                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002abe        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002ac2                _etext = .
+
+.data           0x00800100        0xe load address 0x00002ac2
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.debouncing
+                0x00800100        0x1 obj_polarbear_tester/matrix.o
+ .data.keyboard_protocol
+                0x00800101        0x1 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x00800101                keyboard_protocol
+ .data.lufa_driver
+                0x00800102        0xa obj_polarbear_tester/protocol/lufa/lufa.o
+                0x00800102                lufa_driver
+ .data.keyboard_report
+                0x0080010c        0x2 obj_polarbear_tester/common/action_util.o
+                0x0080010c                keyboard_report
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080010e                . = ALIGN (0x2)
+                0x0080010e                _edata = .
+                0x0080010e                PROVIDE (__data_end, .)
+
+.bss            0x0080010e       0x81
+                0x0080010e                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.matrix    0x0080010e        0x6 obj_polarbear_tester/matrix.o
+ .bss.matrix_debouncing
+                0x00800114        0x6 obj_polarbear_tester/matrix.o
+ .bss.keyboard_idle
+                0x0080011a        0x1 obj_polarbear_tester/protocol/lufa/lufa.o
+                0x0080011a                keyboard_idle
+ .bss.keyboard_led_stats
+                0x0080011b        0x1 obj_polarbear_tester/protocol/lufa/lufa.o
+ .bss.keyboard_report_sent
+                0x0080011c        0x8 obj_polarbear_tester/protocol/lufa/lufa.o
+ .bss.last_consumer_report
+                0x00800124        0x2 obj_polarbear_tester/common/host.o
+ .bss.last_system_report
+                0x00800126        0x2 obj_polarbear_tester/common/host.o
+ .bss.driver    0x00800128        0x2 obj_polarbear_tester/common/host.o
+ .bss.led_status.1975
+                0x0080012a        0x1 obj_polarbear_tester/common/keyboard.o
+ .bss.matrix_prev.1974
+                0x0080012b        0x6 obj_polarbear_tester/common/keyboard.o
+ .bss.tapping_key
+                0x00800131        0x6 obj_polarbear_tester/common/action_tapping.o
+ .bss.waiting_buffer_head
+                0x00800137        0x1 obj_polarbear_tester/common/action_tapping.o
+ .bss.waiting_buffer_tail
+                0x00800138        0x1 obj_polarbear_tester/common/action_tapping.o
+ .bss.waiting_buffer
+                0x00800139       0x30 obj_polarbear_tester/common/action_tapping.o
+ .bss.default_layer_state
+                0x00800169        0x4 obj_polarbear_tester/common/action_layer.o
+                0x00800169                default_layer_state
+ .bss.layer_state
+                0x0080016d        0x4 obj_polarbear_tester/common/action_layer.o
+                0x0080016d                layer_state
+ .bss.__compound_literal.0
+                0x00800171        0x8 obj_polarbear_tester/common/action_util.o
+ .bss.real_mods
+                0x00800179        0x1 obj_polarbear_tester/common/action_util.o
+ .bss.oneshot_mods
+                0x0080017a        0x1 obj_polarbear_tester/common/action_util.o
+ .bss.weak_mods
+                0x0080017b        0x1 obj_polarbear_tester/common/action_util.o
+ .bss.debug_config
+                0x0080017c        0x1 obj_polarbear_tester/common/debug.o
+                0x0080017c                debug_config
+ .bss.wdt_timeout
+                0x0080017d        0x1 obj_polarbear_tester/common/avr/suspend.o
+ .bss.timer_count
+                0x0080017e        0x4 obj_polarbear_tester/common/avr/timer.o
+                0x0080017e                timer_count
+ *(COMMON)
+ COMMON         0x00800182        0x3 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00800182                USB_Device_ConfigurationNumber
+                0x00800183                USB_Device_CurrentlySelfPowered
+                0x00800184                USB_Device_RemoteWakeupEnabled
+ COMMON         0x00800185        0xa obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                0x00800185                USB_IsInitialized
+                0x00800186                USB_DeviceState
+                0x00800187                USB_ControlRequest
+                0x0080018f                PROVIDE (__bss_end, .)
+                0x00002ac2                __data_load_start = LOADADDR (.data)
+                0x00002ad0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080018f        0x4
+                0x0080018f                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+ .noinit        0x0080018f        0x4 obj_polarbear_tester/common/avr/bootloader.o
+                0x0080018f                reset_key
+                0x00800193                PROVIDE (__noinit_end, .)
+                0x00800193                _end = .
+                0x00800193                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000       0x24
+ *(.stab)
+ .stab          0x00000000       0x24 obj_polarbear_tester/common/avr/xprintf.o
+                                0x8b8 (size before relaxing)
+
+.stabstr        0x00000000       0x8f
+ *(.stabstr)
+ .stabstr       0x00000000       0x8f obj_polarbear_tester/common/avr/xprintf.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x7e8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 obj_polarbear_tester/keymap_common.o
+ .debug_aranges
+                0x00000028       0x68 obj_polarbear_tester/matrix.o
+ .debug_aranges
+                0x00000090       0x30 obj_polarbear_tester/led.o
+ .debug_aranges
+                0x000000c0       0x88 obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_aranges
+                0x00000148       0x20 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_aranges
+                0x00000168       0x38 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_aranges
+                0x000001a0       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_aranges
+                0x000001c0       0xc8 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_aranges
+                0x00000288       0x40 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_aranges
+                0x000002c8       0x30 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_aranges
+                0x000002f8       0x38 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_aranges
+                0x00000330       0x38 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_aranges
+                0x00000368       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_aranges
+                0x00000388       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_aranges
+                0x000003a8       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_aranges
+                0x000003c8       0x60 obj_polarbear_tester/common/host.o
+ .debug_aranges
+                0x00000428       0x40 obj_polarbear_tester/common/keyboard.o
+ .debug_aranges
+                0x00000468       0x78 obj_polarbear_tester/common/action.o
+ .debug_aranges
+                0x000004e0       0x40 obj_polarbear_tester/common/action_tapping.o
+ .debug_aranges
+                0x00000520       0x20 obj_polarbear_tester/common/action_macro.o
+ .debug_aranges
+                0x00000540       0xa0 obj_polarbear_tester/common/action_layer.o
+ .debug_aranges
+                0x000005e0       0xb0 obj_polarbear_tester/common/action_util.o
+ .debug_aranges
+                0x00000690       0x30 obj_polarbear_tester/common/keymap.o
+ .debug_aranges
+                0x000006c0       0x60 obj_polarbear_tester/common/util.o
+ .debug_aranges
+                0x00000720       0x50 obj_polarbear_tester/common/avr/suspend.o
+ .debug_aranges
+                0x00000770       0x50 obj_polarbear_tester/common/avr/timer.o
+ .debug_aranges
+                0x000007c0       0x28 obj_polarbear_tester/common/avr/bootloader.o
+
+.debug_pubnames
+                0x00000000     0x11df
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x2d obj_polarbear_tester/keymap_polarbear_tester.o
+ .debug_pubnames
+                0x0000002d       0x44 obj_polarbear_tester/keymap_common.o
+ .debug_pubnames
+                0x00000071       0xb3 obj_polarbear_tester/matrix.o
+ .debug_pubnames
+                0x00000124       0x42 obj_polarbear_tester/led.o
+ .debug_pubnames
+                0x00000166      0x13f obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_pubnames
+                0x000002a5       0xb1 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_pubnames
+                0x00000356       0x7e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_pubnames
+                0x000003d4       0x32 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_pubnames
+                0x00000406      0x2df obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_pubnames
+                0x000006e5       0xaf obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_pubnames
+                0x00000794       0x46 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_pubnames
+                0x000007da       0x72 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_pubnames
+                0x0000084c       0x9b obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_pubnames
+                0x000008e7       0xa1 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_pubnames
+                0x00000988       0x25 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_pubnames
+                0x000009ad       0x63 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_pubnames
+                0x00000a10       0xe3 obj_polarbear_tester/common/host.o
+ .debug_pubnames
+                0x00000af3       0x70 obj_polarbear_tester/common/keyboard.o
+ .debug_pubnames
+                0x00000b63       0xf1 obj_polarbear_tester/common/action.o
+ .debug_pubnames
+                0x00000c54       0x2d obj_polarbear_tester/common/action_tapping.o
+ .debug_pubnames
+                0x00000c81       0x28 obj_polarbear_tester/common/action_macro.o
+ .debug_pubnames
+                0x00000ca9      0x149 obj_polarbear_tester/common/action_layer.o
+ .debug_pubnames
+                0x00000df2      0x161 obj_polarbear_tester/common/action_util.o
+ .debug_pubnames
+                0x00000f53       0x4e obj_polarbear_tester/common/keymap.o
+ .debug_pubnames
+                0x00000fa1       0x23 obj_polarbear_tester/common/debug.o
+ .debug_pubnames
+                0x00000fc4       0x7e obj_polarbear_tester/common/util.o
+ .debug_pubnames
+                0x00001042       0xa9 obj_polarbear_tester/common/avr/suspend.o
+ .debug_pubnames
+                0x000010eb       0x97 obj_polarbear_tester/common/avr/timer.o
+ .debug_pubnames
+                0x00001182       0x5d obj_polarbear_tester/common/avr/bootloader.o
+
+.debug_info     0x00000000     0xa79f
+ *(.debug_info)
+ .debug_info    0x00000000       0xdb obj_polarbear_tester/keymap_polarbear_tester.o
+ .debug_info    0x000000db      0x653 obj_polarbear_tester/keymap_common.o
+ .debug_info    0x0000072e      0x3f0 obj_polarbear_tester/matrix.o
+ .debug_info    0x00000b1e      0x126 obj_polarbear_tester/led.o
+ .debug_info    0x00000c44      0xb8d obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_info    0x000017d1      0x646 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_info    0x00001e17      0x6ee obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_info    0x00002505       0xc4 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_info    0x000025c9     0x15d4 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_info    0x00003b9d      0x5f2 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_info    0x0000418f       0x61 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_info    0x000041f0       0x61 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_info    0x00004251       0x61 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_info    0x000042b2      0x4aa obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_info    0x0000475c      0x6a7 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_info    0x00004e03      0x34e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_info    0x00005151      0x9b1 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_info    0x00005b02       0x79 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_info    0x00005b7b       0x61 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_info    0x00005bdc      0x269 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_info    0x00005e45      0x3ef obj_polarbear_tester/common/host.o
+ .debug_info    0x00006234      0x28c obj_polarbear_tester/common/keyboard.o
+ .debug_info    0x000064c0      0xeb4 obj_polarbear_tester/common/action.o
+ .debug_info    0x00007374      0xc55 obj_polarbear_tester/common/action_tapping.o
+ .debug_info    0x00007fc9      0x735 obj_polarbear_tester/common/action_macro.o
+ .debug_info    0x000086fe      0x61f obj_polarbear_tester/common/action_layer.o
+ .debug_info    0x00008d1d      0x460 obj_polarbear_tester/common/action_util.o
+ .debug_info    0x0000917d      0xd1c obj_polarbear_tester/common/keymap.o
+ .debug_info    0x00009e99       0x5e obj_polarbear_tester/common/print.o
+ .debug_info    0x00009ef7      0x104 obj_polarbear_tester/common/debug.o
+ .debug_info    0x00009ffb      0x253 obj_polarbear_tester/common/util.o
+ .debug_info    0x0000a24e      0x1e5 obj_polarbear_tester/common/avr/suspend.o
+ .debug_info    0x0000a433      0x1ea obj_polarbear_tester/common/avr/timer.o
+ .debug_info    0x0000a61d      0x182 obj_polarbear_tester/common/avr/bootloader.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x2abd
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x6a obj_polarbear_tester/keymap_polarbear_tester.o
+ .debug_abbrev  0x0000006a      0x170 obj_polarbear_tester/keymap_common.o
+ .debug_abbrev  0x000001da      0x212 obj_polarbear_tester/matrix.o
+ .debug_abbrev  0x000003ec       0xbc obj_polarbear_tester/led.o
+ .debug_abbrev  0x000004a8      0x30b obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_abbrev  0x000007b3      0x17d obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_abbrev  0x00000930      0x201 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_abbrev  0x00000b31       0x79 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_abbrev  0x00000baa      0x1bb obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_abbrev  0x00000d65      0x1fb obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_abbrev  0x00000f60       0x33 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_abbrev  0x00000f93       0x33 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_abbrev  0x00000fc6       0x33 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_abbrev  0x00000ff9      0x134 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_abbrev  0x0000112d      0x1e8 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_abbrev  0x00001315      0x15c obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_abbrev  0x00001471      0x256 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_abbrev  0x000016c7       0x4a obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_abbrev  0x00001711       0x33 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_abbrev  0x00001744      0x174 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_abbrev  0x000018b8      0x143 obj_polarbear_tester/common/host.o
+ .debug_abbrev  0x000019fb      0x14f obj_polarbear_tester/common/keyboard.o
+ .debug_abbrev  0x00001b4a      0x241 obj_polarbear_tester/common/action.o
+ .debug_abbrev  0x00001d8b      0x27a obj_polarbear_tester/common/action_tapping.o
+ .debug_abbrev  0x00002005      0x12e obj_polarbear_tester/common/action_macro.o
+ .debug_abbrev  0x00002133      0x16c obj_polarbear_tester/common/action_layer.o
+ .debug_abbrev  0x0000229f      0x1cb obj_polarbear_tester/common/action_util.o
+ .debug_abbrev  0x0000246a      0x216 obj_polarbear_tester/common/keymap.o
+ .debug_abbrev  0x00002680       0x2a obj_polarbear_tester/common/print.o
+ .debug_abbrev  0x000026aa       0x8b obj_polarbear_tester/common/debug.o
+ .debug_abbrev  0x00002735       0x96 obj_polarbear_tester/common/util.o
+ .debug_abbrev  0x000027cb      0x121 obj_polarbear_tester/common/avr/suspend.o
+ .debug_abbrev  0x000028ec       0xd2 obj_polarbear_tester/common/avr/timer.o
+ .debug_abbrev  0x000029be       0xff obj_polarbear_tester/common/avr/bootloader.o
+
+.debug_line     0x00000000     0x732e
+ *(.debug_line)
+ .debug_line    0x00000000       0x94 obj_polarbear_tester/keymap_polarbear_tester.o
+ .debug_line    0x00000094      0x133 obj_polarbear_tester/keymap_common.o
+ .debug_line    0x000001c7      0x373 obj_polarbear_tester/matrix.o
+ .debug_line    0x0000053a      0x170 obj_polarbear_tester/led.o
+ .debug_line    0x000006aa      0x8e5 obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_line    0x00000f8f      0x28d obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_line    0x0000121c      0x5ba obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_line    0x000017d6      0x167 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_line    0x0000193d     0x188d obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_line    0x000031ca      0x5d9 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_line    0x000037a3       0x3e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+ .debug_line    0x000037e1       0x3e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+ .debug_line    0x0000381f       0x3e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+ .debug_line    0x0000385d      0x46a obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_line    0x00003cc7      0x6c0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_line    0x00004387      0x280 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_line    0x00004607      0x5ec obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_line    0x00004bf3       0xa0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_line    0x00004c93       0x3e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+ .debug_line    0x00004cd1      0x207 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_line    0x00004ed8      0x201 obj_polarbear_tester/common/host.o
+ .debug_line    0x000050d9      0x1e4 obj_polarbear_tester/common/keyboard.o
+ .debug_line    0x000052bd      0x683 obj_polarbear_tester/common/action.o
+ .debug_line    0x00005940      0x550 obj_polarbear_tester/common/action_tapping.o
+ .debug_line    0x00005e90      0x1ea obj_polarbear_tester/common/action_macro.o
+ .debug_line    0x0000607a      0x330 obj_polarbear_tester/common/action_layer.o
+ .debug_line    0x000063aa      0x36b obj_polarbear_tester/common/action_util.o
+ .debug_line    0x00006715      0x213 obj_polarbear_tester/common/keymap.o
+ .debug_line    0x00006928       0x3e obj_polarbear_tester/common/print.o
+ .debug_line    0x00006966       0xa3 obj_polarbear_tester/common/debug.o
+ .debug_line    0x00006a09      0x251 obj_polarbear_tester/common/util.o
+ .debug_line    0x00006c5a      0x2cc obj_polarbear_tester/common/avr/suspend.o
+ .debug_line    0x00006f26      0x22a obj_polarbear_tester/common/avr/timer.o
+ .debug_line    0x00007150      0x1de obj_polarbear_tester/common/avr/bootloader.o
+
+.debug_frame    0x00000000      0xc70
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 obj_polarbear_tester/keymap_common.o
+ .debug_frame   0x00000030       0xb0 obj_polarbear_tester/matrix.o
+ .debug_frame   0x000000e0       0x40 obj_polarbear_tester/led.o
+ .debug_frame   0x00000120       0xf0 obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_frame   0x00000210       0x20 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_frame   0x00000230       0x50 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_frame   0x00000280       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_frame   0x000002a0      0x170 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_frame   0x00000410       0x60 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_frame   0x00000470       0x40 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_frame   0x000004b0       0x50 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_frame   0x00000500       0x50 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_frame   0x00000550       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_frame   0x00000570       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_frame   0x00000590       0x20 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_frame   0x000005b0       0xa0 obj_polarbear_tester/common/host.o
+ .debug_frame   0x00000650       0x60 obj_polarbear_tester/common/keyboard.o
+ .debug_frame   0x000006b0       0xd0 obj_polarbear_tester/common/action.o
+ .debug_frame   0x00000780       0x60 obj_polarbear_tester/common/action_tapping.o
+ .debug_frame   0x000007e0       0x20 obj_polarbear_tester/common/action_macro.o
+ .debug_frame   0x00000800      0x120 obj_polarbear_tester/common/action_layer.o
+ .debug_frame   0x00000920      0x140 obj_polarbear_tester/common/action_util.o
+ .debug_frame   0x00000a60       0x40 obj_polarbear_tester/common/keymap.o
+ .debug_frame   0x00000aa0       0xa0 obj_polarbear_tester/common/util.o
+ .debug_frame   0x00000b40       0x80 obj_polarbear_tester/common/avr/suspend.o
+ .debug_frame   0x00000bc0       0x80 obj_polarbear_tester/common/avr/timer.o
+ .debug_frame   0x00000c40       0x30 obj_polarbear_tester/common/avr/bootloader.o
+
+.debug_str      0x00000000     0x3a35
+ *(.debug_str)
+ .debug_str     0x00000000       0xb4 obj_polarbear_tester/keymap_polarbear_tester.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x000000b4      0x453 obj_polarbear_tester/keymap_common.o
+                                0x566 (size before relaxing)
+ .debug_str     0x00000507      0x130 obj_polarbear_tester/matrix.o
+                                0x201 (size before relaxing)
+ .debug_str     0x00000637       0x2f obj_polarbear_tester/led.o
+                                 0xdb (size before relaxing)
+ .debug_str     0x00000666      0x5c0 obj_polarbear_tester/protocol/lufa/lufa.o
+                                0x73a (size before relaxing)
+ .debug_str     0x00000c26      0x4ee obj_polarbear_tester/protocol/lufa/descriptor.o
+                                0x625 (size before relaxing)
+ .debug_str     0x00001114      0x4a4 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+                                0x5e6 (size before relaxing)
+ .debug_str     0x000015b8       0x97 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                0x141 (size before relaxing)
+ .debug_str     0x0000164f      0x4fb obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                0x76f (size before relaxing)
+ .debug_str     0x00001b4a      0x2c2 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                0x56b (size before relaxing)
+ .debug_str     0x00001e0c       0x4d obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.o
+                                 0xf1 (size before relaxing)
+ .debug_str     0x00001e59       0x53 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.o
+                                 0xf7 (size before relaxing)
+ .debug_str     0x00001eac       0x4d obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.o
+                                 0xf1 (size before relaxing)
+ .debug_str     0x00001ef9      0x1ba obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                0x453 (size before relaxing)
+ .debug_str     0x000020b3      0x15c obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                0x44e (size before relaxing)
+ .debug_str     0x0000220f      0x23d obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+                                0x30f (size before relaxing)
+ .debug_str     0x0000244c      0x41c obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                0x83f (size before relaxing)
+ .debug_str     0x00002868       0x54 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+                                 0xf8 (size before relaxing)
+ .debug_str     0x000028bc       0x4e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/HostStandardReq.o
+                                 0xf2 (size before relaxing)
+ .debug_str     0x0000290a       0x6e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                0x2af (size before relaxing)
+ .debug_str     0x00002978      0x100 obj_polarbear_tester/common/host.o
+                                0x286 (size before relaxing)
+ .debug_str     0x00002a78       0xb8 obj_polarbear_tester/common/keyboard.o
+                                0x1d0 (size before relaxing)
+ .debug_str     0x00002b30      0x885 obj_polarbear_tester/common/action.o
+                                0xdca (size before relaxing)
+ .debug_str     0x000033b5      0x103 obj_polarbear_tester/common/action_tapping.o
+                                0x9c1 (size before relaxing)
+ .debug_str     0x000034b8       0x7f obj_polarbear_tester/common/action_macro.o
+                                0x748 (size before relaxing)
+ .debug_str     0x00003537      0x102 obj_polarbear_tester/common/action_layer.o
+                                0x311 (size before relaxing)
+ .debug_str     0x00003639      0x13d obj_polarbear_tester/common/action_util.o
+                                0x247 (size before relaxing)
+ .debug_str     0x00003776       0x77 obj_polarbear_tester/common/keymap.o
+                                0xcb1 (size before relaxing)
+ .debug_str     0x000037ed       0x1e obj_polarbear_tester/common/print.o
+                                 0xc2 (size before relaxing)
+ .debug_str     0x0000380b       0x1e obj_polarbear_tester/common/debug.o
+                                0x112 (size before relaxing)
+ .debug_str     0x00003829       0x65 obj_polarbear_tester/common/util.o
+                                0x128 (size before relaxing)
+ .debug_str     0x0000388e       0xbc obj_polarbear_tester/common/avr/suspend.o
+                                0x238 (size before relaxing)
+ .debug_str     0x0000394a       0x85 obj_polarbear_tester/common/avr/timer.o
+                                0x14f (size before relaxing)
+ .debug_str     0x000039cf       0x66 obj_polarbear_tester/common/avr/bootloader.o
+                                0x179 (size before relaxing)
+
+.debug_loc      0x00000000     0x3c4e
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x49 obj_polarbear_tester/keymap_common.o
+ .debug_loc     0x00000049       0x9a obj_polarbear_tester/matrix.o
+ .debug_loc     0x000000e3       0x31 obj_polarbear_tester/led.o
+ .debug_loc     0x00000114      0x18b obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_loc     0x0000029f      0x1a0 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_loc     0x0000043f      0x584 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_loc     0x000009c3     0x1886 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_loc     0x00002249      0x11c obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_loc     0x00002365      0x2c7 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_loc     0x0000262c      0x21e obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_loc     0x0000284a       0xc0 obj_polarbear_tester/common/host.o
+ .debug_loc     0x0000290a       0xec obj_polarbear_tester/common/keyboard.o
+ .debug_loc     0x000029f6      0x43c obj_polarbear_tester/common/action.o
+ .debug_loc     0x00002e32      0x1f5 obj_polarbear_tester/common/action_tapping.o
+ .debug_loc     0x00003027      0x2f0 obj_polarbear_tester/common/action_macro.o
+ .debug_loc     0x00003317      0x24c obj_polarbear_tester/common/action_layer.o
+ .debug_loc     0x00003563       0xa1 obj_polarbear_tester/common/action_util.o
+ .debug_loc     0x00003604      0x218 obj_polarbear_tester/common/keymap.o
+ .debug_loc     0x0000381c      0x245 obj_polarbear_tester/common/util.o
+ .debug_loc     0x00003a61       0x26 obj_polarbear_tester/common/avr/suspend.o
+ .debug_loc     0x00003a87      0x1af obj_polarbear_tester/common/avr/timer.o
+ .debug_loc     0x00003c36       0x18 obj_polarbear_tester/common/avr/bootloader.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(polarbear_tester.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x8e8
+ .debug_ranges  0x00000000       0x20 obj_polarbear_tester/keymap_common.o
+ .debug_ranges  0x00000020       0xa8 obj_polarbear_tester/matrix.o
+ .debug_ranges  0x000000c8       0x28 obj_polarbear_tester/led.o
+ .debug_ranges  0x000000f0       0x80 obj_polarbear_tester/protocol/lufa/lufa.o
+ .debug_ranges  0x00000170       0x18 obj_polarbear_tester/protocol/lufa/descriptor.o
+ .debug_ranges  0x00000188       0xa0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+ .debug_ranges  0x00000228       0x18 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_ranges  0x00000240       0xc0 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_ranges  0x00000300       0x50 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_ranges  0x00000350       0x28 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_ranges  0x00000378       0x30 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_ranges  0x000003a8       0x30 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+ .debug_ranges  0x000003d8       0x78 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_ranges  0x00000450       0x18 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+ .debug_ranges  0x00000468       0x18 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_ranges  0x00000480       0x58 obj_polarbear_tester/common/host.o
+ .debug_ranges  0x000004d8       0x38 obj_polarbear_tester/common/keyboard.o
+ .debug_ranges  0x00000510       0x70 obj_polarbear_tester/common/action.o
+ .debug_ranges  0x00000580       0x68 obj_polarbear_tester/common/action_tapping.o
+ .debug_ranges  0x000005e8       0x90 obj_polarbear_tester/common/action_macro.o
+ .debug_ranges  0x00000678       0x98 obj_polarbear_tester/common/action_layer.o
+ .debug_ranges  0x00000710       0xa8 obj_polarbear_tester/common/action_util.o
+ .debug_ranges  0x000007b8       0x28 obj_polarbear_tester/common/keymap.o
+ .debug_ranges  0x000007e0       0x58 obj_polarbear_tester/common/util.o
+ .debug_ranges  0x00000838       0x48 obj_polarbear_tester/common/avr/suspend.o
+ .debug_ranges  0x00000880       0x48 obj_polarbear_tester/common/avr/timer.o
+ .debug_ranges  0x000008c8       0x20 obj_polarbear_tester/common/avr/bootloader.o
+
+Cross Reference Table
+
+Symbol                                            File
+CALLBACK_HIDParser_FilterHIDReportItem            obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+CALLBACK_USB_GetDescriptor                        obj_polarbear_tester/protocol/lufa/descriptor.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ConfigurationDescriptor                           obj_polarbear_tester/protocol/lufa/descriptor.o
+DeviceDescriptor                                  obj_polarbear_tester/protocol/lufa/descriptor.o
+EVENT_USB_Device_ConfigurationChanged             obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+EVENT_USB_Device_Connect                          obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_ControlRequest                   obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+EVENT_USB_Device_Disconnect                       obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_Reset                            obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_StartOfFrame                     obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_Suspend                          obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+EVENT_USB_Device_WakeUp                           obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+Endpoint_ClearEndpoints                           obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+Endpoint_ClearStatusStage                         obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+Endpoint_ConfigureEndpointTable                   obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+Endpoint_ConfigureEndpoint_Prv                    obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+Endpoint_Discard_Stream                           obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Null_Stream                              obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_BE                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_EStream_LE                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_BE                   obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Control_Stream_LE                   obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_EStream_BE                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_EStream_LE                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Stream_BE                           obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Read_Stream_LE                           obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_WaitUntilReady                           obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_BE                 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_EStream_LE                 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_BE                 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_PStream_LE                 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+Endpoint_Write_Control_Stream_BE                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Control_Stream_LE                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+Endpoint_Write_EStream_BE                         obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_EStream_LE                         obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_PStream_BE                         obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_PStream_LE                         obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Stream_BE                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+Endpoint_Write_Stream_LE                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+KeyboardReport                                    obj_polarbear_tester/protocol/lufa/descriptor.o
+LanguageString                                    obj_polarbear_tester/protocol/lufa/descriptor.o
+ManufacturerString                                obj_polarbear_tester/protocol/lufa/descriptor.o
+ProductString                                     obj_polarbear_tester/protocol/lufa/descriptor.o
+USB_ControlRequest                                obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_DeviceState                                   obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_Device_ConfigurationNumber                    obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_CurrentlySelfPowered                   obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Device_ProcessControlRequest                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+USB_Device_RemoteWakeupEnabled                    obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_Device_SendRemoteWakeup                       obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_Disable                                       obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_polarbear_tester/common/avr/bootloader.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_Event_Stub                                    obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/Events.o
+USB_GetHIDReportItemInfo                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_GetHIDReportSize                              obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_GetNextDescriptorComp                         obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfType                       obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeAfter                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_GetNextDescriptorOfTypeBefore                 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/ConfigDescriptors.o
+USB_INT_ClearAllInterrupts                        obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_INT_DisableAllInterrupts                      obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_Init                                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_IsInitialized                                 obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+USB_ProcessHIDReport                              obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_ResetInterface                                obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+USB_SetHIDReportItemInfo                          obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Class/Common/HIDParser.o
+USB_USBTask                                       obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+__bad_interrupt                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__bss_end                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+__data_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                                                  obj_polarbear_tester/common/avr/timer.o
+                                                  obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/common/debug.o
+                                                  obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+                                                  obj_polarbear_tester/common/keyboard.o
+                                                  obj_polarbear_tester/common/host.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/USBTask.o
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/led.o
+                                                  obj_polarbear_tester/matrix.o
+__do_copy_data                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                                                  obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  obj_polarbear_tester/matrix.o
+__eerd_byte_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eerd_byte_atmega32u4.o)
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+__eeupd_byte_m32u4                                c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+                                                  obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+__eeupd_r18_m32u4                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(eeupd_byte_atmega32u4.o)
+__heap_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__init                                            c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__stack                                           c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_1                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_10                                       obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_11                                       obj_polarbear_tester/protocol/lufa/LUFA-git/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_12                                       obj_polarbear_tester/common/avr/suspend.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_13                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_14                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_15                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_16                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_17                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_18                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_19                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_2                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_20                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_21                                       obj_polarbear_tester/common/avr/timer.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_22                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_23                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_24                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_25                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_26                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_27                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_28                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_29                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_3                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_30                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_31                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_32                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_33                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_34                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_35                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_36                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_37                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_38                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_39                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_4                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_40                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_41                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_42                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_5                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_6                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_7                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_8                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_9                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+__xprintf                                         obj_polarbear_tester/common/avr/xprintf.o
+_exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+action_exec                                       obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/keyboard.o
+action_for_key                                    obj_polarbear_tester/common/keymap.o
+                                                  obj_polarbear_tester/common/action_layer.o
+action_function                                   obj_polarbear_tester/common/keymap.o
+                                                  obj_polarbear_tester/common/action.o
+action_get_macro                                  obj_polarbear_tester/common/keymap.o
+                                                  obj_polarbear_tester/common/action.o
+action_macro_play                                 obj_polarbear_tester/common/action_macro.o
+                                                  obj_polarbear_tester/common/action.o
+action_tapping_process                            obj_polarbear_tester/common/action_tapping.o
+                                                  obj_polarbear_tester/common/action.o
+add_key                                           obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+add_mods                                          obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+add_weak_mods                                     obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action_macro.o
+                                                  obj_polarbear_tester/common/action.o
+biton                                             obj_polarbear_tester/common/util.o
+biton16                                           obj_polarbear_tester/common/util.o
+biton32                                           obj_polarbear_tester/common/util.o
+bitpop                                            obj_polarbear_tester/common/util.o
+                                                  obj_polarbear_tester/common/action_util.o
+bitpop16                                          obj_polarbear_tester/common/util.o
+                                                  obj_polarbear_tester/matrix.o
+bitpop32                                          obj_polarbear_tester/common/util.o
+bitrev                                            obj_polarbear_tester/common/util.o
+bitrev16                                          obj_polarbear_tester/common/util.o
+bitrev32                                          obj_polarbear_tester/common/util.o
+bootloader_jump                                   obj_polarbear_tester/common/avr/bootloader.o
+                                                  obj_polarbear_tester/common/keymap.o
+bootloader_jump_after_watchdog_reset              obj_polarbear_tester/common/avr/bootloader.o
+clear_keyboard                                    obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/common/keymap.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+clear_keyboard_but_mods                           obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_layer.o
+clear_keys                                        obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+clear_mods                                        obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+clear_oneshot_mods                                obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+clear_weak_mods                                   obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+debug_action                                      obj_polarbear_tester/common/action.o
+debug_config                                      obj_polarbear_tester/common/debug.o
+                                                  obj_polarbear_tester/common/keyboard.o
+debug_event                                       obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+debug_record                                      obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+default_layer_and                                 obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+default_layer_debug                               obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+default_layer_or                                  obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+default_layer_set                                 obj_polarbear_tester/common/action_layer.o
+default_layer_state                               obj_polarbear_tester/common/action_layer.o
+default_layer_xor                                 obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+del_key                                           obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+del_mods                                          obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+del_weak_mods                                     obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action_macro.o
+                                                  obj_polarbear_tester/common/action.o
+exit                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+fn_actions                                        obj_polarbear_tester/keymap_polarbear_tester.o
+                                                  obj_polarbear_tester/keymap_common.o
+get_first_key                                     obj_polarbear_tester/common/action_util.o
+get_mods                                          obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+get_weak_mods                                     obj_polarbear_tester/common/action_util.o
+has_anykey                                        obj_polarbear_tester/common/action_util.o
+has_anymod                                        obj_polarbear_tester/common/action_util.o
+host_consumer_send                                obj_polarbear_tester/common/host.o
+                                                  obj_polarbear_tester/common/action.o
+host_get_driver                                   obj_polarbear_tester/common/host.o
+host_keyboard_leds                                obj_polarbear_tester/common/host.o
+                                                  obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/keyboard.o
+host_keyboard_send                                obj_polarbear_tester/common/host.o
+                                                  obj_polarbear_tester/common/action_util.o
+host_last_consumer_report                         obj_polarbear_tester/common/host.o
+host_last_sysytem_report                          obj_polarbear_tester/common/host.o
+host_mouse_send                                   obj_polarbear_tester/common/host.o
+host_set_driver                                   obj_polarbear_tester/common/host.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+host_system_send                                  obj_polarbear_tester/common/host.o
+                                                  obj_polarbear_tester/common/action.o
+is_tap_key                                        obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+keyboard_idle                                     obj_polarbear_tester/protocol/lufa/lufa.o
+keyboard_init                                     obj_polarbear_tester/common/keyboard.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+keyboard_protocol                                 obj_polarbear_tester/protocol/lufa/lufa.o
+keyboard_report                                   obj_polarbear_tester/common/action_util.o
+keyboard_set_leds                                 obj_polarbear_tester/common/keyboard.o
+keyboard_setup                                    obj_polarbear_tester/common/keyboard.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+keyboard_task                                     obj_polarbear_tester/common/keyboard.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+keymap_fn_to_action                               obj_polarbear_tester/keymap_common.o
+                                                  obj_polarbear_tester/common/keymap.o
+keymap_key_to_keycode                             obj_polarbear_tester/keymap_common.o
+                                                  obj_polarbear_tester/common/keymap.o
+keymaps                                           obj_polarbear_tester/keymap_polarbear_tester.o
+                                                  obj_polarbear_tester/keymap_common.o
+layer_and                                         obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_clear                                       obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_debug                                       obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_invert                                      obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_move                                        obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_off                                         obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_on                                          obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_or                                          obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+layer_state                                       obj_polarbear_tester/common/action_layer.o
+layer_switch_get_action                           obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+                                                  obj_polarbear_tester/common/action.o
+layer_xor                                         obj_polarbear_tester/common/action_layer.o
+                                                  obj_polarbear_tester/common/action.o
+led                                               obj_polarbear_tester/led.o
+led_init                                          obj_polarbear_tester/led.o
+led_set                                           obj_polarbear_tester/led.o
+                                                  obj_polarbear_tester/common/keyboard.o
+led_toggle                                        obj_polarbear_tester/led.o
+                                                  obj_polarbear_tester/keymap_common.o
+lufa_driver                                       obj_polarbear_tester/protocol/lufa/lufa.o
+main                                              obj_polarbear_tester/protocol/lufa/lufa.o
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32u4.o
+matrix_cols                                       obj_polarbear_tester/matrix.o
+matrix_get_row                                    obj_polarbear_tester/matrix.o
+                                                  obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/common/keyboard.o
+matrix_init                                       obj_polarbear_tester/matrix.o
+                                                  obj_polarbear_tester/common/keyboard.o
+matrix_is_modified                                obj_polarbear_tester/matrix.o
+matrix_is_on                                      obj_polarbear_tester/matrix.o
+matrix_key_count                                  obj_polarbear_tester/matrix.o
+matrix_power_down                                 obj_polarbear_tester/common/avr/suspend.o
+matrix_power_up                                   obj_polarbear_tester/common/avr/suspend.o
+matrix_print                                      obj_polarbear_tester/matrix.o
+                                                  obj_polarbear_tester/common/keyboard.o
+matrix_rows                                       obj_polarbear_tester/matrix.o
+matrix_scan                                       obj_polarbear_tester/matrix.o
+                                                  obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/common/keyboard.o
+matrix_setup                                      obj_polarbear_tester/common/keyboard.o
+process_action                                    obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_tapping.o
+register_code                                     obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_macro.o
+register_mods                                     obj_polarbear_tester/common/action.o
+reset_key                                         obj_polarbear_tester/common/avr/bootloader.o
+send_keyboard_report                              obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action_macro.o
+                                                  obj_polarbear_tester/common/action.o
+sendchar                                          obj_polarbear_tester/protocol/lufa/lufa.o
+set_mods                                          obj_polarbear_tester/common/action_util.o
+set_oneshot_mods                                  obj_polarbear_tester/common/action_util.o
+                                                  obj_polarbear_tester/common/action.o
+set_weak_mods                                     obj_polarbear_tester/common/action_util.o
+suspend_idle                                      obj_polarbear_tester/common/avr/suspend.o
+suspend_power_down                                obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+suspend_wakeup_condition                          obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+suspend_wakeup_init                               obj_polarbear_tester/common/avr/suspend.o
+                                                  obj_polarbear_tester/protocol/lufa/lufa.o
+timer_clear                                       obj_polarbear_tester/common/avr/timer.o
+timer_count                                       obj_polarbear_tester/common/avr/timer.o
+                                                  obj_polarbear_tester/common/avr/suspend.o
+timer_elapsed                                     obj_polarbear_tester/common/avr/timer.o
+timer_elapsed32                                   obj_polarbear_tester/common/avr/timer.o
+timer_init                                        obj_polarbear_tester/common/avr/timer.o
+                                                  obj_polarbear_tester/common/keyboard.o
+timer_read                                        obj_polarbear_tester/common/avr/timer.o
+                                                  obj_polarbear_tester/common/keyboard.o
+timer_read32                                      obj_polarbear_tester/common/avr/timer.o
+unregister_code                                   obj_polarbear_tester/common/action.o
+                                                  obj_polarbear_tester/common/action_macro.o
+unregister_mods                                   obj_polarbear_tester/common/action.o
+ws2812_setleds                                    obj_polarbear_tester/led.o
+xfunc_out                                         obj_polarbear_tester/common/avr/xprintf.o
+xitoa                                             obj_polarbear_tester/common/avr/xprintf.o
+xputc                                             obj_polarbear_tester/common/avr/xprintf.o
+xputs                                             obj_polarbear_tester/common/avr/xprintf.o

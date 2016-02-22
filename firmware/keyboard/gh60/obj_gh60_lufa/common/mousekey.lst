@@ -1,0 +1,1090 @@
+   1               		.file	"mousekey.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               		.section	.text.move_unit,"ax",@progbits
+  18               	move_unit:
+  19               	.LFB101:
+  20               	.LSM0:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LSM1:
+  24 0000 8091 0000 		lds r24,mousekey_accel
+  25 0004 80FF      		sbrs r24,0
+  26 0006 00C0      		rjmp .L2
+  27               	.LSM2:
+  28 0008 9091 0000 		lds r25,mk_max_speed
+  29 000c 85E0      		ldi r24,lo8(5)
+  30 000e 989F      		mul r25,r24
+  31 0010 C001      		movw r24,r0
+  32 0012 1124      		clr r1
+  33               	.LVL0:
+  34 0014 9595      		asr r25
+  35 0016 8795      		ror r24
+  36 0018 9595      		asr r25
+  37 001a 8795      		ror r24
+  38 001c 00C0      		rjmp .L3
+  39               	.LVL1:
+  40               	.L2:
+  41               	.LSM3:
+  42 001e 81FF      		sbrs r24,1
+  43 0020 00C0      		rjmp .L4
+  44               	.LSM4:
+  45 0022 9091 0000 		lds r25,mk_max_speed
+  46 0026 85E0      		ldi r24,lo8(5)
+  47 0028 989F      		mul r25,r24
+  48 002a C001      		movw r24,r0
+  49 002c 1124      		clr r1
+  50               	.LVL2:
+  51 002e 9595      		asr r25
+  52 0030 8795      		ror r24
+  53 0032 00C0      		rjmp .L3
+  54               	.LVL3:
+  55               	.L4:
+  56               	.LSM5:
+  57 0034 82FF      		sbrs r24,2
+  58 0036 00C0      		rjmp .L5
+  59               	.LSM6:
+  60 0038 9091 0000 		lds r25,mk_max_speed
+  61 003c 00C0      		rjmp .L12
+  62               	.L5:
+  63               	.LSM7:
+  64 003e 8091 0000 		lds r24,mousekey_repeat
+  65 0042 8823      		tst r24
+  66 0044 01F4      		brne .L6
+  67 0046 85E0      		ldi r24,lo8(5)
+  68 0048 90E0      		ldi r25,hi8(5)
+  69               	.LVL4:
+  70 004a 0895      		ret
+  71               	.LVL5:
+  72               	.L6:
+  73               	.LSM8:
+  74 004c 6091 0000 		lds r22,mk_time_to_max
+  75 0050 9091 0000 		lds r25,mk_max_speed
+  76 0054 8617      		cp r24,r22
+  77 0056 00F0      		brlo .L8
+  78               	.L12:
+  79               	.LSM9:
+  80 0058 85E0      		ldi r24,lo8(5)
+  81 005a 989F      		mul r25,r24
+  82 005c C001      		movw r24,r0
+  83 005e 1124      		clr r1
+  84               	.LVL6:
+  85 0060 00C0      		rjmp .L3
+  86               	.LVL7:
+  87               	.L8:
+  88               	.LSM10:
+  89 0062 899F      		mul r24,r25
+  90 0064 9001      		movw r18,r0
+  91 0066 1124      		clr r1
+  92 0068 C901      		movw r24,r18
+  93 006a 880F      		lsl r24
+  94 006c 991F      		rol r25
+  95 006e 880F      		lsl r24
+  96 0070 991F      		rol r25
+  97 0072 820F      		add r24,r18
+  98 0074 931F      		adc r25,r19
+  99 0076 70E0      		ldi r23,lo8(0)
+ 100 0078 0E94 0000 		call __divmodhi4
+ 101 007c CB01      		movw r24,r22
+ 102               	.LVL8:
+ 103               	.L3:
+ 104               	.LSM11:
+ 105 007e 8038      		cpi r24,128
+ 106 0080 9105      		cpc r25,__zero_reg__
+ 107 0082 00F0      		brlo .L9
+ 108 0084 8FE7      		ldi r24,lo8(127)
+ 109               	.LVL9:
+ 110 0086 0895      		ret
+ 111               	.LVL10:
+ 112               	.L9:
+ 113 0088 0097      		sbiw r24,0
+ 114 008a 01F4      		brne .L10
+ 115 008c 81E0      		ldi r24,lo8(1)
+ 116               	.LVL11:
+ 117               	.L10:
+ 118               	.LVL12:
+ 119               	.LSM12:
+ 120 008e 0895      		ret
+ 121               	.LFE101:
+ 123               		.section	.text.wheel_unit,"ax",@progbits
+ 125               	wheel_unit:
+ 126               	.LFB102:
+ 127               	.LSM13:
+ 128               	/* prologue: function */
+ 129               	/* frame size = 0 */
+ 130               	.LSM14:
+ 131 0000 8091 0000 		lds r24,mousekey_accel
+ 132 0004 80FF      		sbrs r24,0
+ 133 0006 00C0      		rjmp .L14
+ 134               	.LSM15:
+ 135 0008 8091 0000 		lds r24,mk_wheel_max_speed
+ 136 000c 8695      		lsr r24
+ 137 000e 8695      		lsr r24
+ 138 0010 00C0      		rjmp .L24
+ 139               	.L14:
+ 140               	.LSM16:
+ 141 0012 81FF      		sbrs r24,1
+ 142 0014 00C0      		rjmp .L16
+ 143               	.LSM17:
+ 144 0016 8091 0000 		lds r24,mk_wheel_max_speed
+ 145 001a 8695      		lsr r24
+ 146 001c 00C0      		rjmp .L24
+ 147               	.L16:
+ 148               	.LSM18:
+ 149 001e 82FF      		sbrs r24,2
+ 150 0020 00C0      		rjmp .L17
+ 151               	.LSM19:
+ 152 0022 8091 0000 		lds r24,mk_wheel_max_speed
+ 153 0026 00C0      		rjmp .L24
+ 154               	.L17:
+ 155               	.LSM20:
+ 156 0028 2091 0000 		lds r18,mousekey_repeat
+ 157 002c 2223      		tst r18
+ 158 002e 01F4      		brne .L18
+ 159 0030 81E0      		ldi r24,lo8(1)
+ 160 0032 90E0      		ldi r25,hi8(1)
+ 161               	.LVL13:
+ 162 0034 0895      		ret
+ 163               	.LVL14:
+ 164               	.L18:
+ 165               	.LSM21:
+ 166 0036 6091 0000 		lds r22,mk_wheel_time_to_max
+ 167 003a 8091 0000 		lds r24,mk_wheel_max_speed
+ 168 003e 2617      		cp r18,r22
+ 169 0040 00F0      		brlo .L20
+ 170               	.L24:
+ 171               	.LSM22:
+ 172 0042 90E0      		ldi r25,lo8(0)
+ 173               	.LVL15:
+ 174 0044 00C0      		rjmp .L15
+ 175               	.LVL16:
+ 176               	.L20:
+ 177               	.LSM23:
+ 178 0046 289F      		mul r18,r24
+ 179 0048 C001      		movw r24,r0
+ 180 004a 1124      		clr r1
+ 181 004c 70E0      		ldi r23,lo8(0)
+ 182 004e 0E94 0000 		call __divmodhi4
+ 183 0052 CB01      		movw r24,r22
+ 184               	.LVL17:
+ 185               	.L15:
+ 186               	.LSM24:
+ 187 0054 8038      		cpi r24,128
+ 188 0056 9105      		cpc r25,__zero_reg__
+ 189               	.LVL18:
+ 190 0058 00F0      		brlo .L21
+ 191 005a 8FE7      		ldi r24,lo8(127)
+ 192               	.LVL19:
+ 193 005c 0895      		ret
+ 194               	.LVL20:
+ 195               	.L21:
+ 196 005e 0097      		sbiw r24,0
+ 197 0060 01F4      		brne .L22
+ 198 0062 81E0      		ldi r24,lo8(1)
+ 199               	.LVL21:
+ 200               	.L22:
+ 201               	.LVL22:
+ 202               	.LSM25:
+ 203 0064 0895      		ret
+ 204               	.LFE102:
+ 206               		.section	.text.mousekey_on,"ax",@progbits
+ 207               	.global	mousekey_on
+ 209               	mousekey_on:
+ 210               	.LFB104:
+ 211               	.LSM26:
+ 212               	.LVL23:
+ 213               	/* prologue: function */
+ 214               	/* frame size = 0 */
+ 215               	.LSM27:
+ 216 0000 803F      		cpi r24,lo8(-16)
+ 217 0002 01F4      		brne .L26
+ 218 0004 0E94 0000 		call move_unit
+ 219               	.LVL24:
+ 220 0008 8195      		neg r24
+ 221 000a 00C0      		rjmp .L43
+ 222               	.LVL25:
+ 223               	.L26:
+ 224               	.LSM28:
+ 225 000c 813F      		cpi r24,lo8(-15)
+ 226 000e 01F4      		brne .L28
+ 227 0010 0E94 0000 		call move_unit
+ 228               	.LVL26:
+ 229               	.L43:
+ 230 0014 8093 0000 		sts mouse_report+2,r24
+ 231 0018 0895      		ret
+ 232               	.LVL27:
+ 233               	.L28:
+ 234               	.LSM29:
+ 235 001a 823F      		cpi r24,lo8(-14)
+ 236 001c 01F4      		brne .L29
+ 237 001e 0E94 0000 		call move_unit
+ 238               	.LVL28:
+ 239 0022 8195      		neg r24
+ 240 0024 00C0      		rjmp .L45
+ 241               	.LVL29:
+ 242               	.L29:
+ 243               	.LSM30:
+ 244 0026 833F      		cpi r24,lo8(-13)
+ 245 0028 01F4      		brne .L30
+ 246 002a 0E94 0000 		call move_unit
+ 247               	.LVL30:
+ 248               	.L45:
+ 249 002e 8093 0000 		sts mouse_report+1,r24
+ 250 0032 0895      		ret
+ 251               	.LVL31:
+ 252               	.L30:
+ 253               	.LSM31:
+ 254 0034 893F      		cpi r24,lo8(-7)
+ 255 0036 01F4      		brne .L31
+ 256 0038 0E94 0000 		call wheel_unit
+ 257               	.LVL32:
+ 258 003c 00C0      		rjmp .L47
+ 259               	.LVL33:
+ 260               	.L31:
+ 261               	.LSM32:
+ 262 003e 8A3F      		cpi r24,lo8(-6)
+ 263 0040 01F4      		brne .L32
+ 264 0042 0E94 0000 		call wheel_unit
+ 265               	.LVL34:
+ 266 0046 8195      		neg r24
+ 267               	.L47:
+ 268 0048 8093 0000 		sts mouse_report+3,r24
+ 269 004c 0895      		ret
+ 270               	.LVL35:
+ 271               	.L32:
+ 272               	.LSM33:
+ 273 004e 8B3F      		cpi r24,lo8(-5)
+ 274 0050 01F4      		brne .L33
+ 275 0052 0E94 0000 		call wheel_unit
+ 276               	.LVL36:
+ 277 0056 8195      		neg r24
+ 278 0058 00C0      		rjmp .L48
+ 279               	.LVL37:
+ 280               	.L33:
+ 281               	.LSM34:
+ 282 005a 8C3F      		cpi r24,lo8(-4)
+ 283 005c 01F4      		brne .L34
+ 284 005e 0E94 0000 		call wheel_unit
+ 285               	.LVL38:
+ 286               	.L48:
+ 287 0062 8093 0000 		sts mouse_report+4,r24
+ 288 0066 0895      		ret
+ 289               	.LVL39:
+ 290               	.L34:
+ 291               	.LSM35:
+ 292 0068 843F      		cpi r24,lo8(-12)
+ 293 006a 01F4      		brne .L35
+ 294 006c 8091 0000 		lds r24,mouse_report
+ 295               	.LVL40:
+ 296 0070 8160      		ori r24,lo8(1)
+ 297 0072 00C0      		rjmp .L46
+ 298               	.LVL41:
+ 299               	.L35:
+ 300               	.LSM36:
+ 301 0074 853F      		cpi r24,lo8(-11)
+ 302 0076 01F4      		brne .L36
+ 303 0078 8091 0000 		lds r24,mouse_report
+ 304               	.LVL42:
+ 305 007c 8260      		ori r24,lo8(2)
+ 306 007e 00C0      		rjmp .L46
+ 307               	.LVL43:
+ 308               	.L36:
+ 309               	.LSM37:
+ 310 0080 863F      		cpi r24,lo8(-10)
+ 311 0082 01F4      		brne .L37
+ 312 0084 8091 0000 		lds r24,mouse_report
+ 313               	.LVL44:
+ 314 0088 8460      		ori r24,lo8(4)
+ 315 008a 00C0      		rjmp .L46
+ 316               	.LVL45:
+ 317               	.L37:
+ 318               	.LSM38:
+ 319 008c 873F      		cpi r24,lo8(-9)
+ 320 008e 01F4      		brne .L38
+ 321 0090 8091 0000 		lds r24,mouse_report
+ 322               	.LVL46:
+ 323 0094 8860      		ori r24,lo8(8)
+ 324 0096 00C0      		rjmp .L46
+ 325               	.LVL47:
+ 326               	.L38:
+ 327               	.LSM39:
+ 328 0098 883F      		cpi r24,lo8(-8)
+ 329 009a 01F4      		brne .L39
+ 330 009c 8091 0000 		lds r24,mouse_report
+ 331               	.LVL48:
+ 332 00a0 8061      		ori r24,lo8(16)
+ 333               	.L46:
+ 334 00a2 8093 0000 		sts mouse_report,r24
+ 335 00a6 0895      		ret
+ 336               	.LVL49:
+ 337               	.L39:
+ 338               	.LSM40:
+ 339 00a8 8D3F      		cpi r24,lo8(-3)
+ 340 00aa 01F4      		brne .L40
+ 341 00ac 8091 0000 		lds r24,mousekey_accel
+ 342               	.LVL50:
+ 343 00b0 8160      		ori r24,lo8(1)
+ 344 00b2 00C0      		rjmp .L44
+ 345               	.LVL51:
+ 346               	.L40:
+ 347               	.LSM41:
+ 348 00b4 8E3F      		cpi r24,lo8(-2)
+ 349 00b6 01F4      		brne .L41
+ 350 00b8 8091 0000 		lds r24,mousekey_accel
+ 351               	.LVL52:
+ 352 00bc 8260      		ori r24,lo8(2)
+ 353               	.L44:
+ 354 00be 8093 0000 		sts mousekey_accel,r24
+ 355 00c2 0895      		ret
+ 356               	.LVL53:
+ 357               	.L41:
+ 358               	.LSM42:
+ 359 00c4 8F3F      		cpi r24,lo8(-1)
+ 360 00c6 01F4      		brne .L42
+ 361 00c8 8091 0000 		lds r24,mousekey_accel
+ 362               	.LVL54:
+ 363 00cc 8460      		ori r24,lo8(4)
+ 364 00ce 8093 0000 		sts mousekey_accel,r24
+ 365               	.LVL55:
+ 366               	.L42:
+ 367 00d2 0895      		ret
+ 368               	.LFE104:
+ 370               		.section	.text.mousekey_off,"ax",@progbits
+ 371               	.global	mousekey_off
+ 373               	mousekey_off:
+ 374               	.LFB105:
+ 375               	.LSM43:
+ 376               	.LVL56:
+ 377               	/* prologue: function */
+ 378               	/* frame size = 0 */
+ 379               	.LSM44:
+ 380 0000 803F      		cpi r24,lo8(-16)
+ 381 0002 01F4      		brne .L50
+ 382 0004 8091 0000 		lds r24,mouse_report+2
+ 383               	.LVL57:
+ 384 0008 87FF      		sbrs r24,7
+ 385 000a 00C0      		rjmp .L51
+ 386 000c 00C0      		rjmp .L68
+ 387               	.LVL58:
+ 388               	.L50:
+ 389               	.LSM45:
+ 390 000e 813F      		cpi r24,lo8(-15)
+ 391 0010 01F4      		brne .L52
+ 392 0012 8091 0000 		lds r24,mouse_report+2
+ 393               	.LVL59:
+ 394 0016 1816      		cp __zero_reg__,r24
+ 395 0018 04F0      		brlt .+2
+ 396 001a 00C0      		rjmp .L51
+ 397               	.L68:
+ 398 001c 1092 0000 		sts mouse_report+2,__zero_reg__
+ 399 0020 00C0      		rjmp .L51
+ 400               	.LVL60:
+ 401               	.L52:
+ 402               	.LSM46:
+ 403 0022 823F      		cpi r24,lo8(-14)
+ 404 0024 01F4      		brne .L53
+ 405 0026 8091 0000 		lds r24,mouse_report+1
+ 406               	.LVL61:
+ 407 002a 87FF      		sbrs r24,7
+ 408 002c 00C0      		rjmp .L51
+ 409 002e 00C0      		rjmp .L70
+ 410               	.LVL62:
+ 411               	.L53:
+ 412               	.LSM47:
+ 413 0030 833F      		cpi r24,lo8(-13)
+ 414 0032 01F4      		brne .L54
+ 415 0034 8091 0000 		lds r24,mouse_report+1
+ 416               	.LVL63:
+ 417 0038 1816      		cp __zero_reg__,r24
+ 418 003a 04F0      		brlt .+2
+ 419 003c 00C0      		rjmp .L51
+ 420               	.L70:
+ 421 003e 1092 0000 		sts mouse_report+1,__zero_reg__
+ 422 0042 00C0      		rjmp .L51
+ 423               	.LVL64:
+ 424               	.L54:
+ 425               	.LSM48:
+ 426 0044 893F      		cpi r24,lo8(-7)
+ 427 0046 01F4      		brne .L55
+ 428 0048 8091 0000 		lds r24,mouse_report+3
+ 429               	.LVL65:
+ 430 004c 1816      		cp __zero_reg__,r24
+ 431 004e 04F0      		brlt .L71
+ 432 0050 00C0      		rjmp .L51
+ 433               	.LVL66:
+ 434               	.L55:
+ 435               	.LSM49:
+ 436 0052 8A3F      		cpi r24,lo8(-6)
+ 437 0054 01F4      		brne .L56
+ 438 0056 8091 0000 		lds r24,mouse_report+3
+ 439               	.LVL67:
+ 440 005a 87FF      		sbrs r24,7
+ 441 005c 00C0      		rjmp .L51
+ 442               	.L71:
+ 443 005e 1092 0000 		sts mouse_report+3,__zero_reg__
+ 444 0062 00C0      		rjmp .L51
+ 445               	.LVL68:
+ 446               	.L56:
+ 447               	.LSM50:
+ 448 0064 8B3F      		cpi r24,lo8(-5)
+ 449 0066 01F4      		brne .L57
+ 450 0068 8091 0000 		lds r24,mouse_report+4
+ 451               	.LVL69:
+ 452 006c 87FF      		sbrs r24,7
+ 453 006e 00C0      		rjmp .L51
+ 454 0070 00C0      		rjmp .L72
+ 455               	.LVL70:
+ 456               	.L57:
+ 457               	.LSM51:
+ 458 0072 8C3F      		cpi r24,lo8(-4)
+ 459 0074 01F4      		brne .L58
+ 460 0076 8091 0000 		lds r24,mouse_report+4
+ 461               	.LVL71:
+ 462 007a 1816      		cp __zero_reg__,r24
+ 463 007c 04F4      		brge .L51
+ 464               	.L72:
+ 465 007e 1092 0000 		sts mouse_report+4,__zero_reg__
+ 466 0082 00C0      		rjmp .L51
+ 467               	.LVL72:
+ 468               	.L58:
+ 469               	.LSM52:
+ 470 0084 843F      		cpi r24,lo8(-12)
+ 471 0086 01F4      		brne .L59
+ 472 0088 8091 0000 		lds r24,mouse_report
+ 473               	.LVL73:
+ 474 008c 8E7F      		andi r24,lo8(-2)
+ 475 008e 00C0      		rjmp .L73
+ 476               	.LVL74:
+ 477               	.L59:
+ 478               	.LSM53:
+ 479 0090 853F      		cpi r24,lo8(-11)
+ 480 0092 01F4      		brne .L60
+ 481 0094 8091 0000 		lds r24,mouse_report
+ 482               	.LVL75:
+ 483 0098 8D7F      		andi r24,lo8(-3)
+ 484               	.L73:
+ 485 009a 8093 0000 		sts mouse_report,r24
+ 486 009e 00C0      		rjmp .L51
+ 487               	.LVL76:
+ 488               	.L60:
+ 489               	.LSM54:
+ 490 00a0 863F      		cpi r24,lo8(-10)
+ 491 00a2 01F4      		brne .L61
+ 492 00a4 8091 0000 		lds r24,mouse_report
+ 493               	.LVL77:
+ 494 00a8 8B7F      		andi r24,lo8(-5)
+ 495 00aa 00C0      		rjmp .L73
+ 496               	.LVL78:
+ 497               	.L61:
+ 498               	.LSM55:
+ 499 00ac 873F      		cpi r24,lo8(-9)
+ 500 00ae 01F4      		brne .L62
+ 501 00b0 8091 0000 		lds r24,mouse_report
+ 502               	.LVL79:
+ 503 00b4 877F      		andi r24,lo8(-9)
+ 504 00b6 00C0      		rjmp .L73
+ 505               	.LVL80:
+ 506               	.L62:
+ 507               	.LSM56:
+ 508 00b8 883F      		cpi r24,lo8(-8)
+ 509 00ba 01F4      		brne .L63
+ 510 00bc 8091 0000 		lds r24,mouse_report
+ 511               	.LVL81:
+ 512 00c0 8F7E      		andi r24,lo8(-17)
+ 513 00c2 00C0      		rjmp .L73
+ 514               	.LVL82:
+ 515               	.L63:
+ 516               	.LSM57:
+ 517 00c4 8D3F      		cpi r24,lo8(-3)
+ 518 00c6 01F4      		brne .L64
+ 519 00c8 8091 0000 		lds r24,mousekey_accel
+ 520               	.LVL83:
+ 521 00cc 8E7F      		andi r24,lo8(-2)
+ 522 00ce 00C0      		rjmp .L69
+ 523               	.LVL84:
+ 524               	.L64:
+ 525               	.LSM58:
+ 526 00d0 8E3F      		cpi r24,lo8(-2)
+ 527 00d2 01F4      		brne .L65
+ 528 00d4 8091 0000 		lds r24,mousekey_accel
+ 529               	.LVL85:
+ 530 00d8 8D7F      		andi r24,lo8(-3)
+ 531 00da 00C0      		rjmp .L69
+ 532               	.LVL86:
+ 533               	.L65:
+ 534               	.LSM59:
+ 535 00dc 8F3F      		cpi r24,lo8(-1)
+ 536 00de 01F4      		brne .L51
+ 537 00e0 8091 0000 		lds r24,mousekey_accel
+ 538               	.LVL87:
+ 539 00e4 8B7F      		andi r24,lo8(-5)
+ 540               	.L69:
+ 541 00e6 8093 0000 		sts mousekey_accel,r24
+ 542               	.LVL88:
+ 543               	.L51:
+ 544               	.LSM60:
+ 545 00ea 8091 0000 		lds r24,mouse_report+1
+ 546               	.LVL89:
+ 547 00ee 8823      		tst r24
+ 548 00f0 01F4      		brne .L67
+ 549 00f2 8091 0000 		lds r24,mouse_report+2
+ 550 00f6 8823      		tst r24
+ 551 00f8 01F4      		brne .L67
+ 552 00fa 8091 0000 		lds r24,mouse_report+3
+ 553 00fe 8823      		tst r24
+ 554 0100 01F4      		brne .L67
+ 555 0102 8091 0000 		lds r24,mouse_report+4
+ 556 0106 8823      		tst r24
+ 557 0108 01F4      		brne .L67
+ 558               	.LSM61:
+ 559 010a 1092 0000 		sts mousekey_repeat,__zero_reg__
+ 560               	.L67:
+ 561 010e 0895      		ret
+ 562               	.LFE105:
+ 564               		.section	.text.mousekey_clear,"ax",@progbits
+ 565               	.global	mousekey_clear
+ 567               	mousekey_clear:
+ 568               	.LFB107:
+ 569               	.LSM62:
+ 570               	/* prologue: function */
+ 571               	/* frame size = 0 */
+ 572               	.LSM63:
+ 573 0000 E0E0      		ldi r30,lo8(mouse_report)
+ 574 0002 F0E0      		ldi r31,hi8(mouse_report)
+ 575 0004 85E0      		ldi r24,lo8(5)
+ 576 0006 DF01      		movw r26,r30
+ 577 0008 1D92      		st X+,__zero_reg__
+ 578 000a 8A95      	        dec r24
+ 579 000c 01F4      		brne .-6
+ 580               	.LSM64:
+ 581 000e 1092 0000 		sts mousekey_repeat,__zero_reg__
+ 582               	.LSM65:
+ 583 0012 1092 0000 		sts mousekey_accel,__zero_reg__
+ 584               	/* epilogue start */
+ 585               	.LSM66:
+ 586 0016 0895      		ret
+ 587               	.LFE107:
+ 589               		.section	.text.mousekey_send,"ax",@progbits
+ 590               	.global	mousekey_send
+ 592               	mousekey_send:
+ 593               	.LFB106:
+ 594               	.LSM67:
+ 595               	/* prologue: function */
+ 596               	/* frame size = 0 */
+ 597               	.LBB19:
+ 598               	.LBB20:
+ 599               	.LSM68:
+ 600 0000 8091 0000 		lds r24,debug_config
+ 601 0004 83FF      		sbrs r24,3
+ 602 0006 00C0      		rjmp .L77
+ 603               	.LBE20:
+ 604               	.LSM69:
+ 605 0008 80E0      		ldi r24,lo8(__c.4732)
+ 606 000a 90E0      		ldi r25,hi8(__c.4732)
+ 607 000c 0E94 0000 		call xputs
+ 608               	.LBB21:
+ 609               	.LSM70:
+ 610 0010 00D0      		rcall .
+ 611 0012 00D0      		rcall .
+ 612 0014 EDB7      		in r30,__SP_L__
+ 613 0016 FEB7      		in r31,__SP_H__
+ 614 0018 3196      		adiw r30,1
+ 615               	.LBE21:
+ 616 001a 80E0      		ldi r24,lo8(__c.4734)
+ 617 001c 90E0      		ldi r25,hi8(__c.4734)
+ 618 001e ADB7      		in r26,__SP_L__
+ 619 0020 BEB7      		in r27,__SP_H__
+ 620 0022 1296      		adiw r26,1+1
+ 621 0024 9C93      		st X,r25
+ 622 0026 8E93      		st -X,r24
+ 623 0028 1197      		sbiw r26,1
+ 624 002a 8091 0000 		lds r24,mouse_report
+ 625 002e 8283      		std Z+2,r24
+ 626 0030 1382      		std Z+3,__zero_reg__
+ 627 0032 0E94 0000 		call __xprintf
+ 628               	.LBB22:
+ 629 0036 0F90      		pop __tmp_reg__
+ 630 0038 0F90      		pop __tmp_reg__
+ 631 003a 0F90      		pop __tmp_reg__
+ 632 003c 0F90      		pop __tmp_reg__
+ 633               	.LBE22:
+ 634 003e 80E0      		ldi r24,lo8(__c.4736)
+ 635 0040 90E0      		ldi r25,hi8(__c.4736)
+ 636 0042 0E94 0000 		call xputs
+ 637               	.LBB23:
+ 638               	.LSM71:
+ 639 0046 00D0      		rcall .
+ 640 0048 00D0      		rcall .
+ 641               	.LBE23:
+ 642 004a 80E0      		ldi r24,lo8(__c.4738)
+ 643 004c 90E0      		ldi r25,hi8(__c.4738)
+ 644 004e EDB7      		in r30,__SP_L__
+ 645 0050 FEB7      		in r31,__SP_H__
+ 646 0052 9283      		std Z+2,r25
+ 647 0054 8183      		std Z+1,r24
+ 648 0056 8091 0000 		lds r24,mouse_report+1
+ 649 005a 9927      		clr r25
+ 650 005c 87FD      		sbrc r24,7
+ 651 005e 9095      		com r25
+ 652 0060 9483      		std Z+4,r25
+ 653 0062 8383      		std Z+3,r24
+ 654 0064 0E94 0000 		call __xprintf
+ 655               	.LBB24:
+ 656 0068 0F90      		pop __tmp_reg__
+ 657 006a 0F90      		pop __tmp_reg__
+ 658 006c 0F90      		pop __tmp_reg__
+ 659 006e 0F90      		pop __tmp_reg__
+ 660               	.LBE24:
+ 661 0070 80E0      		ldi r24,lo8(__c.4740)
+ 662 0072 90E0      		ldi r25,hi8(__c.4740)
+ 663 0074 0E94 0000 		call xputs
+ 664               	.LBB25:
+ 665               	.LSM72:
+ 666 0078 00D0      		rcall .
+ 667 007a 00D0      		rcall .
+ 668               	.LBE25:
+ 669 007c 80E0      		ldi r24,lo8(__c.4742)
+ 670 007e 90E0      		ldi r25,hi8(__c.4742)
+ 671 0080 ADB7      		in r26,__SP_L__
+ 672 0082 BEB7      		in r27,__SP_H__
+ 673 0084 1296      		adiw r26,1+1
+ 674 0086 9C93      		st X,r25
+ 675 0088 8E93      		st -X,r24
+ 676 008a 1197      		sbiw r26,1
+ 677 008c 8091 0000 		lds r24,mouse_report+2
+ 678 0090 9927      		clr r25
+ 679 0092 87FD      		sbrc r24,7
+ 680 0094 9095      		com r25
+ 681 0096 1496      		adiw r26,3+1
+ 682 0098 9C93      		st X,r25
+ 683 009a 8E93      		st -X,r24
+ 684 009c 1397      		sbiw r26,3
+ 685 009e 0E94 0000 		call __xprintf
+ 686               	.LBB26:
+ 687 00a2 0F90      		pop __tmp_reg__
+ 688 00a4 0F90      		pop __tmp_reg__
+ 689 00a6 0F90      		pop __tmp_reg__
+ 690 00a8 0F90      		pop __tmp_reg__
+ 691               	.LBE26:
+ 692 00aa 80E0      		ldi r24,lo8(__c.4744)
+ 693 00ac 90E0      		ldi r25,hi8(__c.4744)
+ 694 00ae 0E94 0000 		call xputs
+ 695               	.LBB27:
+ 696               	.LSM73:
+ 697 00b2 00D0      		rcall .
+ 698 00b4 00D0      		rcall .
+ 699               	.LBE27:
+ 700 00b6 80E0      		ldi r24,lo8(__c.4746)
+ 701 00b8 90E0      		ldi r25,hi8(__c.4746)
+ 702 00ba EDB7      		in r30,__SP_L__
+ 703 00bc FEB7      		in r31,__SP_H__
+ 704 00be 9283      		std Z+2,r25
+ 705 00c0 8183      		std Z+1,r24
+ 706 00c2 8091 0000 		lds r24,mouse_report+3
+ 707 00c6 9927      		clr r25
+ 708 00c8 87FD      		sbrc r24,7
+ 709 00ca 9095      		com r25
+ 710 00cc 9483      		std Z+4,r25
+ 711 00ce 8383      		std Z+3,r24
+ 712 00d0 0E94 0000 		call __xprintf
+ 713               	.LBB28:
+ 714 00d4 0F90      		pop __tmp_reg__
+ 715 00d6 0F90      		pop __tmp_reg__
+ 716 00d8 0F90      		pop __tmp_reg__
+ 717 00da 0F90      		pop __tmp_reg__
+ 718               	.LBE28:
+ 719 00dc 80E0      		ldi r24,lo8(__c.4748)
+ 720 00de 90E0      		ldi r25,hi8(__c.4748)
+ 721 00e0 0E94 0000 		call xputs
+ 722               	.LBB29:
+ 723               	.LSM74:
+ 724 00e4 00D0      		rcall .
+ 725 00e6 00D0      		rcall .
+ 726               	.LBE29:
+ 727 00e8 80E0      		ldi r24,lo8(__c.4750)
+ 728 00ea 90E0      		ldi r25,hi8(__c.4750)
+ 729 00ec ADB7      		in r26,__SP_L__
+ 730 00ee BEB7      		in r27,__SP_H__
+ 731 00f0 1296      		adiw r26,1+1
+ 732 00f2 9C93      		st X,r25
+ 733 00f4 8E93      		st -X,r24
+ 734 00f6 1197      		sbiw r26,1
+ 735 00f8 8091 0000 		lds r24,mouse_report+4
+ 736 00fc 9927      		clr r25
+ 737 00fe 87FD      		sbrc r24,7
+ 738 0100 9095      		com r25
+ 739 0102 1496      		adiw r26,3+1
+ 740 0104 9C93      		st X,r25
+ 741 0106 8E93      		st -X,r24
+ 742 0108 1397      		sbiw r26,3
+ 743 010a 0E94 0000 		call __xprintf
+ 744               	.LBB30:
+ 745 010e 0F90      		pop __tmp_reg__
+ 746 0110 0F90      		pop __tmp_reg__
+ 747 0112 0F90      		pop __tmp_reg__
+ 748 0114 0F90      		pop __tmp_reg__
+ 749               	.LBE30:
+ 750 0116 80E0      		ldi r24,lo8(__c.4752)
+ 751 0118 90E0      		ldi r25,hi8(__c.4752)
+ 752 011a 0E94 0000 		call xputs
+ 753               	.LBB31:
+ 754               	.LSM75:
+ 755 011e 00D0      		rcall .
+ 756 0120 00D0      		rcall .
+ 757 0122 EDB7      		in r30,__SP_L__
+ 758 0124 FEB7      		in r31,__SP_H__
+ 759 0126 3196      		adiw r30,1
+ 760               	.LBE31:
+ 761 0128 80E0      		ldi r24,lo8(__c.4754)
+ 762 012a 90E0      		ldi r25,hi8(__c.4754)
+ 763 012c ADB7      		in r26,__SP_L__
+ 764 012e BEB7      		in r27,__SP_H__
+ 765 0130 1296      		adiw r26,1+1
+ 766 0132 9C93      		st X,r25
+ 767 0134 8E93      		st -X,r24
+ 768 0136 1197      		sbiw r26,1
+ 769 0138 8091 0000 		lds r24,mousekey_repeat
+ 770 013c 8283      		std Z+2,r24
+ 771 013e 1382      		std Z+3,__zero_reg__
+ 772 0140 0E94 0000 		call __xprintf
+ 773               	.LBB32:
+ 774 0144 0F90      		pop __tmp_reg__
+ 775 0146 0F90      		pop __tmp_reg__
+ 776 0148 0F90      		pop __tmp_reg__
+ 777 014a 0F90      		pop __tmp_reg__
+ 778               	.LBE32:
+ 779 014c 80E0      		ldi r24,lo8(__c.4756)
+ 780 014e 90E0      		ldi r25,hi8(__c.4756)
+ 781 0150 0E94 0000 		call xputs
+ 782               	.LBB33:
+ 783               	.LSM76:
+ 784 0154 00D0      		rcall .
+ 785 0156 00D0      		rcall .
+ 786 0158 EDB7      		in r30,__SP_L__
+ 787 015a FEB7      		in r31,__SP_H__
+ 788 015c 3196      		adiw r30,1
+ 789               	.LBE33:
+ 790 015e 80E0      		ldi r24,lo8(__c.4758)
+ 791 0160 90E0      		ldi r25,hi8(__c.4758)
+ 792 0162 ADB7      		in r26,__SP_L__
+ 793 0164 BEB7      		in r27,__SP_H__
+ 794 0166 1296      		adiw r26,1+1
+ 795 0168 9C93      		st X,r25
+ 796 016a 8E93      		st -X,r24
+ 797 016c 1197      		sbiw r26,1
+ 798 016e 8091 0000 		lds r24,mousekey_accel
+ 799 0172 8283      		std Z+2,r24
+ 800 0174 1382      		std Z+3,__zero_reg__
+ 801 0176 0E94 0000 		call __xprintf
+ 802               	.LBB34:
+ 803 017a 0F90      		pop __tmp_reg__
+ 804 017c 0F90      		pop __tmp_reg__
+ 805 017e 0F90      		pop __tmp_reg__
+ 806 0180 0F90      		pop __tmp_reg__
+ 807               	.LBE34:
+ 808 0182 80E0      		ldi r24,lo8(__c.4760)
+ 809 0184 90E0      		ldi r25,hi8(__c.4760)
+ 810 0186 0E94 0000 		call xputs
+ 811               	.L77:
+ 812               	.LBE19:
+ 813               	.LSM77:
+ 814 018a 80E0      		ldi r24,lo8(mouse_report)
+ 815 018c 90E0      		ldi r25,hi8(mouse_report)
+ 816 018e 0E94 0000 		call host_mouse_send
+ 817               	.LSM78:
+ 818 0192 0E94 0000 		call timer_read
+ 819 0196 9093 0000 		sts (last_timer)+1,r25
+ 820 019a 8093 0000 		sts last_timer,r24
+ 821               	/* epilogue start */
+ 822               	.LSM79:
+ 823 019e 0895      		ret
+ 824               	.LFE106:
+ 826               		.section	.text.mousekey_task,"ax",@progbits
+ 827               	.global	mousekey_task
+ 829               	mousekey_task:
+ 830               	.LFB103:
+ 831               	.LSM80:
+ 832 0000 1F93      		push r17
+ 833               	/* prologue: function */
+ 834               	/* frame size = 0 */
+ 835               	.LSM81:
+ 836 0002 8091 0000 		lds r24,last_timer
+ 837 0006 9091 0000 		lds r25,(last_timer)+1
+ 838 000a 0E94 0000 		call timer_elapsed
+ 839 000e AC01      		movw r20,r24
+ 840 0010 2091 0000 		lds r18,mousekey_repeat
+ 841 0014 2223      		tst r18
+ 842 0016 01F0      		breq .L80
+ 843 0018 8091 0000 		lds r24,mk_interval
+ 844 001c 90E0      		ldi r25,lo8(0)
+ 845 001e 00C0      		rjmp .L81
+ 846               	.L80:
+ 847 0020 9091 0000 		lds r25,mk_delay
+ 848 0024 8AE0      		ldi r24,lo8(10)
+ 849 0026 989F      		mul r25,r24
+ 850 0028 C001      		movw r24,r0
+ 851 002a 1124      		clr r1
+ 852               	.L81:
+ 853 002c 4817      		cp r20,r24
+ 854 002e 5907      		cpc r21,r25
+ 855 0030 00F4      		brsh .+2
+ 856 0032 00C0      		rjmp .L94
+ 857               	.LSM82:
+ 858 0034 9091 0000 		lds r25,mouse_report+1
+ 859 0038 9923      		tst r25
+ 860 003a 01F4      		brne .L83
+ 861 003c 8091 0000 		lds r24,mouse_report+2
+ 862 0040 8823      		tst r24
+ 863 0042 01F4      		brne .L83
+ 864 0044 8091 0000 		lds r24,mouse_report+3
+ 865 0048 8823      		tst r24
+ 866 004a 01F4      		brne .L83
+ 867 004c 8091 0000 		lds r24,mouse_report+4
+ 868 0050 8823      		tst r24
+ 869 0052 01F4      		brne .+2
+ 870 0054 00C0      		rjmp .L94
+ 871               	.L83:
+ 872               	.LSM83:
+ 873 0056 2F3F      		cpi r18,lo8(-1)
+ 874 0058 01F0      		breq .L84
+ 875               	.LSM84:
+ 876 005a 2F5F      		subi r18,lo8(-(1))
+ 877 005c 2093 0000 		sts mousekey_repeat,r18
+ 878               	.L84:
+ 879               	.LSM85:
+ 880 0060 1916      		cp __zero_reg__,r25
+ 881 0062 04F4      		brge .L85
+ 882 0064 0E94 0000 		call move_unit
+ 883 0068 8093 0000 		sts mouse_report+1,r24
+ 884               	.L85:
+ 885               	.LSM86:
+ 886 006c 8091 0000 		lds r24,mouse_report+1
+ 887 0070 87FF      		sbrs r24,7
+ 888 0072 00C0      		rjmp .L86
+ 889 0074 0E94 0000 		call move_unit
+ 890 0078 8195      		neg r24
+ 891 007a 8093 0000 		sts mouse_report+1,r24
+ 892               	.L86:
+ 893               	.LSM87:
+ 894 007e 8091 0000 		lds r24,mouse_report+2
+ 895 0082 1816      		cp __zero_reg__,r24
+ 896 0084 04F4      		brge .L87
+ 897 0086 0E94 0000 		call move_unit
+ 898 008a 8093 0000 		sts mouse_report+2,r24
+ 899               	.L87:
+ 900               	.LSM88:
+ 901 008e 8091 0000 		lds r24,mouse_report+2
+ 902 0092 87FF      		sbrs r24,7
+ 903 0094 00C0      		rjmp .L88
+ 904 0096 0E94 0000 		call move_unit
+ 905 009a 8195      		neg r24
+ 906 009c 8093 0000 		sts mouse_report+2,r24
+ 907               	.L88:
+ 908               	.LSM89:
+ 909 00a0 6091 0000 		lds r22,mouse_report+1
+ 910 00a4 6623      		tst r22
+ 911 00a6 01F0      		breq .L89
+ 912 00a8 1091 0000 		lds r17,mouse_report+2
+ 913 00ac 1123      		tst r17
+ 914 00ae 01F0      		breq .L89
+ 915               	.LSM90:
+ 916 00b0 7727      		clr r23
+ 917 00b2 67FD      		sbrc r22,7
+ 918 00b4 7095      		com r23
+ 919 00b6 872F      		mov r24,r23
+ 920 00b8 972F      		mov r25,r23
+ 921 00ba 0E94 0000 		call __floatsisf
+ 922 00be 23E3      		ldi r18,lo8(0x3f333333)
+ 923 00c0 33E3      		ldi r19,hi8(0x3f333333)
+ 924 00c2 43E3      		ldi r20,hlo8(0x3f333333)
+ 925 00c4 5FE3      		ldi r21,hhi8(0x3f333333)
+ 926 00c6 0E94 0000 		call __mulsf3
+ 927 00ca 0E94 0000 		call __fixsfsi
+ 928 00ce 6093 0000 		sts mouse_report+1,r22
+ 929               	.LSM91:
+ 930 00d2 612F      		mov r22,r17
+ 931 00d4 7727      		clr r23
+ 932 00d6 67FD      		sbrc r22,7
+ 933 00d8 7095      		com r23
+ 934 00da 872F      		mov r24,r23
+ 935 00dc 972F      		mov r25,r23
+ 936 00de 0E94 0000 		call __floatsisf
+ 937 00e2 23E3      		ldi r18,lo8(0x3f333333)
+ 938 00e4 33E3      		ldi r19,hi8(0x3f333333)
+ 939 00e6 43E3      		ldi r20,hlo8(0x3f333333)
+ 940 00e8 5FE3      		ldi r21,hhi8(0x3f333333)
+ 941 00ea 0E94 0000 		call __mulsf3
+ 942 00ee 0E94 0000 		call __fixsfsi
+ 943 00f2 6093 0000 		sts mouse_report+2,r22
+ 944               	.L89:
+ 945               	.LSM92:
+ 946 00f6 8091 0000 		lds r24,mouse_report+3
+ 947 00fa 1816      		cp __zero_reg__,r24
+ 948 00fc 04F4      		brge .L90
+ 949 00fe 0E94 0000 		call wheel_unit
+ 950 0102 8093 0000 		sts mouse_report+3,r24
+ 951               	.L90:
+ 952               	.LSM93:
+ 953 0106 8091 0000 		lds r24,mouse_report+3
+ 954 010a 87FF      		sbrs r24,7
+ 955 010c 00C0      		rjmp .L91
+ 956 010e 0E94 0000 		call wheel_unit
+ 957 0112 8195      		neg r24
+ 958 0114 8093 0000 		sts mouse_report+3,r24
+ 959               	.L91:
+ 960               	.LSM94:
+ 961 0118 8091 0000 		lds r24,mouse_report+4
+ 962 011c 1816      		cp __zero_reg__,r24
+ 963 011e 04F4      		brge .L92
+ 964 0120 0E94 0000 		call wheel_unit
+ 965 0124 8093 0000 		sts mouse_report+4,r24
+ 966               	.L92:
+ 967               	.LSM95:
+ 968 0128 8091 0000 		lds r24,mouse_report+4
+ 969 012c 87FF      		sbrs r24,7
+ 970 012e 00C0      		rjmp .L93
+ 971 0130 0E94 0000 		call wheel_unit
+ 972 0134 8195      		neg r24
+ 973 0136 8093 0000 		sts mouse_report+4,r24
+ 974               	.L93:
+ 975               	.LSM96:
+ 976 013a 0E94 0000 		call mousekey_send
+ 977               	.L94:
+ 978               	/* epilogue start */
+ 979               	.LSM97:
+ 980 013e 1F91      		pop r17
+ 981 0140 0895      		ret
+ 982               	.LFE103:
+ 984               	.global	mk_delay
+ 985               		.section	.data.mk_delay,"aw",@progbits
+ 988               	mk_delay:
+ 989 0000 1E        		.byte	30
+ 990               	.global	mk_interval
+ 991               		.section	.data.mk_interval,"aw",@progbits
+ 994               	mk_interval:
+ 995 0000 32        		.byte	50
+ 996               	.global	mk_max_speed
+ 997               		.section	.data.mk_max_speed,"aw",@progbits
+ 1000               	mk_max_speed:
+ 1001 0000 0A        		.byte	10
+ 1002               	.global	mk_time_to_max
+ 1003               		.section	.data.mk_time_to_max,"aw",@progbits
+ 1006               	mk_time_to_max:
+ 1007 0000 14        		.byte	20
+ 1008               	.global	mk_wheel_max_speed
+ 1009               		.section	.data.mk_wheel_max_speed,"aw",@progbits
+ 1012               	mk_wheel_max_speed:
+ 1013 0000 08        		.byte	8
+ 1014               	.global	mk_wheel_time_to_max
+ 1015               		.section	.data.mk_wheel_time_to_max,"aw",@progbits
+ 1018               	mk_wheel_time_to_max:
+ 1019 0000 28        		.byte	40
+ 1020               		.section	.bss.mouse_report,"aw",@nobits
+ 1023               	mouse_report:
+ 1024 0000 0000 0000 		.skip 5,0
+ 1024      00
+ 1025               		.section	.bss.mousekey_repeat,"aw",@nobits
+ 1028               	mousekey_repeat:
+ 1029 0000 00        		.skip 1,0
+ 1030               		.section	.bss.mousekey_accel,"aw",@nobits
+ 1033               	mousekey_accel:
+ 1034 0000 00        		.skip 1,0
+ 1035               		.section	.bss.last_timer,"aw",@nobits
+ 1038               	last_timer:
+ 1039 0000 0000      		.skip 2,0
+ 1040               		.section	.progmem.data,"a",@progbits
+ 1043               	__c.4760:
+ 1044 0000 290A 00   		.string	")\n"
+ 1047               	__c.4758:
+ 1048 0003 2575 00   		.string	"%u"
+ 1051               	__c.4756:
+ 1052 0006 2F00      		.string	"/"
+ 1055               	__c.4754:
+ 1056 0008 2575 00   		.string	"%u"
+ 1059               	__c.4752:
+ 1060 000b 5D28 00   		.string	"]("
+ 1063               	__c.4750:
+ 1064 000e 2564 00   		.string	"%d"
+ 1067               	__c.4748:
+ 1068 0011 2000      		.string	" "
+ 1071               	__c.4746:
+ 1072 0013 2564 00   		.string	"%d"
+ 1075               	__c.4744:
+ 1076 0016 2000      		.string	" "
+ 1079               	__c.4742:
+ 1080 0018 2564 00   		.string	"%d"
+ 1083               	__c.4740:
+ 1084 001b 2000      		.string	" "
+ 1087               	__c.4738:
+ 1088 001d 2564 00   		.string	"%d"
+ 1091               	__c.4736:
+ 1092 0020 7C00      		.string	"|"
+ 1095               	__c.4734:
+ 1096 0022 2530 3258 		.string	"%02X"
+ 1096      00
+ 1099               	__c.4732:
+ 1100 0027 6D6F 7573 		.string	"mousekey [btn|x y v h](rep/acl): ["
+ 1100      656B 6579 
+ 1100      205B 6274 
+ 1100      6E7C 7820 
+ 1100      7920 7620 
+ 1173               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 mousekey.c
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:2      *ABS*:0000003f __SREG__
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:3      *ABS*:0000003e __SP_H__
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:4      *ABS*:0000003d __SP_L__
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:5      *ABS*:00000034 __CCP__
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:18     .text.move_unit:00000000 move_unit
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1033   .bss.mousekey_accel:00000000 mousekey_accel
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1000   .data.mk_max_speed:00000000 mk_max_speed
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1028   .bss.mousekey_repeat:00000000 mousekey_repeat
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1006   .data.mk_time_to_max:00000000 mk_time_to_max
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:125    .text.wheel_unit:00000000 wheel_unit
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1012   .data.mk_wheel_max_speed:00000000 mk_wheel_max_speed
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1018   .data.mk_wheel_time_to_max:00000000 mk_wheel_time_to_max
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:209    .text.mousekey_on:00000000 mousekey_on
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1023   .bss.mouse_report:00000000 mouse_report
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:373    .text.mousekey_off:00000000 mousekey_off
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:567    .text.mousekey_clear:00000000 mousekey_clear
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:592    .text.mousekey_send:00000000 mousekey_send
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1099   .progmem.data:00000027 __c.4732
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1095   .progmem.data:00000022 __c.4734
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1091   .progmem.data:00000020 __c.4736
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1087   .progmem.data:0000001d __c.4738
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1083   .progmem.data:0000001b __c.4740
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1079   .progmem.data:00000018 __c.4742
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1075   .progmem.data:00000016 __c.4744
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1071   .progmem.data:00000013 __c.4746
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1067   .progmem.data:00000011 __c.4748
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1063   .progmem.data:0000000e __c.4750
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1059   .progmem.data:0000000b __c.4752
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1055   .progmem.data:00000008 __c.4754
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1051   .progmem.data:00000006 __c.4756
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1047   .progmem.data:00000003 __c.4758
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1043   .progmem.data:00000000 __c.4760
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:1038   .bss.last_timer:00000000 last_timer
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:829    .text.mousekey_task:00000000 mousekey_task
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:994    .data.mk_interval:00000000 mk_interval
+C:\Users\User\AppData\Local\Temp/cco5Umhk.s:988    .data.mk_delay:00000000 mk_delay
+
+UNDEFINED SYMBOLS
+__divmodhi4
+debug_config
+xputs
+__xprintf
+host_mouse_send
+timer_read
+timer_elapsed
+__floatsisf
+__mulsf3
+__fixsfsi
+__do_copy_data
+__do_clear_bss
