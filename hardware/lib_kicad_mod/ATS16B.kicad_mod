@@ -1,0 +1,20 @@
+(module lib_kicad_mod:ATS16B (layer F.Cu) (tedit 562D2C43)
+  (attr smd)
+  (fp_text reference X1 (at 0 -0.4) (layer F.SilkS) hide
+    (effects (font (size 0.50038 0.50038) (thickness 0.10922)))
+  )
+  (fp_text value ATS16B (at 0 0.381) (layer F.SilkS) hide
+    (effects (font (size 0.50038 0.50038) (thickness 0.10922)))
+  )
+  (fp_line (start 5.425 2.25) (end 5.425 -2.25) (layer F.SilkS) (width 0.15))
+  (fp_line (start -5.425 2.25) (end -5.425 -2.25) (layer F.SilkS) (width 0.15))
+  (fp_line (start -5.425 -2.25) (end 5.425 -2.25) (layer F.SilkS) (width 0.15))
+  (fp_line (start -5.425 2.25) (end 5.425 2.25) (layer F.SilkS) (width 0.15))
+  (pad 2 thru_hole circle (at 2.44 0) (size 1.2 1.2) (drill 0.5) (layers *.Cu *.Mask F.SilkS))
+  (pad 1 thru_hole circle (at -2.44 0) (size 1.2 1.2) (drill 0.5) (layers *.Cu *.Mask F.SilkS))
+  (model smd/chip_cms.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 0.1 0.1 0.1))
+    (rotate (xyz 0 0 0))
+  )
+)
