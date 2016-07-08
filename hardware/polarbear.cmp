@@ -1,35 +1,315 @@
-Cmp-Mod V01 Created by PcbNew   date = 10/15/2015 10:52:44 AM
+Cmp-Mod V01 Created by PcbNew   date = 6/28/2016 2:57:43 PM
 
 BeginCmp
-TimeStamp = 561FE798
-Path = 
-Reference = MX1A;
-ValeurCmp = VAL**;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E069
-Path = /54E93A35
-Reference = S9;
+TimeStamp = 562BB6C0
+Path = /54E93A7D
+Reference = S11;
 ValeurCmp = MX1A;
-IdModule  = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
 EndCmp
 
 BeginCmp
-TimeStamp = 560CB51E
-Path = 
-Reference = [NoRef];
-ValeurCmp = MH2;
-IdModule  = Connect:1pin;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F29A02
-Path = /54E93A2F
-Reference = S32;
+TimeStamp = 562BB6E4
+Path = /54E93A3B
+Reference = S14;
 ValeurCmp = MX1A;
-IdModule  = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB69C
+Path = /54E93A11
+Reference = S8;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F0BD51
+Path = /54E920B5
+Reference = C1;
+ValeurCmp = 18pF;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB649
+Path = /54E94A8B
+Reference = D35;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB644
+Path = /54E949ED
+Reference = D34;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB63F
+Path = /54E94995
+Reference = D33;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB63A
+Path = /54E9498F
+Reference = D32;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB635
+Path = /54E942B4
+Reference = D31;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB630
+Path = /54E949F3
+Reference = D30;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB62B
+Path = /54E949E7
+Reference = D29;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB626
+Path = /54E9499B
+Reference = D28;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB621
+Path = /54E94989
+Reference = D27;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB61C
+Path = /54E942AE
+Reference = D26;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB617
+Path = /54E94A91
+Reference = D25;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB612
+Path = /54E94983
+Reference = D24;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB60D
+Path = /54E949E1
+Reference = D23;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB608
+Path = /54E949A1
+Reference = D22;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB603
+Path = /54E942A8
+Reference = D21;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5FE
+Path = /54E949DB
+Reference = D20;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5F9
+Path = /54E949A7
+Reference = D19;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5F4
+Path = /54E9497D
+Reference = D18;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5EF
+Path = /54E942A2
+Reference = D17;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5EA
+Path = /54E94A97
+Reference = D16;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5E5
+Path = /54E949D5
+Reference = D15;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5E0
+Path = /54E949AD
+Reference = D14;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5DB
+Path = /54E94977
+Reference = D13;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5D6
+Path = /54E9429C
+Reference = D12;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5D1
+Path = /54E94A9D
+Reference = D11;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5CC
+Path = /54E949CF
+Reference = D10;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5C7
+Path = /54E949B3
+Reference = D9;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5C2
+Path = /54E9487F
+Reference = D8;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5BD
+Path = /54E9428A
+Reference = D7;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5B8
+Path = /54E94AA9
+Reference = D6;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5B3
+Path = /54E94AA3
+Reference = D5;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5AE
+Path = /54E949C9
+Reference = D4;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5A9
+Path = /54E949B9
+Reference = D3;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB5A4
+Path = /54E94879
+Reference = D2;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB59F
+Path = /54E9411E
+Reference = D1;
+ValeurCmp = 1N4148;
+IdModule  = lib_kicad_mod:1N4148_SOD123;
 EndCmp
 
 BeginCmp
@@ -37,639 +317,7 @@ TimeStamp = 54F0BBCB
 Path = /54E91AAD
 Reference = IC1;
 ValeurCmp = ATMEGA32U4;
-IdModule  = TQFP44;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BBD8
-Path = /54E9497D
-Reference = D18;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BBE5
-Path = /54E949C9
-Reference = D4;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BBF2
-Path = /54E949B9
-Reference = D3;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BBFF
-Path = /54E949B3
-Reference = D9;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC0C
-Path = /54E949AD
-Reference = D14;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC19
-Path = /54E949A7
-Reference = D19;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC26
-Path = /54E949A1
-Reference = D22;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC33
-Path = /54E9499B
-Reference = D28;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC40
-Path = /54E94995
-Reference = D33;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC4D
-Path = /54E9498F
-Reference = D32;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC5A
-Path = /54E94989
-Reference = D27;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 550B6317
-Path = /54E94983
-Reference = D24;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC74
-Path = /54E949CF
-Reference = D10;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC81
-Path = /54E94977
-Reference = D13;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC8E
-Path = /54E9487F
-Reference = D8;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BC9B
-Path = /54E94879
-Reference = D2;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BCA8
-Path = /54E942B4
-Reference = D31;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BCB5
-Path = /54E942AE
-Reference = D26;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BCC2
-Path = /54E942A8
-Reference = D21;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BCCF
-Path = /54E942A2
-Reference = D17;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F336BF
-Path = /54E9429C
-Reference = D12;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BCE9
-Path = /54E9428A
-Reference = D7;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F6096A
-Path = /54E9411E
-Reference = D1;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD03
-Path = /54E92F07
-Reference = C6;
-ValeurCmp = 100n;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD10
-Path = /54E91BEA
-Reference = C3;
-ValeurCmp = 1u;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F153D5
-Path = /54E91CAA
-Reference = R1;
-ValeurCmp = 22;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD2A
-Path = /54E91CB0
-Reference = R2;
-ValeurCmp = 22;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD37
-Path = /54E91FAD
-Reference = C2;
-ValeurCmp = 22p;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD44
-Path = /54E94AA9
-Reference = D6;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD51
-Path = /54E920B5
-Reference = C1;
-ValeurCmp = 22p;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD5E
-Path = /54E94AA3
-Reference = D5;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F3B9DA
-Path = /54E92E2C
-Reference = R5;
-ValeurCmp = 10k;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD78
-Path = /54E92EEE
-Reference = C4;
-ValeurCmp = 100n;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD85
-Path = /54E92EFB
-Reference = C8;
-ValeurCmp = 1u;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD92
-Path = /54E92F01
-Reference = C5;
-ValeurCmp = 100n;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BD9F
-Path = /54E930A0
-Reference = C7;
-ValeurCmp = 100n;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDAC
-Path = /54E94A9D
-Reference = D11;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDB9
-Path = /54E94A97
-Reference = D16;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDC6
-Path = /54E94A91
-Reference = D25;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDD3
-Path = /54E94A8B
-Reference = D35;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDE0
-Path = /54E949F3
-Reference = D30;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDED
-Path = /54E949ED
-Reference = D34;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BDFA
-Path = /54E949E7
-Reference = D29;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE07
-Path = /54E949E1
-Reference = D23;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE14
-Path = /54E949DB
-Reference = D20;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE21
-Path = /54E949D5
-Reference = D15;
-ValeurCmp = 1N4148;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E05D
-Path = /54E93A77
-Reference = S10;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE37
-Path = /54E93652
-Reference = S17;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE42
-Path = /54E93A29
-Reference = S27;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F2975D
-Path = /54E93A23
-Reference = S22;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE58
-Path = /54E93A1D
-Reference = S18;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE63
-Path = /54E93A17
-Reference = S13;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E075
-Path = /54E93A11
-Reference = S8;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE79
-Path = /54E93A00
-Reference = S36;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE84
-Path = /54E93946
-Reference = S31;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE8F
-Path = /54E93707
-Reference = S26;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BE9A
-Path = /54E93A9B
-Reference = S35;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E045
-Path = /54E935A9
-Reference = S12;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E08D
-Path = /54E9353C
-Reference = S7;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E081
-Path = /54E9352D
-Reference = S6;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E099
-Path = /54E9351E
-Reference = S5;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E0A5
-Path = /54E9350F
-Reference = S4;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E0B1
-Path = /54E934AD
-Reference = S3;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504D86B
-Path = /54E9349E
-Reference = S2;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BEFD
-Path = /54E93A95
-Reference = S30;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF08
-Path = /54E93A8F
-Reference = S25;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF13
-Path = /54E93A89
-Reference = S21;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF1E
-Path = /54E93A83
-Reference = S16;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 5504E051
-Path = /54E93A7D
-Reference = S11;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF34
-Path = /54E93A71
-Reference = S15;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF3F
-Path = /54E93A6B
-Reference = S20;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF4A
-Path = /54E93A65
-Reference = S24;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF55
-Path = /54E93A5F
-Reference = S29;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F2A613
-Path = /54E93A59
-Reference = S34;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF6B
-Path = /54E93A53
-Reference = S33;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF76
-Path = /54E93A4D
-Reference = S28;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF81
-Path = /54E93A47
-Reference = S23;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF8C
-Path = /54E93A41
-Reference = S19;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
-EndCmp
-
-BeginCmp
-TimeStamp = 54F0BF97
-Path = /54E93A3B
-Reference = S14;
-ValeurCmp = MX1A;
-IdModule  = MX1A;
+IdModule  = TQFP44:TQFP44;
 EndCmp
 
 BeginCmp
@@ -677,31 +325,367 @@ TimeStamp = 54F3BC63
 Path = /54E92D9D
 Reference = S1;
 ValeurCmp = DTSM-6;
-IdModule  = KSEM31GLFS;
+IdModule  = CandK_KSE:KSEM31GLFS;
 EndCmp
 
 BeginCmp
-TimeStamp = 54F0BFC9
+TimeStamp = 56218059
+Path = /54E92D9D
+Reference = S1;
+ValeurCmp = DTSM-6;
+IdModule  = CandK_KSE:KSEM31GLFS;
+EndCmp
+
+BeginCmp
+TimeStamp = 562D2E2E
 Path = /54E92004
 Reference = X1;
-ValeurCmp = ASX3F;
-IdModule  = ASX3F;
+ValeurCmp = ATS16B;
+IdModule  = lib_kicad_mod:ATS16B;
 EndCmp
 
 BeginCmp
-TimeStamp = 54F0BFE1
+TimeStamp = 54F0BD37
+Path = /54E91FAD
+Reference = C2;
+ValeurCmp = 18pF;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F0BD92
+Path = /562B6E01
+Reference = C5;
+ValeurCmp = 100nF;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F0BD78
+Path = /562B6B56
+Reference = C4;
+ValeurCmp = 100nF;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F0BD10
+Path = /54E91BEA
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F0BD03
+Path = /562ADECD
+Reference = C6;
+ValeurCmp = 1uF;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F0BD2A
+Path = /54E91CB0
+Reference = R2;
+ValeurCmp = 22;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 54F153D5
+Path = /54E91CAA
+Reference = R1;
+ValeurCmp = 22;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 562EC324
+Path = /5631EFFE
+Reference = H1;
+ValeurCmp = SPI_header;
+IdModule  = lib_kicad_mod:SPI_header;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB654
+Path = /54E9349E
+Reference = S2;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB660
+Path = /54E934AD
+Reference = S3;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB66C
+Path = /54E9350F
+Reference = S4;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB678
+Path = /54E9351E
+Reference = S5;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB684
+Path = /54E9352D
+Reference = S6;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB690
+Path = /54E9353C
+Reference = S7;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB6A8
+Path = /54E93A35
+Reference = S9;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB6B4
+Path = /54E93A77
+Reference = S10;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB6CC
+Path = /54E935A9
+Reference = S12;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB6D8
+Path = /54E93A17
+Reference = S13;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB6F0
+Path = /54E93A71
+Reference = S15;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB6FC
+Path = /54E93A83
+Reference = S16;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB708
+Path = /54E93652
+Reference = S17;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB714
+Path = /54E93A1D
+Reference = S18;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB720
+Path = /54E93A41
+Reference = S19;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB72C
+Path = /54E93A6B
+Reference = S20;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB738
+Path = /54E93A89
+Reference = S21;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB744
+Path = /54E93A23
+Reference = S22;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB750
+Path = /54E93A47
+Reference = S23;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB75C
+Path = /54E93A65
+Reference = S24;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB768
+Path = /54E93A8F
+Reference = S25;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB774
+Path = /54E93707
+Reference = S26;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB780
+Path = /54E93A29
+Reference = S27;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB78C
+Path = /54E93A4D
+Reference = S28;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB798
+Path = /54E93A5F
+Reference = S29;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7A4
+Path = /54E93A95
+Reference = S30;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7B0
+Path = /54E93946
+Reference = S31;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7BC
+Path = /54E93A2F
+Reference = S32;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7C8
+Path = /54E93A53
+Reference = S33;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7D4
+Path = /54E93A59
+Reference = S34;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7EC
+Path = /54E93A00
+Reference = S36;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB653
+Path = /54E92E2C
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = lib_kicad_mod:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 56340221
 Path = /54EFF137
 Reference = J1;
 ValeurCmp = USBMICRO;
-IdModule  = conn_usbmicro;
+IdModule  = lib_kicad_mod:conn_usbmicro;
 EndCmp
 
 BeginCmp
-TimeStamp = 560CB1CC
-Path = 
-Reference = [NoRef];
-ValeurCmp = MH1;
-IdModule  = Connect:1pin;
+TimeStamp = 576F1DC5
+Path = /576F26DA
+Reference = U1;
+ValeurCmp = TEENSY2.0;
+IdModule  = lib_kicad_mod:TEENSY_2.0;
+EndCmp
+
+BeginCmp
+TimeStamp = 562BB7E0
+Path = /54E93A9B
+Reference = S35;
+ValeurCmp = MX1A;
+IdModule  = lib_kicad_mod:MX1A_ddouble_sided_big_ring;
 EndCmp
 
 EndListe
