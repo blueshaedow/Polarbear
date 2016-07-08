@@ -1,2 +1,2 @@
 # Polarbear
-Repo for custom design mechanical keyboard
+Repo for custom mechanical keyboard
